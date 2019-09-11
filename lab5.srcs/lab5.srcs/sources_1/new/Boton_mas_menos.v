@@ -35,17 +35,17 @@ module Boton_mas_menos(btnC,clk,an,seg);
          an = 4'b0110;
     end
     
-    always@(posedge clk & btnC)
+    always@(posedge clk)
         begin
-            /*if(btnC == 1 & k == 0)
-                k = 1;*/
-            if (btnC == 1 /*& k == 4*/)
-                counter = counter + 1;
-                //k = 0;
-                if (counter == 4)
-                    counter = 0;
-            /*else
-                k = k + 1;*/                                       
+            if(btnC == 1 & k == 0)
+                k = 1;
+            if (btnC == 1 & k == 10)
+                //counter = counter + 1;
+                k = 0;
+//                if (counter == 4)
+//                    counter = 0;
+            else
+                k = k + 1;                                       
         end
         
     always@(posedge clk)

@@ -21,6 +21,23 @@
 
 
 module Deboucing(
-
+    input clk,
+    input btnC,
+    output reg boton_limpio
     );
+    
+    reg k;
+    reg contador;
+    
+    always@(posedge clk)
+    begin
+        if(btnC == 1 & k == 0)
+            k = 1;
+        else if (k == 1000)
+            k = 0;
+        else
+            k = k + 1;
+    end
 endmodule
+
+
