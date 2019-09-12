@@ -32,7 +32,7 @@ module Wave_Selector (input [1:0] clk_sel,               // input sel used to se
 wire [7:0] val_sine;
 wire [7:0] val_square;
 wire [7:0] val_triangle;
-reg [1:0] wave_sel;
+wire [1:0] wave_sel;
 
 Sine(clk, clk_sel, enable, val_sine);
 Square(clk, clk_sel, enable, val_square);

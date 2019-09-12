@@ -2,8 +2,8 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Thu Sep 12 15:38:30 2019
-# Process ID: 1248
+# Start of session at: Thu Sep 12 16:25:20 2019
+# Process ID: 2080
 # Current directory: C:/Users/NBJSWETT/Desktop/lab2.srcs/lab5.runs/synth_1
 # Command line: vivado.exe -log Wave_Selector.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Wave_Selector.tcl
 # Log file: C:/Users/NBJSWETT/Desktop/lab2.srcs/lab5.runs/synth_1/Wave_Selector.vds
@@ -17,25 +17,25 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 15020 
+INFO: Helper process launched with PID 13228 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 701.285 ; gain = 176.406
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 702.379 ; gain = 177.293
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'Wave_Selector' [C:/Users/NBJSWETT/Desktop/lab2.srcs/lab5.srcs/sources_1/new/Wave_Selector.v:23]
 INFO: [Synth 8-6157] synthesizing module 'Sine' [C:/Users/NBJSWETT/Desktop/lab2.srcs/lab5.srcs/sources_1/new/Sine.v:23]
 INFO: [Synth 8-6157] synthesizing module 'counter_1' [C:/Users/NBJSWETT/Desktop/lab2.srcs/lab5.srcs/sources_1/new/counter_1.v:23]
 INFO: [Synth 8-6157] synthesizing module 'freq_selector' [C:/Users/NBJSWETT/Desktop/lab2.srcs/lab5.srcs/sources_1/new/freq_selector.v:23]
 INFO: [Synth 8-6157] synthesizing module 'Clock_divider_2' [C:/Users/NBJSWETT/Desktop/lab2.srcs/lab5.srcs/sources_1/new/clock_divider.v:23]
-	Parameter DIVISOR bound to: 28'b0001001100010010110100000000 
+	Parameter DIVISOR bound to: 28'b0000000111101000010010000000 
 INFO: [Synth 8-6155] done synthesizing module 'Clock_divider_2' (1#1) [C:/Users/NBJSWETT/Desktop/lab2.srcs/lab5.srcs/sources_1/new/clock_divider.v:23]
 INFO: [Synth 8-6157] synthesizing module 'Clock_divider_3' [C:/Users/NBJSWETT/Desktop/lab2.srcs/lab5.srcs/sources_1/new/clock_divider_3.v:22]
-	Parameter DIVISOR bound to: 28'b0001110010011100001110000000 
+	Parameter DIVISOR bound to: 28'b0000001011011100011011000000 
 INFO: [Synth 8-6155] done synthesizing module 'Clock_divider_3' (2#1) [C:/Users/NBJSWETT/Desktop/lab2.srcs/lab5.srcs/sources_1/new/clock_divider_3.v:22]
 INFO: [Synth 8-6157] synthesizing module 'Clock_divider_4' [C:/Users/NBJSWETT/Desktop/lab2.srcs/lab5.srcs/sources_1/new/Clock_divider_4.v:23]
-	Parameter DIVISOR bound to: 28'b0010011000100101101000000000 
+	Parameter DIVISOR bound to: 28'b0000001111010000100100000000 
 INFO: [Synth 8-6155] done synthesizing module 'Clock_divider_4' (3#1) [C:/Users/NBJSWETT/Desktop/lab2.srcs/lab5.srcs/sources_1/new/Clock_divider_4.v:23]
 INFO: [Synth 8-6157] synthesizing module 'Clock_divider_5' [C:/Users/NBJSWETT/Desktop/lab2.srcs/lab5.srcs/sources_1/new/Clock_divider_5.v:23]
-	Parameter DIVISOR bound to: 28'b0010111110101111000010000000 
+	Parameter DIVISOR bound to: 28'b0000010011000100101101000000 
 INFO: [Synth 8-6155] done synthesizing module 'Clock_divider_5' (4#1) [C:/Users/NBJSWETT/Desktop/lab2.srcs/lab5.srcs/sources_1/new/Clock_divider_5.v:23]
 INFO: [Synth 8-6155] done synthesizing module 'freq_selector' (5#1) [C:/Users/NBJSWETT/Desktop/lab2.srcs/lab5.srcs/sources_1/new/freq_selector.v:23]
 WARNING: [Synth 8-3848] Net a in module/entity counter_1 does not have driver. [C:/Users/NBJSWETT/Desktop/lab2.srcs/lab5.srcs/sources_1/new/counter_1.v:33]
@@ -62,10 +62,8 @@ INFO: [Synth 8-6157] synthesizing module 'my_dff' [C:/Users/NBJSWETT/Desktop/lab
 INFO: [Synth 8-6155] done synthesizing module 'my_dff' (11#1) [C:/Users/NBJSWETT/Desktop/lab2.srcs/lab5.srcs/sources_1/new/debouncer.v:44]
 INFO: [Synth 8-6155] done synthesizing module 'debouncer' (12#1) [C:/Users/NBJSWETT/Desktop/lab2.srcs/lab5.srcs/sources_1/new/debouncer.v:23]
 INFO: [Synth 8-6155] done synthesizing module 'count_2' (13#1) [C:/Users/NBJSWETT/Desktop/lab2.srcs/lab5.srcs/sources_1/new/count_2.v:23]
-INFO: [Synth 8-6157] synthesizing module 'seven_segment' [C:/Users/NBJSWETT/Desktop/lab2.srcs/lab5.srcs/sources_1/new/7_segment.v:23]
-WARNING: [Synth 8-6014] Unused sequential element disp_reg was removed.  [C:/Users/NBJSWETT/Desktop/lab2.srcs/lab5.srcs/sources_1/new/7_segment.v:40]
-INFO: [Synth 8-6155] done synthesizing module 'seven_segment' (14#1) [C:/Users/NBJSWETT/Desktop/lab2.srcs/lab5.srcs/sources_1/new/7_segment.v:23]
-WARNING: [Synth 8-6104] Input port 'an' has an internal driver [C:/Users/NBJSWETT/Desktop/lab2.srcs/lab5.srcs/sources_1/new/Wave_Selector.v:41]
+INFO: [Synth 8-6157] synthesizing module 'seven_segment' [C:/Users/NBJSWETT/Desktop/lab2.srcs/lab5.srcs/sources_1/new/7_segment.v:43]
+INFO: [Synth 8-6155] done synthesizing module 'seven_segment' (14#1) [C:/Users/NBJSWETT/Desktop/lab2.srcs/lab5.srcs/sources_1/new/7_segment.v:43]
 INFO: [Synth 8-6157] synthesizing module 'termo_decoder' [C:/Users/NBJSWETT/Desktop/lab2.srcs/lab5.srcs/sources_1/new/termo_decoder.v:23]
 WARNING: [Synth 8-151] case item 32'b00000000000000000000000100000000 is unreachable [C:/Users/NBJSWETT/Desktop/lab2.srcs/lab5.srcs/sources_1/new/termo_decoder.v:288]
 INFO: [Synth 8-6155] done synthesizing module 'termo_decoder' (15#1) [C:/Users/NBJSWETT/Desktop/lab2.srcs/lab5.srcs/sources_1/new/termo_decoder.v:23]
@@ -95,7 +93,7 @@ WARNING: [Synth 8-3331] design Sine has unconnected port clk[2]
 WARNING: [Synth 8-3331] design Sine has unconnected port clk[1]
 WARNING: [Synth 8-3331] design Sine has unconnected port enable[1]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 765.652 ; gain = 240.773
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 765.297 ; gain = 240.211
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -108,45 +106,44 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 765.652 ; gain = 240.773
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 765.297 ; gain = 240.211
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 765.652 ; gain = 240.773
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 765.297 ; gain = 240.211
 ---------------------------------------------------------------------------------
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
 Parsing XDC File [C:/Users/NBJSWETT/Desktop/lab2.srcs/lab5.srcs/constrs_1/new/basys.xdc]
-CRITICAL WARNING: [Designutils 20-1307] Command 'Sch' is not supported in the xdc constraint file. [C:/Users/NBJSWETT/Desktop/lab2.srcs/lab5.srcs/constrs_1/new/basys.xdc:153]
 Finished Parsing XDC File [C:/Users/NBJSWETT/Desktop/lab2.srcs/lab5.srcs/constrs_1/new/basys.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/NBJSWETT/Desktop/lab2.srcs/lab5.srcs/constrs_1/new/basys.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Wave_Selector_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/Wave_Selector_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 888.398 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 887.855 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 888.398 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 887.855 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 888.398 ; gain = 363.520
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 887.855 ; gain = 362.770
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 888.398 ; gain = 363.520
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 887.855 ; gain = 362.770
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 888.398 ; gain = 363.520
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 887.855 ; gain = 362.770
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 888.398 ; gain = 363.520
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 887.855 ; gain = 362.770
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -163,8 +160,6 @@ Detailed RTL Component Info :
 	   2 Input      2 Bit       Adders := 1     
 +---Registers : 
 	                8 Bit    Registers := 3     
-	                7 Bit    Registers := 1     
-	                4 Bit    Registers := 1     
 	                2 Bit    Registers := 1     
 	                1 Bit    Registers := 3     
 +---Muxes : 
@@ -213,9 +208,6 @@ Detailed RTL Component Info :
 	   2 Input      2 Bit        Muxes := 1     
 Module seven_segment 
 Detailed RTL Component Info : 
-+---Registers : 
-	                7 Bit    Registers := 1     
-	                4 Bit    Registers := 1     
 +---Muxes : 
 	   4 Input      7 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
@@ -234,18 +226,13 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
-INFO: [Synth 8-3886] merging instance 'nolabel_line41/segments_reg[0]' (FD) to 'nolabel_line41/segments_reg[3]'
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (\nolabel_line41/segments_reg[5] )
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin an[3] with 1st driver pin 'nolabel_line41/an_reg[3]/Q' [C:/Users/NBJSWETT/Desktop/lab2.srcs/lab5.srcs/sources_1/new/7_segment.v:34]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin an[3] with 2nd driver pin 'an[3]' [C:/Users/NBJSWETT/Desktop/lab2.srcs/lab5.srcs/sources_1/new/Wave_Selector.v:23]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin an[2] with 1st driver pin 'nolabel_line41/an_reg[2]/Q' [C:/Users/NBJSWETT/Desktop/lab2.srcs/lab5.srcs/sources_1/new/7_segment.v:34]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin an[2] with 2nd driver pin 'an[2]' [C:/Users/NBJSWETT/Desktop/lab2.srcs/lab5.srcs/sources_1/new/Wave_Selector.v:23]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin an[1] with 1st driver pin 'nolabel_line41/an_reg[1]/Q' [C:/Users/NBJSWETT/Desktop/lab2.srcs/lab5.srcs/sources_1/new/7_segment.v:34]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin an[1] with 2nd driver pin 'an[1]' [C:/Users/NBJSWETT/Desktop/lab2.srcs/lab5.srcs/sources_1/new/Wave_Selector.v:23]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin an[0] with 1st driver pin 'nolabel_line41/an_reg[0]/Q' [C:/Users/NBJSWETT/Desktop/lab2.srcs/lab5.srcs/sources_1/new/7_segment.v:34]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin an[0] with 2nd driver pin 'an[0]' [C:/Users/NBJSWETT/Desktop/lab2.srcs/lab5.srcs/sources_1/new/Wave_Selector.v:23]
+WARNING: [Synth 8-3917] design Wave_Selector has port an[3] driven by constant 1
+WARNING: [Synth 8-3917] design Wave_Selector has port an[2] driven by constant 1
+WARNING: [Synth 8-3917] design Wave_Selector has port an[1] driven by constant 1
+WARNING: [Synth 8-3917] design Wave_Selector has port an[0] driven by constant 0
+WARNING: [Synth 8-3917] design Wave_Selector has port segments[5] driven by constant 1
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 888.398 ; gain = 363.520
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 887.855 ; gain = 362.770
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -261,6 +248,7 @@ ROM:
 |termo_decoder | leds                                      | 256x16        | LUT            | 
 |Wave_Selector | nolabel_line37/nolabel_line31/out_reg_rep | 256x8         | Block RAM      | 
 |Wave_Selector | nolabel_line38/out                        | 256x1         | LUT            | 
+|Wave_Selector | nolabel_line39/nolabel_line31/out_reg_rep | 256x8         | Block RAM      | 
 |Wave_Selector | nolabel_line42/leds                       | 256x16        | LUT            | 
 +--------------+-------------------------------------------+---------------+----------------+
 
@@ -279,13 +267,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 888.398 ; gain = 363.520
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 887.855 ; gain = 362.770
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 892.977 ; gain = 368.098
+Finished Timing Optimization : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 894.445 ; gain = 369.359
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -299,7 +287,7 @@ Start Technology Mapping
 INFO: [Synth 8-6837] The timing for the instance nolabel_line37/nolabel_line31/out_reg_rep (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 INFO: [Synth 8-6837] The timing for the instance nolabel_line39/nolabel_line31/out_reg_rep (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:39 ; elapsed = 00:00:42 . Memory (MB): peak = 892.977 ; gain = 368.098
+Finished Technology Mapping : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 894.445 ; gain = 369.359
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -323,7 +311,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:42 ; elapsed = 00:00:45 . Memory (MB): peak = 903.086 ; gain = 378.207
+Finished IO Insertion : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 901.414 ; gain = 376.328
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -336,7 +324,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:42 ; elapsed = 00:00:45 . Memory (MB): peak = 903.086 ; gain = 378.207
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 901.414 ; gain = 376.328
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -348,25 +336,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 903.086 ; gain = 378.207
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 901.414 ; gain = 376.328
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 903.086 ; gain = 378.207
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 901.414 ; gain = 376.328
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 903.086 ; gain = 378.207
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 901.414 ; gain = 376.328
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 903.086 ; gain = 378.207
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 901.414 ; gain = 376.328
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -384,76 +372,75 @@ Report Cell Usage:
 +------+-----------+------+
 |1     |BUFG       |     1|
 |2     |CARRY4     |    91|
-|3     |LUT1       |    17|
-|4     |LUT2       |    16|
-|5     |LUT3       |    36|
+|3     |LUT1       |    16|
+|4     |LUT2       |    23|
+|5     |LUT3       |    21|
 |6     |LUT4       |    35|
-|7     |LUT5       |    23|
+|7     |LUT5       |    29|
 |8     |LUT6       |    99|
 |9     |RAMB18E1   |     1|
 |10    |RAMB18E1_1 |     1|
-|11    |FDRE       |   396|
-|12    |FDSE       |     1|
-|13    |IBUF       |     5|
-|14    |OBUF       |    31|
+|11    |FDRE       |   392|
+|12    |IBUF       |     5|
+|13    |OBUF       |    35|
 +------+-----------+------+
 
 Report Instance Areas: 
 +------+-----------------------+-------------------+------+
 |      |Instance               |Module             |Cells |
 +------+-----------------------+-------------------+------+
-|1     |top                    |                   |   753|
-|2     |  nolabel_line37       |Sine               |   210|
-|3     |    nolabel_line31     |counter_1_7        |   210|
-|4     |      nolabel_line31   |freq_selector_8    |   192|
-|5     |        nolabel_line28 |Clock_divider_2_9  |    49|
+|1     |top                    |                   |   749|
+|2     |  nolabel_line37       |Sine               |   209|
+|3     |    nolabel_line31     |counter_1_7        |   209|
+|4     |      nolabel_line31   |freq_selector_8    |   191|
+|5     |        nolabel_line28 |Clock_divider_2_9  |    48|
 |6     |        nolabel_line29 |Clock_divider_3_10 |    48|
 |7     |        nolabel_line30 |Clock_divider_4_11 |    47|
 |8     |        nolabel_line31 |Clock_divider_5_12 |    48|
-|9     |  nolabel_line38       |Square             |   209|
-|10    |    nolabel_line31     |counter_1_1        |   209|
-|11    |      nolabel_line31   |freq_selector_2    |   192|
-|12    |        nolabel_line28 |Clock_divider_2_3  |    49|
+|9     |  nolabel_line38       |Square             |   208|
+|10    |    nolabel_line31     |counter_1_1        |   208|
+|11    |      nolabel_line31   |freq_selector_2    |   191|
+|12    |        nolabel_line28 |Clock_divider_2_3  |    48|
 |13    |        nolabel_line29 |Clock_divider_3_4  |    48|
 |14    |        nolabel_line30 |Clock_divider_4_5  |    47|
 |15    |        nolabel_line31 |Clock_divider_5_6  |    48|
-|16    |  nolabel_line39       |Triangle           |   210|
-|17    |    nolabel_line31     |counter_1          |   210|
-|18    |      nolabel_line31   |freq_selector      |   192|
-|19    |        nolabel_line28 |Clock_divider_2    |    49|
+|16    |  nolabel_line39       |Triangle           |   209|
+|17    |    nolabel_line31     |counter_1          |   209|
+|18    |      nolabel_line31   |freq_selector      |   191|
+|19    |        nolabel_line28 |Clock_divider_2    |    48|
 |20    |        nolabel_line29 |Clock_divider_3    |    48|
 |21    |        nolabel_line30 |Clock_divider_4    |    47|
 |22    |        nolabel_line31 |Clock_divider_5    |    48|
-|23    |  nolabel_line40       |count_2            |    64|
+|23    |  nolabel_line40       |count_2            |    62|
 |24    |    nolabel_line30     |debouncer          |    48|
 |25    |      d1               |my_dff             |     1|
 |26    |      d2               |my_dff_0           |     1|
 |27    |      u1               |clock_div          |    46|
-|28    |  nolabel_line41       |seven_segment      |     5|
+|28    |  nolabel_line41       |seven_segment      |     2|
 |29    |  nolabel_line42       |termo_decoder      |    18|
 +------+-----------------------+-------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 903.086 ; gain = 378.207
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 901.414 ; gain = 376.328
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 8 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:31 ; elapsed = 00:00:41 . Memory (MB): peak = 903.086 ; gain = 255.461
-Synthesis Optimization Complete : Time (s): cpu = 00:00:43 ; elapsed = 00:00:46 . Memory (MB): peak = 903.086 ; gain = 378.207
+Synthesis finished with 0 errors, 0 critical warnings and 5 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:31 ; elapsed = 00:00:41 . Memory (MB): peak = 901.414 ; gain = 253.770
+Synthesis Optimization Complete : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 901.414 ; gain = 376.328
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 93 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 910.207 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 906.055 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-53 Infos, 35 Warnings, 9 Critical Warnings and 0 Errors encountered.
+51 Infos, 38 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:51 ; elapsed = 00:00:57 . Memory (MB): peak = 910.207 ; gain = 613.734
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 910.207 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:51 ; elapsed = 00:00:56 . Memory (MB): peak = 906.055 ; gain = 609.441
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 906.055 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'C:/Users/NBJSWETT/Desktop/lab2.srcs/lab5.runs/synth_1/Wave_Selector.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file Wave_Selector_utilization_synth.rpt -pb Wave_Selector_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Thu Sep 12 15:39:36 2019...
+INFO: [Common 17-206] Exiting Vivado at Thu Sep 12 16:26:25 2019...

@@ -61,14 +61,100 @@ proc step_failed { step } {
 }
 
 
+start_step init_design
+set ACTIVE_STEP init_design
+set rc [catch {
+  create_msg_db init_design.pb
+  set_param chipscope.maxJobs 1
+  set_param xicom.use_bs_reader 1
+  create_project -in_memory -part xc7a35tcpg236-1
+  set_property design_mode GateLvl [current_fileset]
+  set_param project.singleFileAddWarning.threshold 0
+  set_property webtalk.parent_dir C:/Users/NBJSWETT/Desktop/lab2.srcs/lab5.cache/wt [current_project]
+  set_property parent.project_path C:/Users/NBJSWETT/Desktop/lab2.srcs/lab5.xpr [current_project]
+  set_property ip_output_repo {{D:/University/Engineering/8th semester/Digital Lab/exp4/lab4.cache/ip}} [current_project]
+  set_property ip_cache_permissions {read write} [current_project]
+  add_files -quiet C:/Users/NBJSWETT/Desktop/lab2.srcs/lab5.runs/synth_1/Wave_Selector.dcp
+  read_xdc C:/Users/NBJSWETT/Desktop/lab2.srcs/lab5.srcs/constrs_1/new/basys.xdc
+  link_design -top Wave_Selector -part xc7a35tcpg236-1
+  close_msg_db -file init_design.pb
+} RESULT]
+if {$rc} {
+  step_failed init_design
+  return -code error $RESULT
+} else {
+  end_step init_design
+  unset ACTIVE_STEP 
+}
+
+start_step opt_design
+set ACTIVE_STEP opt_design
+set rc [catch {
+  create_msg_db opt_design.pb
+  opt_design 
+  write_checkpoint -force Wave_Selector_opt.dcp
+  create_report "impl_1_opt_report_drc_0" "report_drc -file Wave_Selector_drc_opted.rpt -pb Wave_Selector_drc_opted.pb -rpx Wave_Selector_drc_opted.rpx"
+  close_msg_db -file opt_design.pb
+} RESULT]
+if {$rc} {
+  step_failed opt_design
+  return -code error $RESULT
+} else {
+  end_step opt_design
+  unset ACTIVE_STEP 
+}
+
+start_step place_design
+set ACTIVE_STEP place_design
+set rc [catch {
+  create_msg_db place_design.pb
+  if { [llength [get_debug_cores -quiet] ] > 0 }  { 
+    implement_debug_core 
+  } 
+  place_design 
+  write_checkpoint -force Wave_Selector_placed.dcp
+  create_report "impl_1_place_report_io_0" "report_io -file Wave_Selector_io_placed.rpt"
+  create_report "impl_1_place_report_utilization_0" "report_utilization -file Wave_Selector_utilization_placed.rpt -pb Wave_Selector_utilization_placed.pb"
+  create_report "impl_1_place_report_control_sets_0" "report_control_sets -verbose -file Wave_Selector_control_sets_placed.rpt"
+  close_msg_db -file place_design.pb
+} RESULT]
+if {$rc} {
+  step_failed place_design
+  return -code error $RESULT
+} else {
+  end_step place_design
+  unset ACTIVE_STEP 
+}
+
+start_step route_design
+set ACTIVE_STEP route_design
+set rc [catch {
+  create_msg_db route_design.pb
+  route_design 
+  write_checkpoint -force Wave_Selector_routed.dcp
+  create_report "impl_1_route_report_drc_0" "report_drc -file Wave_Selector_drc_routed.rpt -pb Wave_Selector_drc_routed.pb -rpx Wave_Selector_drc_routed.rpx"
+  create_report "impl_1_route_report_methodology_0" "report_methodology -file Wave_Selector_methodology_drc_routed.rpt -pb Wave_Selector_methodology_drc_routed.pb -rpx Wave_Selector_methodology_drc_routed.rpx"
+  create_report "impl_1_route_report_power_0" "report_power -file Wave_Selector_power_routed.rpt -pb Wave_Selector_power_summary_routed.pb -rpx Wave_Selector_power_routed.rpx"
+  create_report "impl_1_route_report_route_status_0" "report_route_status -file Wave_Selector_route_status.rpt -pb Wave_Selector_route_status.pb"
+  create_report "impl_1_route_report_timing_summary_0" "report_timing_summary -max_paths 10 -file Wave_Selector_timing_summary_routed.rpt -pb Wave_Selector_timing_summary_routed.pb -rpx Wave_Selector_timing_summary_routed.rpx -warn_on_violation "
+  create_report "impl_1_route_report_incremental_reuse_0" "report_incremental_reuse -file Wave_Selector_incremental_reuse_routed.rpt"
+  create_report "impl_1_route_report_clock_utilization_0" "report_clock_utilization -file Wave_Selector_clock_utilization_routed.rpt"
+  create_report "impl_1_route_report_bus_skew_0" "report_bus_skew -warn_on_violation -file Wave_Selector_bus_skew_routed.rpt -pb Wave_Selector_bus_skew_routed.pb -rpx Wave_Selector_bus_skew_routed.rpx"
+  close_msg_db -file route_design.pb
+} RESULT]
+if {$rc} {
+  write_checkpoint -force Wave_Selector_routed_error.dcp
+  step_failed route_design
+  return -code error $RESULT
+} else {
+  end_step route_design
+  unset ACTIVE_STEP 
+}
+
 start_step write_bitstream
 set ACTIVE_STEP write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
-  set_param chipscope.maxJobs 1
-  set_param xicom.use_bs_reader 1
-  open_checkpoint Wave_Selector_routed.dcp
-  set_property webtalk.parent_dir C:/Users/NBJSWETT/Desktop/lab2.srcs/lab5.cache/wt [current_project]
   catch { write_mem_info -force Wave_Selector.mmi }
   write_bitstream -force Wave_Selector.bit 
   catch {write_debug_probes -quiet -force Wave_Selector}

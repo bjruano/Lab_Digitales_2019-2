@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date             : Thu Sep 12 15:41:55 2019
+| Date             : Thu Sep 12 16:28:19 2019
 | Host             : Danielitoh running 64-bit major release  (build 9200)
 | Command          : report_power -file Wave_Selector_power_routed.rpt -pb Wave_Selector_power_summary_routed.pb -rpx Wave_Selector_power_routed.rpx
 | Design           : Wave_Selector
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.124        |
+| Total On-Chip Power (W)  | 0.123        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.052        |
+| Dynamic (W)              | 0.051        |
 | Device Static (W)        | 0.072        |
 | Effective TJA (C/W)      | 5.0          |
 | Max Ambient (C)          | 84.4         |
@@ -52,17 +52,17 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Clocks         |     0.003 |        3 |       --- |             --- |
-| Slice Logic    |     0.001 |      755 |       --- |             --- |
-|   LUT as Logic |    <0.001 |      203 |     20800 |            0.98 |
+| Clocks         |     0.002 |        3 |       --- |             --- |
+| Slice Logic    |    <0.001 |      745 |       --- |             --- |
+|   LUT as Logic |    <0.001 |      202 |     20800 |            0.97 |
 |   CARRY4       |    <0.001 |       91 |      8150 |            1.12 |
-|   Register     |    <0.001 |      398 |     41600 |            0.96 |
-|   Others       |     0.000 |       40 |       --- |             --- |
-| Signals        |     0.002 |      698 |       --- |             --- |
+|   Register     |    <0.001 |      392 |     41600 |            0.94 |
+|   Others       |     0.000 |       39 |       --- |             --- |
+| Signals        |     0.001 |      689 |       --- |             --- |
 | Block RAM      |    <0.001 |        1 |        50 |            2.00 |
-| I/O            |     0.046 |       36 |       106 |           33.96 |
+| I/O            |     0.046 |       40 |       106 |           37.74 |
 | Static Power   |     0.072 |          |           |                 |
-| Total          |     0.124 |          |           |                 |
+| Total          |     0.123 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -72,7 +72,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.016 |       0.006 |      0.010 |
+| Vccint    |       1.000 |     0.014 |       0.005 |      0.010 |
 | Vccaux    |       1.800 |     0.014 |       0.002 |      0.013 |
 | Vcco33    |       3.300 |     0.014 |       0.013 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -138,19 +138,14 @@ Table of Contents
 3.1 By Hierarchy
 ----------------
 
-+----------------------+-----------+
-| Name                 | Power (W) |
-+----------------------+-----------+
-| Wave_Selector        |     0.052 |
-|   nolabel_line37     |     0.002 |
-|     nolabel_line31   |     0.002 |
-|       nolabel_line31 |     0.001 |
-|   nolabel_line38     |     0.001 |
-|     nolabel_line31   |     0.001 |
-|       nolabel_line31 |     0.001 |
-|   nolabel_line39     |     0.002 |
-|     nolabel_line31   |     0.002 |
-|       nolabel_line31 |     0.001 |
-+----------------------+-----------+
++--------------------+-----------+
+| Name               | Power (W) |
++--------------------+-----------+
+| Wave_Selector      |     0.051 |
+|   nolabel_line37   |     0.001 |
+|     nolabel_line31 |     0.001 |
+|   nolabel_line39   |     0.001 |
+|     nolabel_line31 |     0.001 |
++--------------------+-----------+
 
 

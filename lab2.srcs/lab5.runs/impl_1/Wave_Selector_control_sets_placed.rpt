@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date         : Thu Sep 12 15:41:10 2019
+| Date         : Thu Sep 12 16:27:36 2019
 | Host         : Danielitoh running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file Wave_Selector_control_sets_placed.rpt
 | Design       : Wave_Selector
@@ -23,11 +23,11 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Total control sets                                       |    19 |
-|    Minimum number of control sets                        |    19 |
+| Total control sets                                       |    18 |
+|    Minimum number of control sets                        |    18 |
 |    Addition due to synthesis replication                 |     0 |
 |    Addition due to physical synthesis replication        |     0 |
-| Unused register locations in slices containing registers |    66 |
+| Unused register locations in slices containing registers |    64 |
 +----------------------------------------------------------+-------+
 * Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
 ** Run report_qor_suggestions for automated merging and remapping suggestions
@@ -39,11 +39,11 @@ Table of Contents
 +--------------------+-------+
 |       Fanout       | Count |
 +--------------------+-------+
-| Total control sets |    19 |
+| Total control sets |    18 |
 | >= 0 to < 4        |     2 |
 | >= 4 to < 6        |     0 |
 | >= 6 to < 8        |     0 |
-| >= 8 to < 10       |     4 |
+| >= 8 to < 10       |     3 |
 | >= 10 to < 12      |     0 |
 | >= 12 to < 14      |     0 |
 | >= 14 to < 16      |     0 |
@@ -58,10 +58,10 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              10 |            6 |
+| No           | No                    | No                     |               5 |            3 |
 | No           | No                    | Yes                    |               0 |            0 |
-| No           | Yes                   | No                     |             364 |           92 |
-| Yes          | No                    | No                     |              24 |            8 |
+| No           | Yes                   | No                     |             363 |           91 |
+| Yes          | No                    | No                     |              24 |            7 |
 | Yes          | No                    | Yes                    |               0 |            0 |
 | Yes          | Yes                   | No                     |               0 |            0 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
@@ -73,25 +73,24 @@ Table of Contents
 +---------------------------------------------------------------------------+---------------+------------------------------------------------------------------------------------+------------------+----------------+
 |                                Clock Signal                               | Enable Signal |                                  Set/Reset Signal                                  | Slice Load Count | Bel Load Count |
 +---------------------------------------------------------------------------+---------------+------------------------------------------------------------------------------------+------------------+----------------+
-|  clk_IBUF_BUFG                                                            |               | nolabel_line40/y[0]                                                                |                1 |              1 |
 |  nolabel_line40/nolabel_line30/u1/slow_clk                                |               |                                                                                    |                1 |              2 |
-|  nolabel_line39/nolabel_line31/nolabel_line31/nolabel_line28/clk_selected | enable_IBUF   |                                                                                    |                3 |              8 |
-|  nolabel_line37/nolabel_line31/nolabel_line31/nolabel_line28/clk_selected | enable_IBUF   |                                                                                    |                3 |              8 |
-|  nolabel_line38/nolabel_line31/nolabel_line31/nolabel_line28/clk_selected | enable_IBUF   |                                                                                    |                2 |              8 |
-|  clk_IBUF_BUFG                                                            |               |                                                                                    |                5 |              8 |
+|  clk_IBUF_BUFG                                                            |               |                                                                                    |                2 |              3 |
+|  nolabel_line37/nolabel_line31/nolabel_line31/nolabel_line31/clk_selected | enable_IBUF   |                                                                                    |                2 |              8 |
+|  nolabel_line38/nolabel_line31/nolabel_line31/nolabel_line31/clk_selected | enable_IBUF   |                                                                                    |                3 |              8 |
+|  nolabel_line39/nolabel_line31/nolabel_line31/nolabel_line31/clk_selected | enable_IBUF   |                                                                                    |                2 |              8 |
 |  clk_IBUF_BUFG                                                            |               | nolabel_line40/nolabel_line30/u1/counter[0]_i_1_n_0                                |                7 |             27 |
-|  clk_IBUF_BUFG                                                            |               | nolabel_line38/nolabel_line31/nolabel_line31/nolabel_line29/counter[0]_i_1__5_n_0  |                7 |             28 |
-|  clk_IBUF_BUFG                                                            |               | nolabel_line38/nolabel_line31/nolabel_line31/nolabel_line30/counter[0]_i_1__6_n_0  |                7 |             28 |
-|  clk_IBUF_BUFG                                                            |               | nolabel_line38/nolabel_line31/nolabel_line31/nolabel_line31/counter[0]_i_1__7_n_0  |                7 |             28 |
-|  clk_IBUF_BUFG                                                            |               | nolabel_line39/nolabel_line31/nolabel_line31/nolabel_line28/counter[0]_i_1__8_n_0  |                7 |             28 |
 |  clk_IBUF_BUFG                                                            |               | nolabel_line37/nolabel_line31/nolabel_line31/nolabel_line28/clear                  |                7 |             28 |
 |  clk_IBUF_BUFG                                                            |               | nolabel_line37/nolabel_line31/nolabel_line31/nolabel_line29/counter[0]_i_1__1_n_0  |                7 |             28 |
 |  clk_IBUF_BUFG                                                            |               | nolabel_line37/nolabel_line31/nolabel_line31/nolabel_line30/counter[0]_i_1__2_n_0  |                7 |             28 |
 |  clk_IBUF_BUFG                                                            |               | nolabel_line37/nolabel_line31/nolabel_line31/nolabel_line31/counter[0]_i_1__3_n_0  |                7 |             28 |
 |  clk_IBUF_BUFG                                                            |               | nolabel_line38/nolabel_line31/nolabel_line31/nolabel_line28/counter[0]_i_1__4_n_0  |                7 |             28 |
-|  clk_IBUF_BUFG                                                            |               | nolabel_line39/nolabel_line31/nolabel_line31/nolabel_line30/counter[0]_i_1__10_n_0 |                7 |             28 |
+|  clk_IBUF_BUFG                                                            |               | nolabel_line38/nolabel_line31/nolabel_line31/nolabel_line29/counter[0]_i_1__5_n_0  |                7 |             28 |
+|  clk_IBUF_BUFG                                                            |               | nolabel_line38/nolabel_line31/nolabel_line31/nolabel_line30/counter[0]_i_1__6_n_0  |                7 |             28 |
+|  clk_IBUF_BUFG                                                            |               | nolabel_line38/nolabel_line31/nolabel_line31/nolabel_line31/counter[0]_i_1__7_n_0  |                7 |             28 |
+|  clk_IBUF_BUFG                                                            |               | nolabel_line39/nolabel_line31/nolabel_line31/nolabel_line28/counter[0]_i_1__8_n_0  |                7 |             28 |
 |  clk_IBUF_BUFG                                                            |               | nolabel_line39/nolabel_line31/nolabel_line31/nolabel_line31/counter[0]_i_1__11_n_0 |                7 |             28 |
 |  clk_IBUF_BUFG                                                            |               | nolabel_line39/nolabel_line31/nolabel_line31/nolabel_line29/counter[0]_i_1__9_n_0  |                7 |             28 |
+|  clk_IBUF_BUFG                                                            |               | nolabel_line39/nolabel_line31/nolabel_line31/nolabel_line30/counter[0]_i_1__10_n_0 |                7 |             28 |
 +---------------------------------------------------------------------------+---------------+------------------------------------------------------------------------------------+------------------+----------------+
 
 

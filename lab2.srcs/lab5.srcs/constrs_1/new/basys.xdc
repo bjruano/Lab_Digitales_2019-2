@@ -195,17 +195,17 @@ set_property PACKAGE_PIN P18 [get_ports {val_selected[3]}]
 	set_property IOSTANDARD LVCMOS33 [get_ports {val_selected[3]}]
 	set_property PULLUP true [get_ports {val_selected[3]}]
 #Sch name = JC7
-set_property PACKAGE_PIN L17 [get_ports {JC[4]}]					
-	set_property IOSTANDARD LVCMOS33 [get_ports {JC[4]}]
+set_property PACKAGE_PIN L17 [get_ports {val_selected[4]}]	
+	set_property IOSTANDARD LVCMOS33 [get_ports {val_selected[4]}]
 #Sch name = JC8
-set_property PACKAGE_PIN M19 [get_ports {JC[5]}]					
-	set_property IOSTANDARD LVCMOS33 [get_ports {JC[5]}]
+set_property PACKAGE_PIN M19 [get_ports {val_selected[5]}]					
+	set_property IOSTANDARD LVCMOS33 [get_ports {val_selected[5]}]
 #Sch name = JC9
-set_property PACKAGE_PIN P17 [get_ports {JC[6]}]					
-	set_property IOSTANDARD LVCMOS33 [get_ports {JC[6]}]
+set_property PACKAGE_PIN P17 [get_ports {val_selected[6]}]					
+	set_property IOSTANDARD LVCMOS33 [get_ports {val_selected[6]}]
 #Sch name = JC10
-set_property PACKAGE_PIN R18 [get_ports {JC[7]}]					
-	set_property IOSTANDARD LVCMOS33 [get_ports {JC[7]}]
+set_property PACKAGE_PIN R18 [get_ports {val_selected[7]}]					
+	set_property IOSTANDARD LVCMOS33 [get_ports {val_selected[7]}]
 
 
 ##Pmod Header JXADC

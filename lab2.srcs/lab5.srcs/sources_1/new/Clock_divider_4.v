@@ -25,7 +25,7 @@ module Clock_divider_4(clock_in,clock_out
 input clock_in; // input clock on FPGA
 output clock_out; // output clock after dividing the input clock by divisor
 reg[27:0] counter=28'd0;
-parameter DIVISOR = 28'd40000000;
+parameter DIVISOR = 28'd4000000;
 always @(posedge clock_in)
 begin
  counter <= counter + 28'd1;
