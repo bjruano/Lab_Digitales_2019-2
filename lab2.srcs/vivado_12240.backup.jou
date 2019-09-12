@@ -1,0 +1,47 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Sep 11 10:09:15 2019
+# Process ID: 12240
+# Current directory: C:/Users/NBJSWETT/Desktop/lab2.srcs
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11960 C:\Users\NBJSWETT\Desktop\lab2.srcs\lab5.xpr
+# Log file: C:/Users/NBJSWETT/Desktop/lab2.srcs/vivado.log
+# Journal file: C:/Users/NBJSWETT/Desktop/lab2.srcs\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/NBJSWETT/Desktop/lab2.srcs/lab5.xpr
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top count_2 [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+close [ open C:/Users/NBJSWETT/Desktop/lab2.srcs/lab5.srcs/sources_1/new/counter_1.v w ]
+add_files C:/Users/NBJSWETT/Desktop/lab2.srcs/lab5.srcs/sources_1/new/counter_1.v
+update_compile_order -fileset sources_1
+close [ open C:/Users/NBJSWETT/Desktop/lab2.srcs/lab5.srcs/sources_1/new/Sine.v w ]
+add_files C:/Users/NBJSWETT/Desktop/lab2.srcs/lab5.srcs/sources_1/new/Sine.v
+update_compile_order -fileset sources_1
+close [ open C:/Users/NBJSWETT/Desktop/lab2.srcs/lab5.srcs/sources_1/new/Square.v w ]
+add_files C:/Users/NBJSWETT/Desktop/lab2.srcs/lab5.srcs/sources_1/new/Square.v
+update_compile_order -fileset sources_1
+close [ open C:/Users/NBJSWETT/Desktop/lab2.srcs/lab5.srcs/sources_1/new/Triangle.v w ]
+add_files C:/Users/NBJSWETT/Desktop/lab2.srcs/lab5.srcs/sources_1/new/Triangle.v
+update_compile_order -fileset sources_1
+close [ open C:/Users/NBJSWETT/Desktop/lab2.srcs/lab5.srcs/sources_1/new/Wave_Selector.v w ]
+add_files C:/Users/NBJSWETT/Desktop/lab2.srcs/lab5.srcs/sources_1/new/Wave_Selector.v
+update_compile_order -fileset sources_1
+close [ open C:/Users/NBJSWETT/Desktop/lab2.srcs/lab5.srcs/sources_1/new/debouncer.v w ]
+add_files C:/Users/NBJSWETT/Desktop/lab2.srcs/lab5.srcs/sources_1/new/debouncer.v
+update_compile_order -fileset sources_1

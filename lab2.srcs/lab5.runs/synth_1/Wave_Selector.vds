@@ -1,0 +1,437 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Sep 12 02:25:23 2019
+# Process ID: 9144
+# Current directory: C:/Users/NBJSWETT/Desktop/lab2.srcs/lab5.runs/synth_1
+# Command line: vivado.exe -log Wave_Selector.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Wave_Selector.tcl
+# Log file: C:/Users/NBJSWETT/Desktop/lab2.srcs/lab5.runs/synth_1/Wave_Selector.vds
+# Journal file: C:/Users/NBJSWETT/Desktop/lab2.srcs/lab5.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Wave_Selector.tcl -notrace
+Command: synth_design -top Wave_Selector -part xc7a35tcpg236-1 -effort_level quick
+WARNING: [Vivado_Tcl 4-135] The effort_level switch has been deprecated. Please use the -directive switch. Processing will continue in the default mode.
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 9028 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 701.719 ; gain = 177.465
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Wave_Selector' [C:/Users/NBJSWETT/Desktop/lab2.srcs/lab5.srcs/sources_1/new/Wave_Selector.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Sine' [C:/Users/NBJSWETT/Desktop/lab2.srcs/lab5.srcs/sources_1/new/Sine.v:23]
+INFO: [Synth 8-6157] synthesizing module 'counter_1' [C:/Users/NBJSWETT/Desktop/lab2.srcs/lab5.srcs/sources_1/new/counter_1.v:23]
+INFO: [Synth 8-6157] synthesizing module 'freq_selector' [C:/Users/NBJSWETT/Desktop/lab2.srcs/lab5.srcs/sources_1/new/freq_selector.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Clock_divider_2' [C:/Users/NBJSWETT/Desktop/lab2.srcs/lab5.srcs/sources_1/new/clock_divider.v:23]
+	Parameter DIVISOR bound to: 28'b0001001100010010110100000000 
+INFO: [Synth 8-6155] done synthesizing module 'Clock_divider_2' (1#1) [C:/Users/NBJSWETT/Desktop/lab2.srcs/lab5.srcs/sources_1/new/clock_divider.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Clock_divider_3' [C:/Users/NBJSWETT/Desktop/lab2.srcs/lab5.srcs/sources_1/new/clock_divider_3.v:22]
+	Parameter DIVISOR bound to: 28'b0001110010011100001110000000 
+INFO: [Synth 8-6155] done synthesizing module 'Clock_divider_3' (2#1) [C:/Users/NBJSWETT/Desktop/lab2.srcs/lab5.srcs/sources_1/new/clock_divider_3.v:22]
+INFO: [Synth 8-6157] synthesizing module 'Clock_divider_4' [C:/Users/NBJSWETT/Desktop/lab2.srcs/lab5.srcs/sources_1/new/Clock_divider_4.v:23]
+	Parameter DIVISOR bound to: 28'b0010011000100101101000000000 
+INFO: [Synth 8-6155] done synthesizing module 'Clock_divider_4' (3#1) [C:/Users/NBJSWETT/Desktop/lab2.srcs/lab5.srcs/sources_1/new/Clock_divider_4.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Clock_divider_5' [C:/Users/NBJSWETT/Desktop/lab2.srcs/lab5.srcs/sources_1/new/Clock_divider_5.v:23]
+	Parameter DIVISOR bound to: 28'b0010111110101111000010000000 
+INFO: [Synth 8-6155] done synthesizing module 'Clock_divider_5' (4#1) [C:/Users/NBJSWETT/Desktop/lab2.srcs/lab5.srcs/sources_1/new/Clock_divider_5.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'freq_selector' (5#1) [C:/Users/NBJSWETT/Desktop/lab2.srcs/lab5.srcs/sources_1/new/freq_selector.v:23]
+WARNING: [Synth 8-3848] Net a in module/entity counter_1 does not have driver. [C:/Users/NBJSWETT/Desktop/lab2.srcs/lab5.srcs/sources_1/new/counter_1.v:33]
+INFO: [Synth 8-6155] done synthesizing module 'counter_1' (6#1) [C:/Users/NBJSWETT/Desktop/lab2.srcs/lab5.srcs/sources_1/new/counter_1.v:23]
+WARNING: [Synth 8-689] width (8) of port connection 'clk' does not match port width (1) of module 'counter_1' [C:/Users/NBJSWETT/Desktop/lab2.srcs/lab5.srcs/sources_1/new/Sine.v:31]
+WARNING: [Synth 8-689] width (2) of port connection 'enable' does not match port width (1) of module 'counter_1' [C:/Users/NBJSWETT/Desktop/lab2.srcs/lab5.srcs/sources_1/new/Sine.v:31]
+INFO: [Synth 8-226] default block is never used [C:/Users/NBJSWETT/Desktop/lab2.srcs/lab5.srcs/sources_1/new/Sine.v:34]
+INFO: [Synth 8-6155] done synthesizing module 'Sine' (7#1) [C:/Users/NBJSWETT/Desktop/lab2.srcs/lab5.srcs/sources_1/new/Sine.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Square' [C:/Users/NBJSWETT/Desktop/lab2.srcs/lab5.srcs/sources_1/new/Square.v:23]
+WARNING: [Synth 8-689] width (8) of port connection 'clk' does not match port width (1) of module 'counter_1' [C:/Users/NBJSWETT/Desktop/lab2.srcs/lab5.srcs/sources_1/new/Square.v:31]
+WARNING: [Synth 8-689] width (2) of port connection 'enable' does not match port width (1) of module 'counter_1' [C:/Users/NBJSWETT/Desktop/lab2.srcs/lab5.srcs/sources_1/new/Square.v:31]
+INFO: [Synth 8-226] default block is never used [C:/Users/NBJSWETT/Desktop/lab2.srcs/lab5.srcs/sources_1/new/Square.v:34]
+INFO: [Synth 8-6155] done synthesizing module 'Square' (8#1) [C:/Users/NBJSWETT/Desktop/lab2.srcs/lab5.srcs/sources_1/new/Square.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Triangle' [C:/Users/NBJSWETT/Desktop/lab2.srcs/lab5.srcs/sources_1/new/Triangle.v:23]
+WARNING: [Synth 8-689] width (8) of port connection 'clk' does not match port width (1) of module 'counter_1' [C:/Users/NBJSWETT/Desktop/lab2.srcs/lab5.srcs/sources_1/new/Triangle.v:31]
+WARNING: [Synth 8-689] width (2) of port connection 'enable' does not match port width (1) of module 'counter_1' [C:/Users/NBJSWETT/Desktop/lab2.srcs/lab5.srcs/sources_1/new/Triangle.v:31]
+INFO: [Synth 8-226] default block is never used [C:/Users/NBJSWETT/Desktop/lab2.srcs/lab5.srcs/sources_1/new/Triangle.v:34]
+INFO: [Synth 8-6155] done synthesizing module 'Triangle' (9#1) [C:/Users/NBJSWETT/Desktop/lab2.srcs/lab5.srcs/sources_1/new/Triangle.v:23]
+INFO: [Synth 8-6157] synthesizing module 'count_2' [C:/Users/NBJSWETT/Desktop/lab2.srcs/lab5.srcs/sources_1/new/count_2.v:23]
+INFO: [Synth 8-6157] synthesizing module 'debouncer' [C:/Users/NBJSWETT/Desktop/lab2.srcs/lab5.srcs/sources_1/new/debouncer.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clock_div' [C:/Users/NBJSWETT/Desktop/lab2.srcs/lab5.srcs/sources_1/new/debouncer.v:33]
+INFO: [Synth 8-6155] done synthesizing module 'clock_div' (10#1) [C:/Users/NBJSWETT/Desktop/lab2.srcs/lab5.srcs/sources_1/new/debouncer.v:33]
+INFO: [Synth 8-6157] synthesizing module 'my_dff' [C:/Users/NBJSWETT/Desktop/lab2.srcs/lab5.srcs/sources_1/new/debouncer.v:44]
+INFO: [Synth 8-6155] done synthesizing module 'my_dff' (11#1) [C:/Users/NBJSWETT/Desktop/lab2.srcs/lab5.srcs/sources_1/new/debouncer.v:44]
+INFO: [Synth 8-6155] done synthesizing module 'debouncer' (12#1) [C:/Users/NBJSWETT/Desktop/lab2.srcs/lab5.srcs/sources_1/new/debouncer.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'count_2' (13#1) [C:/Users/NBJSWETT/Desktop/lab2.srcs/lab5.srcs/sources_1/new/count_2.v:23]
+INFO: [Synth 8-6157] synthesizing module 'seven_segment' [C:/Users/NBJSWETT/Desktop/lab2.srcs/lab5.srcs/sources_1/new/7_segment.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'seven_segment' (14#1) [C:/Users/NBJSWETT/Desktop/lab2.srcs/lab5.srcs/sources_1/new/7_segment.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Wave_Selector' (15#1) [C:/Users/NBJSWETT/Desktop/lab2.srcs/lab5.srcs/sources_1/new/Wave_Selector.v:23]
+WARNING: [Synth 8-3331] design Triangle has unconnected port clk[7]
+WARNING: [Synth 8-3331] design Triangle has unconnected port clk[6]
+WARNING: [Synth 8-3331] design Triangle has unconnected port clk[5]
+WARNING: [Synth 8-3331] design Triangle has unconnected port clk[4]
+WARNING: [Synth 8-3331] design Triangle has unconnected port clk[3]
+WARNING: [Synth 8-3331] design Triangle has unconnected port clk[2]
+WARNING: [Synth 8-3331] design Triangle has unconnected port clk[1]
+WARNING: [Synth 8-3331] design Triangle has unconnected port enable[1]
+WARNING: [Synth 8-3331] design Square has unconnected port clk[7]
+WARNING: [Synth 8-3331] design Square has unconnected port clk[6]
+WARNING: [Synth 8-3331] design Square has unconnected port clk[5]
+WARNING: [Synth 8-3331] design Square has unconnected port clk[4]
+WARNING: [Synth 8-3331] design Square has unconnected port clk[3]
+WARNING: [Synth 8-3331] design Square has unconnected port clk[2]
+WARNING: [Synth 8-3331] design Square has unconnected port clk[1]
+WARNING: [Synth 8-3331] design Square has unconnected port enable[1]
+WARNING: [Synth 8-3331] design Sine has unconnected port clk[7]
+WARNING: [Synth 8-3331] design Sine has unconnected port clk[6]
+WARNING: [Synth 8-3331] design Sine has unconnected port clk[5]
+WARNING: [Synth 8-3331] design Sine has unconnected port clk[4]
+WARNING: [Synth 8-3331] design Sine has unconnected port clk[3]
+WARNING: [Synth 8-3331] design Sine has unconnected port clk[2]
+WARNING: [Synth 8-3331] design Sine has unconnected port clk[1]
+WARNING: [Synth 8-3331] design Sine has unconnected port enable[1]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 766.352 ; gain = 242.098
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 766.352 ; gain = 242.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 766.352 ; gain = 242.098
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/NBJSWETT/Desktop/lab2.srcs/lab5.srcs/constrs_1/new/basys.xdc]
+Finished Parsing XDC File [C:/Users/NBJSWETT/Desktop/lab2.srcs/lab5.srcs/constrs_1/new/basys.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/NBJSWETT/Desktop/lab2.srcs/lab5.srcs/constrs_1/new/basys.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Wave_Selector_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Wave_Selector_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 885.750 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 885.750 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 885.750 ; gain = 361.496
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 885.750 ; gain = 361.496
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 885.750 ; gain = 361.496
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 885.750 ; gain = 361.496
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 3     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 3     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 3     
+	   4 Input      7 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 12    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Wave_Selector 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 3     
+Module freq_selector 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module counter_1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module clock_div 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module my_dff 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module count_2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+Module seven_segment 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      7 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3917] design Wave_Selector has port segments[1] driven by constant 1
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 885.750 ; gain = 361.496
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++--------------+-------------------------------------------+---------------+----------------+
+|Module Name   | RTL Object                                | Depth x Width | Implemented As | 
++--------------+-------------------------------------------+---------------+----------------+
+|Sine          | out                                       | 256x8         | LUT            | 
+|Square        | out                                       | 256x1         | LUT            | 
+|Triangle      | out                                       | 256x8         | LUT            | 
+|Wave_Selector | nolabel_line35/nolabel_line31/out_reg_rep | 256x8         | Block RAM      | 
+|Wave_Selector | nolabel_line36/out                        | 256x1         | LUT            | 
+|Wave_Selector | nolabel_line37/nolabel_line31/out_reg_rep | 256x8         | Block RAM      | 
++--------------+-------------------------------------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6837] The timing for the instance i_0/nolabel_line35/nolabel_line31/out_reg_rep (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_1/nolabel_line37/nolabel_line31/out_reg_rep (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 885.750 ; gain = 361.496
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 892.453 ; gain = 368.199
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6837] The timing for the instance nolabel_line35/nolabel_line31/out_reg_rep (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance nolabel_line37/nolabel_line31/out_reg_rep (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:39 ; elapsed = 00:00:42 . Memory (MB): peak = 892.453 ; gain = 368.199
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:43 ; elapsed = 00:00:46 . Memory (MB): peak = 901.676 ; gain = 377.422
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:43 ; elapsed = 00:00:46 . Memory (MB): peak = 901.676 ; gain = 377.422
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:43 ; elapsed = 00:00:46 . Memory (MB): peak = 901.676 ; gain = 377.422
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:43 ; elapsed = 00:00:46 . Memory (MB): peak = 901.676 ; gain = 377.422
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:43 ; elapsed = 00:00:46 . Memory (MB): peak = 901.676 ; gain = 377.422
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:43 ; elapsed = 00:00:46 . Memory (MB): peak = 901.676 ; gain = 377.422
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |BUFG       |     1|
+|2     |CARRY4     |    91|
+|3     |LUT1       |    16|
+|4     |LUT2       |    28|
+|5     |LUT3       |    46|
+|6     |LUT4       |    37|
+|7     |LUT5       |    20|
+|8     |LUT6       |    78|
+|9     |MUXF7      |     6|
+|10    |MUXF8      |     3|
+|11    |RAMB18E1   |     1|
+|12    |RAMB18E1_1 |     1|
+|13    |FDRE       |   392|
+|14    |IBUF       |     5|
+|15    |OBUF       |    15|
++------+-----------+------+
+
+Report Instance Areas: 
++------+-----------------------+-------------------+------+
+|      |Instance               |Module             |Cells |
++------+-----------------------+-------------------+------+
+|1     |top                    |                   |   740|
+|2     |  nolabel_line35       |Sine               |   219|
+|3     |    nolabel_line31     |counter_1_7        |   219|
+|4     |      nolabel_line31   |freq_selector_8    |   201|
+|5     |        nolabel_line28 |Clock_divider_2_9  |    51|
+|6     |        nolabel_line29 |Clock_divider_3_10 |    52|
+|7     |        nolabel_line30 |Clock_divider_4_11 |    50|
+|8     |        nolabel_line31 |Clock_divider_5_12 |    48|
+|9     |  nolabel_line36       |Square             |   218|
+|10    |    nolabel_line31     |counter_1_1        |   218|
+|11    |      nolabel_line31   |freq_selector_2    |   201|
+|12    |        nolabel_line28 |Clock_divider_2_3  |    51|
+|13    |        nolabel_line29 |Clock_divider_3_4  |    52|
+|14    |        nolabel_line30 |Clock_divider_4_5  |    50|
+|15    |        nolabel_line31 |Clock_divider_5_6  |    48|
+|16    |  nolabel_line37       |Triangle           |   219|
+|17    |    nolabel_line31     |counter_1          |   219|
+|18    |      nolabel_line31   |freq_selector      |   201|
+|19    |        nolabel_line28 |Clock_divider_2    |    51|
+|20    |        nolabel_line29 |Clock_divider_3    |    52|
+|21    |        nolabel_line30 |Clock_divider_4    |    50|
+|22    |        nolabel_line31 |Clock_divider_5    |    48|
+|23    |  nolabel_line38       |count_2            |    63|
+|24    |    nolabel_line30     |debouncer          |    48|
+|25    |      d1               |my_dff             |     1|
+|26    |      d2               |my_dff_0           |     1|
+|27    |      u1               |clock_div          |    46|
++------+-----------------------+-------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:43 ; elapsed = 00:00:46 . Memory (MB): peak = 901.676 ; gain = 377.422
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:32 ; elapsed = 00:00:42 . Memory (MB): peak = 901.676 ; gain = 258.023
+Synthesis Optimization Complete : Time (s): cpu = 00:00:44 ; elapsed = 00:00:47 . Memory (MB): peak = 901.676 ; gain = 377.422
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 102 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 905.492 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+49 Infos, 33 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:55 ; elapsed = 00:01:03 . Memory (MB): peak = 905.492 ; gain = 614.941
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 905.492 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/NBJSWETT/Desktop/lab2.srcs/lab5.runs/synth_1/Wave_Selector.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Wave_Selector_utilization_synth.rpt -pb Wave_Selector_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Sep 12 02:26:39 2019...
