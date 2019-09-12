@@ -20,8 +20,28 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
+//module seven_segment(
+////    input clk,
+//    input [1:0] wave_choice,
+//    output [3:0] an,
+//    output reg [6:0] segments
+//    );
+    
+//    assign an = 4'b1110;
+
+
+//    always@(*)
+//            case(wave_choice)
+//            2'b00:segments=7'b1111001;//1
+//            2'b01:segments=7'b0100100;//2
+//            2'b10:segments=7'b0110000;//3
+//            default: segments = 7'b0111111;//"-" Número erróneo
+//            endcase
+           
+//endmodule
+
 module seven_segment(
-    input clk,
+    /*input clk,*/
     input [1:0] wave_choice,
     output reg [3:0] an,
     output reg [6:0] segments
@@ -29,12 +49,12 @@ module seven_segment(
 
     reg[6:0]disp;
 
-    always@(posedge clk)
+    always@(*/*posedge clk*/)
     begin
         an = 4'b1110;
     end
 
-    always@(posedge clk)
+    always@(*/*posedge clk*/)
     begin
             case(wave_choice)
             2'b00:disp=7'b1111001;//1

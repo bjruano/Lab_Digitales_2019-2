@@ -17,7 +17,6 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_param chipscope.maxJobs 1
 set_param xicom.use_bs_reader 1
 create_project -in_memory -part xc7a35tcpg236-1
 
@@ -43,6 +42,7 @@ read_verilog -library xil_defaultlib {
   C:/Users/NBJSWETT/Desktop/lab2.srcs/lab5.srcs/sources_1/new/counter_1.v
   C:/Users/NBJSWETT/Desktop/lab2.srcs/lab5.srcs/sources_1/new/debouncer.v
   C:/Users/NBJSWETT/Desktop/lab2.srcs/lab5.srcs/sources_1/new/freq_selector.v
+  C:/Users/NBJSWETT/Desktop/lab2.srcs/lab5.srcs/sources_1/new/termo_decoder.v
   C:/Users/NBJSWETT/Desktop/lab2.srcs/lab5.srcs/sources_1/new/Wave_Selector.v
 }
 # Mark all dcp files as not used in implementation to prevent them from being
