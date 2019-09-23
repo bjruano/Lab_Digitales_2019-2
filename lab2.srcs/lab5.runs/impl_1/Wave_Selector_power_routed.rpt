@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date             : Thu Sep 12 16:28:19 2019
+| Date             : Thu Sep 12 17:53:12 2019
 | Host             : Danielitoh running 64-bit major release  (build 9200)
 | Command          : report_power -file Wave_Selector_power_routed.rpt -pb Wave_Selector_power_summary_routed.pb -rpx Wave_Selector_power_routed.rpx
 | Design           : Wave_Selector
@@ -53,12 +53,12 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |     0.002 |        3 |       --- |             --- |
-| Slice Logic    |    <0.001 |      745 |       --- |             --- |
-|   LUT as Logic |    <0.001 |      202 |     20800 |            0.97 |
-|   CARRY4       |    <0.001 |       91 |      8150 |            1.12 |
-|   Register     |    <0.001 |      392 |     41600 |            0.94 |
+| Slice Logic    |    <0.001 |      760 |       --- |             --- |
+|   LUT as Logic |    <0.001 |      210 |     20800 |            1.01 |
+|   CARRY4       |    <0.001 |       94 |      8150 |            1.15 |
+|   Register     |    <0.001 |      404 |     41600 |            0.97 |
 |   Others       |     0.000 |       39 |       --- |             --- |
-| Signals        |     0.001 |      689 |       --- |             --- |
+| Signals        |     0.001 |      704 |       --- |             --- |
 | Block RAM      |    <0.001 |        1 |        50 |            2.00 |
 | I/O            |     0.046 |       40 |       106 |           37.74 |
 | Static Power   |     0.072 |          |           |                 |

@@ -30,13 +30,10 @@ module counter_1 (
   wire clk_selected;
   freq_selector(sel, clk, clk_selected);
 
-  reg[7:0] a;
  
     always @(posedge clk_selected)
       if (enable) begin
-        out <= out+1;
-      end else if (a == 8'b1111_1111) begin
-        out <= 8'b0;
+        out = out+1;
       end
         
 endmodule

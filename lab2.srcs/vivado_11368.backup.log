@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Sep 19 01:29:10 2019
+# Process ID: 11368
+# Current directory: C:/Users/NBJSWETT/Desktop/lab2.srcs
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12584 C:\Users\NBJSWETT\Desktop\lab2.srcs\lab5.xpr
+# Log file: C:/Users/NBJSWETT/Desktop/lab2.srcs/vivado.log
+# Journal file: C:/Users/NBJSWETT/Desktop/lab2.srcs\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/NBJSWETT/Desktop/lab2.srcs/lab5.xpr
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-3] IP Output Repository Path: Could not find the directory 'D:/University/Engineering/8th semester/Digital Lab/exp4/lab4.cache/ip'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:35 ; elapsed = 00:00:24 . Memory (MB): peak = 693.449 ; gain = 85.484
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Sep 19 02:39:27 2019...

@@ -30,9 +30,9 @@ wire button_fixed;
 debouncer(button, clk, button_fixed);
 
 always @ (posedge clk) begin
-    if (button_fixed) begin  // Need to debounce and syncrhonize to clk!!
+    if (button_fixed) begin  
         y <= y+1;
-        if (y == 2'b10)  // Uh, count can never reach a value greater than 3 and will rollover to 0 anyway.
+        if (y == 2'b10)  
           y <= 0;
     end
     end

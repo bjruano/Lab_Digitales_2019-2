@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date         : Thu Sep 12 16:28:16 2019
+| Date         : Thu Sep 12 17:53:08 2019
 | Host         : Danielitoh running 64-bit major release  (build 9200)
 | Command      : report_drc -file Wave_Selector_drc_routed.rpt -pb Wave_Selector_drc_routed.pb -rpx Wave_Selector_drc_routed.rpx
 | Design       : Wave_Selector
@@ -50,34 +50,34 @@ Related violations: <none>
 
 PDRC-153#1 Warning
 Gated clock check  
-Net nolabel_line37/nolabel_line31/nolabel_line31/nolabel_line31/clk_selected is a gated clock net sourced by a combinational pin nolabel_line37/nolabel_line31/nolabel_line31/nolabel_line31/out_reg_rep_i_1/O, cell nolabel_line37/nolabel_line31/nolabel_line31/nolabel_line31/out_reg_rep_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net nolabel_line37/nolabel_line31/nolabel_line31/nolabel_line29/CLK is a gated clock net sourced by a combinational pin nolabel_line37/nolabel_line31/nolabel_line31/nolabel_line29/out_reg_rep_i_1/O, cell nolabel_line37/nolabel_line31/nolabel_line31/nolabel_line29/out_reg_rep_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#2 Warning
 Gated clock check  
-Net nolabel_line38/nolabel_line31/nolabel_line31/nolabel_line31/clk_selected is a gated clock net sourced by a combinational pin nolabel_line38/nolabel_line31/nolabel_line31/nolabel_line31/out[7]_i_2/O, cell nolabel_line38/nolabel_line31/nolabel_line31/nolabel_line31/out[7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net nolabel_line38/nolabel_line31/nolabel_line31/nolabel_line29/CLK is a gated clock net sourced by a combinational pin nolabel_line38/nolabel_line31/nolabel_line31/nolabel_line29/out[7]_i_2/O, cell nolabel_line38/nolabel_line31/nolabel_line31/nolabel_line29/out[7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#3 Warning
 Gated clock check  
-Net nolabel_line39/nolabel_line31/nolabel_line31/nolabel_line31/clk_selected is a gated clock net sourced by a combinational pin nolabel_line39/nolabel_line31/nolabel_line31/nolabel_line31/out_reg_rep_i_1__0/O, cell nolabel_line39/nolabel_line31/nolabel_line31/nolabel_line31/out_reg_rep_i_1__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net nolabel_line39/nolabel_line31/nolabel_line31/nolabel_line29/CLK is a gated clock net sourced by a combinational pin nolabel_line39/nolabel_line31/nolabel_line31/nolabel_line29/out_reg_rep_i_1__0/O, cell nolabel_line39/nolabel_line31/nolabel_line31/nolabel_line29/out_reg_rep_i_1__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PLHOLDVIO-2#1 Warning
 Non-Optimal connections which could lead to hold violations  
-A LUT nolabel_line37/nolabel_line31/nolabel_line31/nolabel_line31/out_reg_rep_i_1 is driving clock pin of 9 cells. This could lead to large hold time violations. Involved cells are:
+A LUT nolabel_line37/nolabel_line31/nolabel_line31/nolabel_line29/out_reg_rep_i_1 is driving clock pin of 9 cells. This could lead to large hold time violations. Involved cells are:
 nolabel_line37/nolabel_line31/out_reg[0], nolabel_line37/nolabel_line31/out_reg[1], nolabel_line37/nolabel_line31/out_reg[2], nolabel_line37/nolabel_line31/out_reg[3], nolabel_line37/nolabel_line31/out_reg[4], nolabel_line37/nolabel_line31/out_reg[5], nolabel_line37/nolabel_line31/out_reg[6], nolabel_line37/nolabel_line31/out_reg[7], nolabel_line37/nolabel_line31/out_reg_rep
 Related violations: <none>
 
 PLHOLDVIO-2#2 Warning
 Non-Optimal connections which could lead to hold violations  
-A LUT nolabel_line38/nolabel_line31/nolabel_line31/nolabel_line31/out[7]_i_2 is driving clock pin of 8 cells. This could lead to large hold time violations. Involved cells are:
+A LUT nolabel_line38/nolabel_line31/nolabel_line31/nolabel_line29/out[7]_i_2 is driving clock pin of 8 cells. This could lead to large hold time violations. Involved cells are:
 nolabel_line38/nolabel_line31/out_reg[0], nolabel_line38/nolabel_line31/out_reg[1], nolabel_line38/nolabel_line31/out_reg[2], nolabel_line38/nolabel_line31/out_reg[3], nolabel_line38/nolabel_line31/out_reg[4], nolabel_line38/nolabel_line31/out_reg[5], nolabel_line38/nolabel_line31/out_reg[6], nolabel_line38/nolabel_line31/out_reg[7]
 Related violations: <none>
 
 PLHOLDVIO-2#3 Warning
 Non-Optimal connections which could lead to hold violations  
-A LUT nolabel_line39/nolabel_line31/nolabel_line31/nolabel_line31/out_reg_rep_i_1__0 is driving clock pin of 9 cells. This could lead to large hold time violations. Involved cells are:
+A LUT nolabel_line39/nolabel_line31/nolabel_line31/nolabel_line29/out_reg_rep_i_1__0 is driving clock pin of 9 cells. This could lead to large hold time violations. Involved cells are:
 nolabel_line39/nolabel_line31/out_reg[0], nolabel_line39/nolabel_line31/out_reg[1], nolabel_line39/nolabel_line31/out_reg[2], nolabel_line39/nolabel_line31/out_reg[3], nolabel_line39/nolabel_line31/out_reg[4], nolabel_line39/nolabel_line31/out_reg[5], nolabel_line39/nolabel_line31/out_reg[6], nolabel_line39/nolabel_line31/out_reg[7], nolabel_line39/nolabel_line31/out_reg_rep
 Related violations: <none>
 
