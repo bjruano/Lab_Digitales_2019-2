@@ -1,0 +1,39 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Sep 19 01:50:19 2019
+# Process ID: 7972
+# Current directory: C:/Users/NBJSWETT/Desktop/lab3.srcs
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2392 C:\Users\NBJSWETT\Desktop\lab3.srcs\lab3.xpr
+# Log file: C:/Users/NBJSWETT/Desktop/lab3.srcs/vivado.log
+# Journal file: C:/Users/NBJSWETT/Desktop/lab3.srcs\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/NBJSWETT/Desktop/lab3.srcs/lab3.xpr
+INFO: [Project 1-313] Project file moved from 'D:/exp5' since last save.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/NBJSWETT/Desktop/lab3.srcs/lab3.srcs/sources_1/new/main.v', nor could it be found using path 'D:/exp5/lab5.srcs/sources_1/new/main.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/NBJSWETT/Desktop/lab3.srcs/lab3.srcs/constrs_1/new/basys.xdc', nor could it be found using path 'D:/exp5/lab5.srcs/constrs_1/new/basys.xdc'.
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-3] IP Output Repository Path: Could not find the directory 'D:/University/Engineering/8th semester/Digital Lab/exp4/lab4.cache/ip'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:25 ; elapsed = 00:00:20 . Memory (MB): peak = 652.570 ; gain = 73.559
+exit
+INFO: [Common 17-206] Exiting Vivado afile mkdir C:/Users/NBJSWETT/Desktop/lab3.srcs/lab3.srcs/sources_1/new
+close [ open C:/Users/NBJSWETT/Desktop/lab3.srcs/lab3.srcs/sources_1/new/clk_divider.v w ]
+add_files C:/Users/NBJSWETT/Desktop/lab3.srcs/lab3.srcs/sources_1/new/clk_divider.v
+close [ open C:/Users/NBJSWETT/Desktop/lab3.srcs/lab3.srcs/sources_1/new/debouncer.v w ]
+add_files C:/Users/NBJSWETT/Desktop/lab3.srcs/lab3.srcs/sources_1/new/debouncer.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close [ open C:/Users/NBJSWETT/Desktop/lab3.srcs/lab3.srcs/sources_1/new/mux_luces.v w ]
+add_files C:/Users/NBJSWETT/Desktop/lab3.srcs/lab3.srcs/sources_1/new/mux_luces.v
+update_compile_order -fileset sources_1
+close [ open C:/Users/NBJSWETT/Desktop/lab3.srcs/lab3.srcs/sources_1/new/clasficador_flujo.v w ]
+add_files C:/Users/NBJSWETT/Desktop/lab3.srcs/lab3.srcs/sources_1/new/clasficador_flujo.v
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Sep 19 02:39:23 2019...
