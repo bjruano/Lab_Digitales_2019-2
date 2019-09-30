@@ -22,12 +22,15 @@
 
 module contador_cola_eo(
     input clk, S_eo, cruce_eo, 
-    output [6:0]N 
+    output reg [6:0] N_eo 
     );
     
-    
-
-    
-    
-    
+always @(posedge clk)
+begin
+if (S_eo)
+ N_eo <= N_eo+1;
+if (cruce_eo)
+ N_eo <= N_eo-1;
+end 
+            
 endmodule

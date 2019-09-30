@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 19.09.2019 01:59:36
+// Create Date: 26.09.2019 15:30:34
 // Design Name: 
-// Module Name: mux_luces
+// Module Name: contador_cola_sn
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -20,14 +20,17 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module mux_luces(
-    input [5:0] luces_bajo, luces_alto,
-    input flujo_alto,
-    output [5:0] luces_escogidas,
-    output led_flujo_alto
+module contador_cola_sn(
+    input clk, S_sn, cruce_sn, A,
+    output reg [6:0] N_sn 
     );
     
-    assign led_flujo_alto = flujo_alto;
-    assign clk_out_selected = flujo_alto ? luces_alto : luces_bajo; 
-    
+always @(posedge clk)
+begin
+if (S_sn | A)
+ N_sn <= N_sn+1;
+if (cruce_sn)
+ N_sn <= N_sn-1;
+end 
+            
 endmodule
