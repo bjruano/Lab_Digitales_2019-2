@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1570028978">
+  <File Type="BITSTR-BMM" Name="flujo_alto_bd.bmm"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="flujo_alto_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="flujo_alto_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR" Name="flujo_alto_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="flujo_alto.tcl"/>
+  <File Type="OPT-TIMING" Name="flujo_alto_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="flujo_alto_opt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="flujo_alto_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="flujo_alto_reports.tcl"/>
+  <File Type="OPT-DRC" Name="flujo_alto_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="flujo_alto.hwdef"/>
+  <File Type="PWROPT-DCP" Name="flujo_alto_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="flujo_alto_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="flujo_alto_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="flujo_alto_placed.dcp"/>
+  <File Type="PLACE-IO" Name="flujo_alto_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="flujo_alto_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="flujo_alto_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="flujo_alto_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="flujo_alto_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="flujo_alto_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="flujo_alto_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BGN" Name="flujo_alto.bgn"/>
+  <File Type="PLACE-TIMING" Name="flujo_alto_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="flujo_alto_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="flujo_alto.bin"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="flujo_alto_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="flujo_alto_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="flujo_alto_drc_physopted.rpt"/>
+  <File Type="BITSTR-MSK" Name="flujo_alto.msk"/>
+  <File Type="PHYSOPT-TIMING" Name="flujo_alto_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="flujo_alto_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="flujo_alto_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="flujo_alto_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="flujo_alto_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="flujo_alto_drc_routed.pb"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="flujo_alto.ltx"/>
+  <File Type="ROUTE-DRC-RPX" Name="flujo_alto_drc_routed.rpx"/>
+  <File Type="BITSTR-MMI" Name="flujo_alto.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="flujo_alto_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="flujo_alto_methodology_drc_routed.rpx"/>
+  <File Type="BITSTR-SYSDEF" Name="flujo_alto.sysdef"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="flujo_alto_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="flujo_alto_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="flujo_alto_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="flujo_alto_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="flujo_alto_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="flujo_alto_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="flujo_alto_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="flujo_alto_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="flujo_alto_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="flujo_alto_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="flujo_alto_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="flujo_alto_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="flujo_alto_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="flujo_alto_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="flujo_alto_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="flujo_alto_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="flujo_alto_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="flujo_alto_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="flujo_alto_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="flujo_alto.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="flujo_alto_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-RBT" Name="flujo_alto.rbt"/>
+  <File Type="BITSTR-NKY" Name="flujo_alto.nky"/>
+  <File Type="BG-DRC" Name="flujo_alto.drc"/>
+  <File Type="RDI-RDI" Name="flujo_alto.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/clk_divider.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/debouncer.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/seven_seg_converter.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/contador_0_15.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/flujo_alto.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/contador_012.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/mux_luces.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/clasficador_flujo.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/rom_flujo_bajo.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/contador_0_27.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/contador_cola_eo.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/contador_cola_sn.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/digit_separator.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/cruce_eo.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/cruce_sn.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/secuencia_semaforos.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/seven_seg_mgt.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="flujo_alto"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/basys3.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

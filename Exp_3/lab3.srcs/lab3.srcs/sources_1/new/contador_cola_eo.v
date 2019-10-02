@@ -25,7 +25,7 @@ module contador_cola_eo(
     output reg [6:0] N_eo 
     );
     
-always @(posedge clk)
+always @(posedge clk or posedge S_eo or posedge cruce_eo)
 begin
 if (S_eo)
  N_eo <= N_eo+1;

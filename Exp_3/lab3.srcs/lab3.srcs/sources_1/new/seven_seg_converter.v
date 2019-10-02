@@ -22,22 +22,22 @@
 
 module seven_seg_converter(
     input [3:0] data,
-    output reg [6:0] segments
+    output reg [6:0] seg
     );
     
     always @(*)
       case(data)
-        0: segments = ~7'b111_1110;
-        1: segments = ~7'b011_0000;
-        2: segments = ~7'b110_1101;
-        3: segments = ~7'b111_1001;
-        4: segments = ~7'b011_0011;
-        5: segments = ~7'b101_1011;
-        6: segments = ~7'b101_1111;
-        7: segments = ~7'b111_0000;
-        8: segments = ~7'b111_1111;
-        9: segments = ~7'b111_1011;
-        default: segments = 7'b000_0000;
+        0: seg = 7'b1000000; 
+        1: seg = 7'b1111001; 
+        2: seg = 7'b0100100; 
+        3: seg = 7'b0110000; 
+        4: seg = 7'b0011001; 
+        5: seg = 7'b0010010; 
+        6: seg = 7'b0000010; 
+        7: seg = 7'b1111000; 
+        8: seg = 7'b0000000; 
+        9: seg = 7'b0010000; 
+        default: seg = 7'b0000001;
         
       endcase
     

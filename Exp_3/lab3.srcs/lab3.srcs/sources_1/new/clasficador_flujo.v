@@ -21,22 +21,22 @@
 
 
 module clasficador_flujo(
+    input clk,
     input [7:0] cola_sn, cola_eo,
+    input [4:0] c_29, c_17,
     output reg flujo_alto
     );
     
-    wire cond_1;
-    wire cond_2;
+    reg siguiente;
     
-    assign cond_1 = cola_sn > 8'b00000110;
-    assign cond_2 = cola_eo > 8'b00000110;
+    always @ (posedge clk)
+        flujo_alto <= siguiente;
     
-    always @(*)
-    begin
-        if (cond_1 & cond_2)
-            flujo_alto = 1;
-        else
-            flujo_alto = 0;
-    end
+    always @ (*)
+      case(flujo_alto)
+         0: if (c_29 == 5'd29 & cola_sn > 8'b00000110 & cola_eo > 8'b00000110) siguiente = 0;
+         1: if (c_17 == 5'd17 & (cola_sn < 8'b00000110 |cola_eo < 8'b00000110)) siguiente = 1;
+         default: siguiente = 0;
+      endcase
             
 endmodule

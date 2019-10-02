@@ -20,17 +20,44 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module clk_divider(clock_in, clock_out
-    );
-input clock_in; // input clock on FPGA
-output clock_out; // output clock after dividing the input clock by divisor
-reg[31:0] counter=32'd0;
-parameter DIVISOR = 32'd50000000;
-always @(posedge clock_in)
+//module clk_divider(clock_in, clock_out
+//    );
+//input clock_in; // input clock on FPGA
+//output clock_out; // output clock after dividing the input clock by divisor
+//reg[31:0] counter=32'd0;
+//parameter DIVISOR = 32'd200000000;
+//always @(posedge clock_in)
+//begin
+// counter <= counter + 1;
+// if(counter>=(DIVISOR-1))
+//  counter <= 32'd0;
+//end
+//assign clock_out = (counter<DIVISOR/2)?1'b0:1'b1;
+//endmodule
+
+
+module clk_divider(clk, reset, clk_1Hz);
+input clk, reset;
+output clk_1Hz;
+
+reg clk_1Hz = 1'b0;
+reg [27:0] counter;
+
+always@(posedge reset or posedge clk)
 begin
- counter <= counter + 1;
- if(counter>=(DIVISOR-1))
-  counter <= 32'd0;
+    if (reset == 1'b1)
+        begin
+            clk_1Hz <= 0;
+            counter <= 0;
+        end
+    else
+        begin
+            counter <= counter + 1;
+            if ( counter == 25_000_000)
+                begin
+                    counter <= 0;
+                    clk_1Hz <= ~clk_1Hz;
+                end
+        end
 end
-assign clock_out = (counter<DIVISOR/2)?1'b0:1'b1;
-endmodule
+endmodule   

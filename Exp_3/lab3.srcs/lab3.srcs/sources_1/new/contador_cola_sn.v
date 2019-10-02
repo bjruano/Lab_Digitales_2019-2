@@ -21,15 +21,15 @@
 
 
 module contador_cola_sn(
-    input clk, S_sn, cruce_sn, A,
+    input clk, S_sn, cruce_sn, cruce_A, A,
     output reg [6:0] N_sn 
     );
     
-always @(posedge clk)
+always @(posedge clk or posedge S_sn or posedge cruce_sn or posedge A or posedge cruce_A)
 begin
 if (S_sn | A)
  N_sn <= N_sn+1;
-if (cruce_sn)
+if (cruce_sn | cruce_A)
  N_sn <= N_sn-1;
 end 
             
