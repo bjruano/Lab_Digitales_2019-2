@@ -1,73 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1569962030">
-  <File Type="BITSTR-BMM" Name="seven_seg_manager_bd.bmm"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="seven_seg_manager_methodology_drc_opted.rpt"/>
-  <File Type="INIT-TIMING" Name="seven_seg_manager_timing_summary_init.rpt"/>
-  <File Type="ROUTE-PWR" Name="seven_seg_manager_power_routed.rpt"/>
-  <File Type="PA-TCL" Name="seven_seg_manager.tcl"/>
-  <File Type="OPT-TIMING" Name="seven_seg_manager_timing_summary_opted.rpt"/>
-  <File Type="OPT-DCP" Name="seven_seg_manager_opt.dcp"/>
-  <File Type="ROUTE-PWR-SUM" Name="seven_seg_manager_power_summary_routed.pb"/>
-  <File Type="REPORTS-TCL" Name="seven_seg_manager_reports.tcl"/>
-  <File Type="OPT-DRC" Name="seven_seg_manager_drc_opted.rpt"/>
-  <File Type="OPT-HWDEF" Name="seven_seg_manager.hwdef"/>
-  <File Type="PWROPT-DCP" Name="seven_seg_manager_pwropt.dcp"/>
-  <File Type="PWROPT-DRC" Name="seven_seg_manager_drc_pwropted.rpt"/>
-  <File Type="PWROPT-TIMING" Name="seven_seg_manager_timing_summary_pwropted.rpt"/>
-  <File Type="PLACE-DCP" Name="seven_seg_manager_placed.dcp"/>
-  <File Type="PLACE-IO" Name="seven_seg_manager_io_placed.rpt"/>
-  <File Type="PLACE-CLK" Name="seven_seg_manager_clock_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL" Name="seven_seg_manager_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL-PB" Name="seven_seg_manager_utilization_placed.pb"/>
-  <File Type="PLACE-CTRL" Name="seven_seg_manager_control_sets_placed.rpt"/>
-  <File Type="PLACE-SIMILARITY" Name="seven_seg_manager_incremental_reuse_placed.rpt"/>
-  <File Type="PLACE-PRE-SIMILARITY" Name="seven_seg_manager_incremental_reuse_pre_placed.rpt"/>
-  <File Type="BG-BGN" Name="seven_seg_manager.bgn"/>
-  <File Type="PLACE-TIMING" Name="seven_seg_manager_timing_summary_placed.rpt"/>
-  <File Type="POSTPLACE-PWROPT-DCP" Name="seven_seg_manager_postplace_pwropt.dcp"/>
-  <File Type="BG-BIN" Name="seven_seg_manager.bin"/>
-  <File Type="POSTPLACE-PWROPT-TIMING" Name="seven_seg_manager_timing_summary_postplace_pwropted.rpt"/>
-  <File Type="PHYSOPT-DCP" Name="seven_seg_manager_physopt.dcp"/>
-  <File Type="PHYSOPT-DRC" Name="seven_seg_manager_drc_physopted.rpt"/>
-  <File Type="BITSTR-MSK" Name="seven_seg_manager.msk"/>
-  <File Type="PHYSOPT-TIMING" Name="seven_seg_manager_timing_summary_physopted.rpt"/>
-  <File Type="ROUTE-ERROR-DCP" Name="seven_seg_manager_routed_error.dcp"/>
-  <File Type="ROUTE-DCP" Name="seven_seg_manager_routed.dcp"/>
-  <File Type="ROUTE-BLACKBOX-DCP" Name="seven_seg_manager_routed_bb.dcp"/>
-  <File Type="ROUTE-DRC" Name="seven_seg_manager_drc_routed.rpt"/>
-  <File Type="ROUTE-DRC-PB" Name="seven_seg_manager_drc_routed.pb"/>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1570028978">
+  <File Type="BITSTR-BMM" Name="flujo_alto_bd.bmm"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="flujo_alto_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="flujo_alto_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR" Name="flujo_alto_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="flujo_alto.tcl"/>
+  <File Type="OPT-TIMING" Name="flujo_alto_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="flujo_alto_opt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="flujo_alto_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="flujo_alto_reports.tcl"/>
+  <File Type="OPT-DRC" Name="flujo_alto_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="flujo_alto.hwdef"/>
+  <File Type="PWROPT-DCP" Name="flujo_alto_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="flujo_alto_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="flujo_alto_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="flujo_alto_placed.dcp"/>
+  <File Type="PLACE-IO" Name="flujo_alto_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="flujo_alto_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="flujo_alto_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="flujo_alto_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="flujo_alto_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="flujo_alto_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="flujo_alto_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BGN" Name="flujo_alto.bgn"/>
+  <File Type="PLACE-TIMING" Name="flujo_alto_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="flujo_alto_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="flujo_alto.bin"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="flujo_alto_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="flujo_alto_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="flujo_alto_drc_physopted.rpt"/>
+  <File Type="BITSTR-MSK" Name="flujo_alto.msk"/>
+  <File Type="PHYSOPT-TIMING" Name="flujo_alto_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="flujo_alto_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="flujo_alto_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="flujo_alto_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="flujo_alto_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="flujo_alto_drc_routed.pb"/>
   <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
-  <File Type="BITSTR-LTX" Name="seven_seg_manager.ltx"/>
-  <File Type="ROUTE-DRC-RPX" Name="seven_seg_manager_drc_routed.rpx"/>
-  <File Type="BITSTR-MMI" Name="seven_seg_manager.mmi"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="seven_seg_manager_methodology_drc_routed.rpt"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="seven_seg_manager_methodology_drc_routed.rpx"/>
-  <File Type="BITSTR-SYSDEF" Name="seven_seg_manager.sysdef"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="seven_seg_manager_methodology_drc_routed.pb"/>
-  <File Type="ROUTE-PWR-RPX" Name="seven_seg_manager_power_routed.rpx"/>
-  <File Type="ROUTE-STATUS" Name="seven_seg_manager_route_status.rpt"/>
-  <File Type="ROUTE-STATUS-PB" Name="seven_seg_manager_route_status.pb"/>
-  <File Type="ROUTE-TIMINGSUMMARY" Name="seven_seg_manager_timing_summary_routed.rpt"/>
-  <File Type="ROUTE-TIMING-PB" Name="seven_seg_manager_timing_summary_routed.pb"/>
-  <File Type="ROUTE-TIMING-RPX" Name="seven_seg_manager_timing_summary_routed.rpx"/>
-  <File Type="ROUTE-SIMILARITY" Name="seven_seg_manager_incremental_reuse_routed.rpt"/>
-  <File Type="ROUTE-CLK" Name="seven_seg_manager_clock_utilization_routed.rpt"/>
-  <File Type="ROUTE-BUS-SKEW" Name="seven_seg_manager_bus_skew_routed.rpt"/>
-  <File Type="ROUTE-BUS-SKEW-PB" Name="seven_seg_manager_bus_skew_routed.pb"/>
-  <File Type="ROUTE-BUS-SKEW-RPX" Name="seven_seg_manager_bus_skew_routed.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-DCP" Name="seven_seg_manager_postroute_physopt.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="seven_seg_manager_postroute_physopt_bb.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="seven_seg_manager_timing_summary_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="seven_seg_manager_timing_summary_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="seven_seg_manager_timing_summary_postroute_physopted.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="seven_seg_manager_bus_skew_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="seven_seg_manager_bus_skew_postroute_physopted.pb"/>
-  <File Type="BG-BIT" Name="seven_seg_manager.bit"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="seven_seg_manager_bus_skew_postroute_physopted.rpx"/>
-  <File Type="BITSTR-RBT" Name="seven_seg_manager.rbt"/>
-  <File Type="BITSTR-NKY" Name="seven_seg_manager.nky"/>
-  <File Type="BG-DRC" Name="seven_seg_manager.drc"/>
-  <File Type="RDI-RDI" Name="seven_seg_manager.vdi"/>
+  <File Type="BITSTR-LTX" Name="flujo_alto.ltx"/>
+  <File Type="ROUTE-DRC-RPX" Name="flujo_alto_drc_routed.rpx"/>
+  <File Type="BITSTR-MMI" Name="flujo_alto.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="flujo_alto_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="flujo_alto_methodology_drc_routed.rpx"/>
+  <File Type="BITSTR-SYSDEF" Name="flujo_alto.sysdef"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="flujo_alto_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="flujo_alto_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="flujo_alto_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="flujo_alto_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="flujo_alto_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="flujo_alto_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="flujo_alto_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="flujo_alto_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="flujo_alto_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="flujo_alto_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="flujo_alto_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="flujo_alto_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="flujo_alto_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="flujo_alto_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="flujo_alto_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="flujo_alto_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="flujo_alto_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="flujo_alto_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="flujo_alto_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="flujo_alto.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="flujo_alto_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-RBT" Name="flujo_alto.rbt"/>
+  <File Type="BITSTR-NKY" Name="flujo_alto.nky"/>
+  <File Type="BG-DRC" Name="flujo_alto.drc"/>
+  <File Type="RDI-RDI" Name="flujo_alto.vdi"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
@@ -78,7 +78,7 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/digit_separator.v">
+    <File Path="$PSRCDIR/sources_1/new/debouncer.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -92,48 +92,8 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/seven_seg_manager.v">
+    <File Path="$PSRCDIR/sources_1/new/contador_0_15.v">
       <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/new/debouncer.v">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/new/main.v">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/new/mux_luces.v">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/new/clasficador_flujo.v">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/new/rom_flujo_bajo.v">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -141,7 +101,34 @@
     </File>
     <File Path="$PSRCDIR/sources_1/new/flujo_alto.v">
       <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/contador_012.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/mux_luces.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/clasficador_flujo.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/rom_flujo_bajo.v">
+      <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -149,15 +136,6 @@
     </File>
     <File Path="$PSRCDIR/sources_1/new/contador_0_27.v">
       <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/new/contador_0_15.v">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -165,7 +143,6 @@
     </File>
     <File Path="$PSRCDIR/sources_1/new/contador_cola_eo.v">
       <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -173,7 +150,13 @@
     </File>
     <File Path="$PSRCDIR/sources_1/new/contador_cola_sn.v">
       <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/digit_separator.v">
+      <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -181,7 +164,6 @@
     </File>
     <File Path="$PSRCDIR/sources_1/new/cruce_eo.v">
       <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -189,7 +171,6 @@
     </File>
     <File Path="$PSRCDIR/sources_1/new/cruce_sn.v">
       <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -197,15 +178,13 @@
     </File>
     <File Path="$PSRCDIR/sources_1/new/secuencia_semaforos.v">
       <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/Contadores_0_99.v">
+    <File Path="$PSRCDIR/sources_1/new/seven_seg_mgt.v">
       <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -213,7 +192,7 @@
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="seven_seg_manager"/>
+      <Option Name="TopModule" Val="flujo_alto"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">

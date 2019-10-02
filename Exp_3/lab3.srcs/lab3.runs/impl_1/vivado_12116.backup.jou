@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Oct  2 11:06:59 2019
+# Process ID: 12116
+# Current directory: C:/Users/NBJSWETT/Desktop/COSAS PUC/VIII Semestre/Laboratorio de Sistemas Digitales/Lab_Digitales_2019-2/Exp_3/lab3.srcs/lab3.runs/impl_1
+# Command line: vivado.exe -log contador_0_17.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source contador_0_17.tcl -notrace
+# Log file: C:/Users/NBJSWETT/Desktop/COSAS PUC/VIII Semestre/Laboratorio de Sistemas Digitales/Lab_Digitales_2019-2/Exp_3/lab3.srcs/lab3.runs/impl_1/contador_0_17.vdi
+# Journal file: C:/Users/NBJSWETT/Desktop/COSAS PUC/VIII Semestre/Laboratorio de Sistemas Digitales/Lab_Digitales_2019-2/Exp_3/lab3.srcs/lab3.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source contador_0_17.tcl -notrace

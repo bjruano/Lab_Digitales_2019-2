@@ -1,9 +1,17 @@
 `timescale 1ns / 1ps
 
 module flujo_alto (input clk,
-                   input wire [4:0] addr,
+                   input reset_btn,
                    output reg [5:0] lights);
-
+  
+  
+  wire [4:0] count;
+  wire clock;
+  wire reset;
+  
+  debouncer(reset_btn, clk, reset);
+  clk_divider(clk, clock);
+  contador_0_17(clock, reset, count);
 
   //-- Memoria
   reg [3:0] rom [0:31];
@@ -11,8 +19,8 @@ module flujo_alto (input clk,
   //-- Proceso de acceso a la memoria. 
   //-- Se ha elegido flanco de bajada en este ejemplo, pero
   //-- funciona igual si es de subida
-  always @(posedge clk) begin
-    lights <= rom[addr];
+  always @(posedge clock) begin
+    lights <= rom[count];
   end
 
 //-- Inicializacion de la memoria. 
