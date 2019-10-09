@@ -1,0 +1,49 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Oct  3 12:59:25 2019
+# Process ID: 16112
+# Current directory: C:/Users/NBJSWETT/Desktop/COSAS PUC/VIII Semestre/Laboratorio de Sistemas Digitales/Lab_Digitales_2019-2/Exp_3/lab3.srcs
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11140 C:\Users\NBJSWETT\Desktop\COSAS PUC\VIII Semestre\Laboratorio de Sistemas Digitales\Lab_Digitales_2019-2\Exp_3\lab3.srcs\lab3_vfinal.xpr
+# Log file: C:/Users/NBJSWETT/Desktop/COSAS PUC/VIII Semestre/Laboratorio de Sistemas Digitales/Lab_Digitales_2019-2/Exp_3/lab3.srcs/vivado.log
+# Journal file: C:/Users/NBJSWETT/Desktop/COSAS PUC/VIII Semestre/Laboratorio de Sistemas Digitales/Lab_Digitales_2019-2/Exp_3/lab3.srcs\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/NBJSWETT/Desktop/COSAS PUC/VIII Semestre/Laboratorio de Sistemas Digitales/Lab_Digitales_2019-2/Exp_3/lab3.srcs/lab3_vfinal.xpr}
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/NBJSWETT/Desktop/COSAS PUC/VIII Semestre/Laboratorio de Sistemas Digitales/Lab_Digitales_2019-2/Exp_3/lab3.srcs'
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/NBJSWETT/Desktop/COSAS PUC/VIII Semestre/Laboratorio de Sistemas Digitales/Lab_Digitales_2019-2/Exp_3/lab3.srcs/lab3_vfinal.srcs/sources_1/new/clk_divider.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/NBJSWETT/Desktop/COSAS PUC/VIII Semestre/Laboratorio de Sistemas Digitales/Lab_Digitales_2019-2/Exp_3/lab3.srcs/lab3_vfinal.srcs/sources_1/new/debouncer.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/NBJSWETT/Desktop/COSAS PUC/VIII Semestre/Laboratorio de Sistemas Digitales/Lab_Digitales_2019-2/Exp_3/lab3.srcs/lab3_vfinal.srcs/sources_1/new/contador_0_15.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/NBJSWETT/Desktop/COSAS PUC/VIII Semestre/Laboratorio de Sistemas Digitales/Lab_Digitales_2019-2/Exp_3/lab3.srcs/lab3_vfinal.srcs/sources_1/new/flujo_alto.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/NBJSWETT/Desktop/COSAS PUC/VIII Semestre/Laboratorio de Sistemas Digitales/Lab_Digitales_2019-2/Exp_3/lab3.srcs/lab3_vfinal.srcs/sources_1/new/contador_012.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/NBJSWETT/Desktop/COSAS PUC/VIII Semestre/Laboratorio de Sistemas Digitales/Lab_Digitales_2019-2/Exp_3/lab3.srcs/lab3_vfinal.srcs/sources_1/new/mux_luces.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/NBJSWETT/Desktop/COSAS PUC/VIII Semestre/Laboratorio de Sistemas Digitales/Lab_Digitales_2019-2/Exp_3/lab3.srcs/lab3_vfinal.srcs/sources_1/new/clasficador_flujo.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/NBJSWETT/Desktop/COSAS PUC/VIII Semestre/Laboratorio de Sistemas Digitales/Lab_Digitales_2019-2/Exp_3/lab3.srcs/lab3_vfinal.srcs/sources_1/new/rom_flujo_bajo.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/NBJSWETT/Desktop/COSAS PUC/VIII Semestre/Laboratorio de Sistemas Digitales/Lab_Digitales_2019-2/Exp_3/lab3.srcs/lab3_vfinal.srcs/sources_1/new/contador_0_27.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/NBJSWETT/Desktop/COSAS PUC/VIII Semestre/Laboratorio de Sistemas Digitales/Lab_Digitales_2019-2/Exp_3/lab3.srcs/lab3_vfinal.srcs/sources_1/new/contador_cola_eo.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/NBJSWETT/Desktop/COSAS PUC/VIII Semestre/Laboratorio de Sistemas Digitales/Lab_Digitales_2019-2/Exp_3/lab3.srcs/lab3_vfinal.srcs/sources_1/new/contador_cola_sn.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/NBJSWETT/Desktop/COSAS PUC/VIII Semestre/Laboratorio de Sistemas Digitales/Lab_Digitales_2019-2/Exp_3/lab3.srcs/lab3_vfinal.srcs/sources_1/new/cruce_eo.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/NBJSWETT/Desktop/COSAS PUC/VIII Semestre/Laboratorio de Sistemas Digitales/Lab_Digitales_2019-2/Exp_3/lab3.srcs/lab3_vfinal.srcs/sources_1/new/cruce_sn.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/NBJSWETT/Desktop/COSAS PUC/VIII Semestre/Laboratorio de Sistemas Digitales/Lab_Digitales_2019-2/Exp_3/lab3.srcs/lab3_vfinal.srcs/sources_1/new/clk_divider_7s.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/NBJSWETT/Desktop/COSAS PUC/VIII Semestre/Laboratorio de Sistemas Digitales/Lab_Digitales_2019-2/Exp_3/lab3.srcs/lab3_vfinal.srcs/sources_1/new/digit_separator_7s.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/NBJSWETT/Desktop/COSAS PUC/VIII Semestre/Laboratorio de Sistemas Digitales/Lab_Digitales_2019-2/Exp_3/lab3.srcs/lab3_vfinal.srcs/sources_1/new/7_converter.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/NBJSWETT/Desktop/COSAS PUC/VIII Semestre/Laboratorio de Sistemas Digitales/Lab_Digitales_2019-2/Exp_3/lab3.srcs/lab3_vfinal.srcs/sources_1/new/display_7s.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/NBJSWETT/Desktop/COSAS PUC/VIII Semestre/Laboratorio de Sistemas Digitales/Lab_Digitales_2019-2/Exp_3/lab3.srcs/lab3_vfinal.srcs/sources_1/new/7s_seg_manager.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/NBJSWETT/Desktop/COSAS PUC/VIII Semestre/Laboratorio de Sistemas Digitales/Lab_Digitales_2019-2/Exp_3/lab3.srcs/lab3_vfinal.srcs/sources_1/new/Top.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/NBJSWETT/Desktop/COSAS PUC/VIII Semestre/Laboratorio de Sistemas Digitales/Lab_Digitales_2019-2/Exp_3/lab3.srcs/lab3_vfinal.srcs/constrs_1/new/basys3.xdc'.
+Scanning sources...
+Finished scanning sources
+WARNING: [Project 1-509] GeneratedRun file for 'synth_1' not found
+WARNING: [Project 1-509] GeneratedRun file for 'impl_1' not found
+WARNING: [filemgmt 56-3] IP Output Repository Path: Could not find the directory 'D:/University/Engineering/8th semester/Digital Lab/exp4/lab4.cache/ip'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+INFO: [IP_Flow 19-2338] Canceling the changes to the IP catalog. Reverting the catalog back to its previous state.
+INFO: [IP_Flow 19-2340] The IP catalog has been returned to its previous state.
+INFO: [Common 17-344] 'open_project' was cancelled
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Oct  3 13:00:34 2019...

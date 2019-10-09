@@ -1,0 +1,93 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Oct  3 16:12:58 2019
+# Process ID: 7424
+# Current directory: C:/Users/NBJSWETT/Desktop/lab3_vfinal.srcs/lab3.srcs
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7124 C:\Users\NBJSWETT\Desktop\lab3_vfinal.srcs\lab3.srcs\lab3.xpr
+# Log file: C:/Users/NBJSWETT/Desktop/lab3_vfinal.srcs/lab3.srcs/vivado.log
+# Journal file: C:/Users/NBJSWETT/Desktop/lab3_vfinal.srcs/lab3.srcs\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/NBJSWETT/Desktop/lab3_vfinal.srcs/lab3.srcs/lab3.xpr
+open_hw
+connect_hw_server
+disconnect_hw_server localhost:3121
+connect_hw_server
+disconnect_hw_server localhost:3121
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/NBJSWETT/Desktop/lab3_vfinal.srcs/lab3.srcs/lab3.runs/impl_1/Top.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/NBJSWETT/Desktop/lab3_vfinal.srcs/lab3.srcs/lab3.runs/impl_1/Top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reorder_files -fileset constrs_1 -after C:/Users/NBJSWETT/Desktop/lab3_vfinal.srcs/lab3.srcs/lab3.srcs/constrs_1/new/basys3.xdc C:/Users/NBJSWETT/Desktop/lab3_vfinal.srcs/lab3.srcs/lab3.srcs/constrs_1/new/basys3.xdc
+disconnect_hw_server localhost:3121
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/NBJSWETT/Desktop/lab3_vfinal.srcs/lab3.srcs/lab3.runs/impl_1/Top.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/NBJSWETT/Desktop/lab3_vfinal.srcs/lab3.srcs/lab3.runs/impl_1/Top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/NBJSWETT/Desktop/lab3_vfinal.srcs/lab3.srcs/lab3.runs/impl_1/Top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/NBJSWETT/Desktop/lab3_vfinal.srcs/lab3.srcs/lab3.runs/impl_1/Top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/NBJSWETT/Desktop/lab3_vfinal.srcs/lab3.srcs/lab3.runs/impl_1/Top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/NBJSWETT/Desktop/lab3_vfinal.srcs/lab3.srcs/lab3.runs/impl_1/Top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/NBJSWETT/Desktop/lab3_vfinal.srcs/lab3.srcs/lab3.runs/impl_1/Top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+disconnect_hw_server localhost:3121
+connect_hw_server
+disconnect_hw_server localhost:3121
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/NBJSWETT/Desktop/lab3_vfinal.srcs/lab3.srcs/lab3.runs/impl_1/Top.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/NBJSWETT/Desktop/lab3_vfinal.srcs/lab3.srcs/lab3.runs/impl_1/Top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]

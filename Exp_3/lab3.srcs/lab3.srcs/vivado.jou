@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Oct  9 14:12:40 2019
+# Process ID: 2640
+# Current directory: C:/Users/NBJSWETT/Desktop/lab3.srcs/lab3.srcs
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12872 C:\Users\NBJSWETT\Desktop\lab3.srcs\lab3.srcs\lab3.xpr
+# Log file: C:/Users/NBJSWETT/Desktop/lab3.srcs/lab3.srcs/vivado.log
+# Journal file: C:/Users/NBJSWETT/Desktop/lab3.srcs/lab3.srcs\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/NBJSWETT/Desktop/lab3.srcs/lab3.srcs/lab3.xpr
