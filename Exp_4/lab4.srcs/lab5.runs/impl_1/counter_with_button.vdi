@@ -2,87 +2,74 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Thu Oct 10 05:58:47 2019
-# Process ID: 9616
-# Current directory: C:/Users/NBJSWETT/Desktop/lab4.srcs/lab5.runs/impl_1
+# Start of session at: Thu Oct 10 16:45:48 2019
+# Process ID: 26192
+# Current directory: D:/Lab_Digitales/Lab_Digitales_2019-2/Exp_4/lab4.srcs/lab5.runs/impl_1
 # Command line: vivado.exe -log counter_with_button.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source counter_with_button.tcl -notrace
-# Log file: C:/Users/NBJSWETT/Desktop/lab4.srcs/lab5.runs/impl_1/counter_with_button.vdi
-# Journal file: C:/Users/NBJSWETT/Desktop/lab4.srcs/lab5.runs/impl_1\vivado.jou
+# Log file: D:/Lab_Digitales/Lab_Digitales_2019-2/Exp_4/lab4.srcs/lab5.runs/impl_1/counter_with_button.vdi
+# Journal file: D:/Lab_Digitales/Lab_Digitales_2019-2/Exp_4/lab4.srcs/lab5.runs/impl_1\vivado.jou
 #-----------------------------------------------------------
 source counter_with_button.tcl -notrace
-Command: link_design -top counter_with_button -part xc7a35tcpg236-1
-Design is defaulting to srcset: sources_1
-Design is defaulting to constrset: constrs_1
+Command: open_checkpoint counter_with_button_routed.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.051 . Memory (MB): peak = 294.133 ; gain = 0.000
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
-INFO: [Netlist 29-17] Analyzing 17 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 18 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-479] Netlist was created with Vivado 2019.1
 INFO: [Project 1-570] Preparing netlist for logic optimization
-Parsing XDC File [C:/Users/NBJSWETT/Desktop/lab4.srcs/lab5.srcs/constrs_1/new/basys.xdc]
-Finished Parsing XDC File [C:/Users/NBJSWETT/Desktop/lab4.srcs/lab5.srcs/constrs_1/new/basys.xdc]
-INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 650.215 ; gain = 0.000
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.120 . Memory (MB): peak = 1215.148 ; gain = 8.207
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.120 . Memory (MB): peak = 1215.148 ; gain = 8.207
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1215.148 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-7 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
-link_design completed successfully
-link_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 654.227 ; gain = 357.465
-Command: opt_design
+INFO: [Project 1-604] Checkpoint was created with Vivado v2019.1 (64-bit) build 2552052
+open_checkpoint: Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1215.148 ; gain = 921.016
+Command: write_bitstream -force counter_with_button.bit
 Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
-Running DRC as a precondition to command opt_design
-
-Starting DRC Task
+Running DRC as a precondition to command write_bitstream
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Programas/Xilinx/Vivado/2019.1/data/ip'.
 INFO: [DRC 23-27] Running DRC with 2 threads
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net nolabel_line36/cnt[0] has multiple drivers: nolabel_line36/cnt_reg[0]/Q, and nolabel_line36/cnt_reg[0]__0/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net nolabel_line36/cnt[10] has multiple drivers: nolabel_line36/cnt_reg[10]__0/Q, and nolabel_line36/cnt_reg[10]/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net nolabel_line36/cnt[11] has multiple drivers: nolabel_line36/cnt_reg[11]__0/Q, and nolabel_line36/cnt_reg[11]/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net nolabel_line36/cnt[12] has multiple drivers: nolabel_line36/cnt_reg[12]/Q, and nolabel_line36/cnt_reg[12]__0/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net nolabel_line36/cnt[13] has multiple drivers: nolabel_line36/cnt_reg[13]/Q, and nolabel_line36/cnt_reg[13]__0/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net nolabel_line36/cnt[14] has multiple drivers: nolabel_line36/cnt_reg[14]__0/Q, and nolabel_line36/cnt_reg[14]/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net nolabel_line36/cnt[15] has multiple drivers: nolabel_line36/cnt_reg[15]/Q, and nolabel_line36/cnt_reg[15]__0/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net nolabel_line36/cnt[16] has multiple drivers: nolabel_line36/cnt_reg[16]__0/Q, and nolabel_line36/cnt_reg[16]/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net nolabel_line36/cnt[17] has multiple drivers: nolabel_line36/cnt_reg[17]/Q, and nolabel_line36/cnt_reg[17]__0/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net nolabel_line36/cnt[18] has multiple drivers: nolabel_line36/cnt_reg[18]/Q, and nolabel_line36/cnt_reg[18]__0/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net nolabel_line36/cnt[19] has multiple drivers: nolabel_line36/cnt_reg[19]__0/Q, and nolabel_line36/cnt_reg[19]/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net nolabel_line36/cnt[1] has multiple drivers: nolabel_line36/cnt_reg[1]__0/Q, and nolabel_line36/cnt_reg[1]/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net nolabel_line36/cnt[2] has multiple drivers: nolabel_line36/cnt_reg[2]__0/Q, and nolabel_line36/cnt_reg[2]/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net nolabel_line36/cnt[3] has multiple drivers: nolabel_line36/cnt_reg[3]/Q, and nolabel_line36/cnt_reg[3]__0/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net nolabel_line36/cnt[4] has multiple drivers: nolabel_line36/cnt_reg[4]__0/Q, and nolabel_line36/cnt_reg[4]/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net nolabel_line36/cnt[5] has multiple drivers: nolabel_line36/cnt_reg[5]__0/Q, and nolabel_line36/cnt_reg[5]/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net nolabel_line36/cnt[6] has multiple drivers: nolabel_line36/cnt_reg[6]__0/Q, and nolabel_line36/cnt_reg[6]/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net nolabel_line36/cnt[7] has multiple drivers: nolabel_line36/cnt_reg[7]__0/Q, and nolabel_line36/cnt_reg[7]/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net nolabel_line36/cnt[8] has multiple drivers: nolabel_line36/cnt_reg[8]__0/Q, and nolabel_line36/cnt_reg[8]/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net nolabel_line36/cnt[9] has multiple drivers: nolabel_line36/cnt_reg[9]__0/Q, and nolabel_line36/cnt_reg[9]/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net nolabel_line37/cnt[0] has multiple drivers: nolabel_line37/cnt_reg[0]/Q, and nolabel_line37/cnt_reg[0]__0/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net nolabel_line37/cnt[10] has multiple drivers: nolabel_line37/cnt_reg[10]/Q, and nolabel_line37/cnt_reg[10]__0/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net nolabel_line37/cnt[11] has multiple drivers: nolabel_line37/cnt_reg[11]/Q, and nolabel_line37/cnt_reg[11]__0/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net nolabel_line37/cnt[12] has multiple drivers: nolabel_line37/cnt_reg[12]/Q, and nolabel_line37/cnt_reg[12]__0/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net nolabel_line37/cnt[13] has multiple drivers: nolabel_line37/cnt_reg[13]/Q, and nolabel_line37/cnt_reg[13]__0/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net nolabel_line37/cnt[14] has multiple drivers: nolabel_line37/cnt_reg[14]__0/Q, and nolabel_line37/cnt_reg[14]/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net nolabel_line37/cnt[15] has multiple drivers: nolabel_line37/cnt_reg[15]/Q, and nolabel_line37/cnt_reg[15]__0/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net nolabel_line37/cnt[16] has multiple drivers: nolabel_line37/cnt_reg[16]__0/Q, and nolabel_line37/cnt_reg[16]/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net nolabel_line37/cnt[17] has multiple drivers: nolabel_line37/cnt_reg[17]__0/Q, and nolabel_line37/cnt_reg[17]/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net nolabel_line37/cnt[18] has multiple drivers: nolabel_line37/cnt_reg[18]/Q, and nolabel_line37/cnt_reg[18]__0/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net nolabel_line37/cnt[19] has multiple drivers: nolabel_line37/cnt_reg[19]/Q, and nolabel_line37/cnt_reg[19]__0/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net nolabel_line37/cnt[1] has multiple drivers: nolabel_line37/cnt_reg[1]__0/Q, and nolabel_line37/cnt_reg[1]/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net nolabel_line37/cnt[2] has multiple drivers: nolabel_line37/cnt_reg[2]/Q, and nolabel_line37/cnt_reg[2]__0/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net nolabel_line37/cnt[3] has multiple drivers: nolabel_line37/cnt_reg[3]__0/Q, and nolabel_line37/cnt_reg[3]/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net nolabel_line37/cnt[4] has multiple drivers: nolabel_line37/cnt_reg[4]/Q, and nolabel_line37/cnt_reg[4]__0/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net nolabel_line37/cnt[5] has multiple drivers: nolabel_line37/cnt_reg[5]/Q, and nolabel_line37/cnt_reg[5]__0/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net nolabel_line37/cnt[6] has multiple drivers: nolabel_line37/cnt_reg[6]__0/Q, and nolabel_line37/cnt_reg[6]/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net nolabel_line37/cnt[7] has multiple drivers: nolabel_line37/cnt_reg[7]/Q, and nolabel_line37/cnt_reg[7]__0/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net nolabel_line37/cnt[8] has multiple drivers: nolabel_line37/cnt_reg[8]/Q, and nolabel_line37/cnt_reg[8]__0/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net nolabel_line37/cnt[9] has multiple drivers: nolabel_line37/cnt_reg[9]/Q, and nolabel_line37/cnt_reg[9]__0/Q.
-INFO: [Project 1-461] DRC finished with 40 Errors
-INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
-ERROR: [Vivado_Tcl 4-78] Error(s) found during DRC. Opt_design not run.
+WARNING: [DRC CFGBVS-1] Missing CFGBVS and CONFIG_VOLTAGE Design Properties: Neither the CFGBVS nor CONFIG_VOLTAGE voltage property is set in the current_design.  Configuration bank voltage select (CFGBVS) must be set to VCCO or GND, and CONFIG_VOLTAGE must be set to the correct configuration voltage, in order to determine the I/O voltage support for the pins in bank 0.  It is suggested to specify these either using the 'Edit Device Properties' function in the GUI or directly in the XDC file using the following syntax:
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 671.168 ; gain = 16.941
+ set_property CFGBVS value1 [current_design]
+ #where value1 is either VCCO or GND
+
+ set_property CONFIG_VOLTAGE value2 [current_design]
+ #where value2 is the voltage provided to configuration bank 0
+
+Refer to the device configuration user guide for more information.
+WARNING: [DRC PDRC-153] Gated clock check: Net nolabel_line83/nolabel_line13/decena_reg[3]_i_2_n_0 is a gated clock net sourced by a combinational pin nolabel_line83/nolabel_line13/decena_reg[3]_i_2/O, cell nolabel_line83/nolabel_line13/decena_reg[3]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net nolabel_line83/nolabel_line14/decena_reg[3]_i_2__0_n_0 is a gated clock net sourced by a combinational pin nolabel_line83/nolabel_line14/decena_reg[3]_i_2__0/O, cell nolabel_line83/nolabel_line14/decena_reg[3]_i_2__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 3 Warnings
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+INFO: [Designutils 20-2272] Running write_bitstream with 2 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./counter_with_button.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-120] WebTalk data collection is mandatory when using a WebPACK part without a full Vivado license. To see the specific WebTalk data collected for your design, open the usage_statistics_webtalk.html or usage_statistics_webtalk.xml file in the implementation directory.
+INFO: [Common 17-186] 'D:/Lab_Digitales/Lab_Digitales_2019-2/Exp_4/lab4.srcs/lab5.runs/impl_1/usage_statistics_webtalk.xml' has been successfully sent to Xilinx on Thu Oct 10 16:46:34 2019. For additional details about this file, please refer to the WebTalk help file at D:/Programas/Xilinx/Vivado/2019.1/doc/webtalk_introduction.html.
 INFO: [Common 17-83] Releasing license: Implementation
-12 Infos, 0 Warnings, 0 Critical Warnings and 41 Errors encountered.
-opt_design failed
-ERROR: [Common 17-39] 'opt_design' failed due to earlier errors.
-
-INFO: [Common 17-206] Exiting Vivado at Thu Oct 10 05:59:11 2019...
+23 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:15 ; elapsed = 00:00:24 . Memory (MB): peak = 1670.512 ; gain = 455.363
+INFO: [Common 17-206] Exiting Vivado at Thu Oct 10 16:46:34 2019...

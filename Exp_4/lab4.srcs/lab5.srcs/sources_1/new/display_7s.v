@@ -7,8 +7,8 @@ module display_7s(
     output [6:0] seg
     );
     reg btnC = 1'd0;
-    //reg [6:0] N1
-    //reg [6:0] N2
+    //reg [6:0] N1 = 7'd54;
+    //reg [6:0] N2 = 7'd32;
     wire [3:0] D1, U1, D2, U2;
     digit_separator(N1, D1, U1);
     digit_separator(N2, D2, U2);
