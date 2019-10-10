@@ -1,0 +1,87 @@
+
+*** Running vivado
+    with args -log counter_with_button.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source counter_with_button.tcl -notrace
+
+
+****** Vivado v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source counter_with_button.tcl -notrace
+Command: link_design -top counter_with_button -part xc7a35tcpg236-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Netlist 29-17] Analyzing 17 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/NBJSWETT/Desktop/lab4.srcs/lab5.srcs/constrs_1/new/basys.xdc]
+Finished Parsing XDC File [C:/Users/NBJSWETT/Desktop/lab4.srcs/lab5.srcs/constrs_1/new/basys.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 650.215 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+7 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 654.227 ; gain = 357.465
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net nolabel_line36/cnt[0] has multiple drivers: nolabel_line36/cnt_reg[0]/Q, and nolabel_line36/cnt_reg[0]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net nolabel_line36/cnt[10] has multiple drivers: nolabel_line36/cnt_reg[10]__0/Q, and nolabel_line36/cnt_reg[10]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net nolabel_line36/cnt[11] has multiple drivers: nolabel_line36/cnt_reg[11]__0/Q, and nolabel_line36/cnt_reg[11]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net nolabel_line36/cnt[12] has multiple drivers: nolabel_line36/cnt_reg[12]/Q, and nolabel_line36/cnt_reg[12]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net nolabel_line36/cnt[13] has multiple drivers: nolabel_line36/cnt_reg[13]/Q, and nolabel_line36/cnt_reg[13]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net nolabel_line36/cnt[14] has multiple drivers: nolabel_line36/cnt_reg[14]__0/Q, and nolabel_line36/cnt_reg[14]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net nolabel_line36/cnt[15] has multiple drivers: nolabel_line36/cnt_reg[15]/Q, and nolabel_line36/cnt_reg[15]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net nolabel_line36/cnt[16] has multiple drivers: nolabel_line36/cnt_reg[16]__0/Q, and nolabel_line36/cnt_reg[16]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net nolabel_line36/cnt[17] has multiple drivers: nolabel_line36/cnt_reg[17]/Q, and nolabel_line36/cnt_reg[17]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net nolabel_line36/cnt[18] has multiple drivers: nolabel_line36/cnt_reg[18]/Q, and nolabel_line36/cnt_reg[18]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net nolabel_line36/cnt[19] has multiple drivers: nolabel_line36/cnt_reg[19]__0/Q, and nolabel_line36/cnt_reg[19]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net nolabel_line36/cnt[1] has multiple drivers: nolabel_line36/cnt_reg[1]__0/Q, and nolabel_line36/cnt_reg[1]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net nolabel_line36/cnt[2] has multiple drivers: nolabel_line36/cnt_reg[2]__0/Q, and nolabel_line36/cnt_reg[2]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net nolabel_line36/cnt[3] has multiple drivers: nolabel_line36/cnt_reg[3]/Q, and nolabel_line36/cnt_reg[3]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net nolabel_line36/cnt[4] has multiple drivers: nolabel_line36/cnt_reg[4]__0/Q, and nolabel_line36/cnt_reg[4]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net nolabel_line36/cnt[5] has multiple drivers: nolabel_line36/cnt_reg[5]__0/Q, and nolabel_line36/cnt_reg[5]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net nolabel_line36/cnt[6] has multiple drivers: nolabel_line36/cnt_reg[6]__0/Q, and nolabel_line36/cnt_reg[6]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net nolabel_line36/cnt[7] has multiple drivers: nolabel_line36/cnt_reg[7]__0/Q, and nolabel_line36/cnt_reg[7]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net nolabel_line36/cnt[8] has multiple drivers: nolabel_line36/cnt_reg[8]__0/Q, and nolabel_line36/cnt_reg[8]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net nolabel_line36/cnt[9] has multiple drivers: nolabel_line36/cnt_reg[9]__0/Q, and nolabel_line36/cnt_reg[9]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net nolabel_line37/cnt[0] has multiple drivers: nolabel_line37/cnt_reg[0]/Q, and nolabel_line37/cnt_reg[0]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net nolabel_line37/cnt[10] has multiple drivers: nolabel_line37/cnt_reg[10]/Q, and nolabel_line37/cnt_reg[10]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net nolabel_line37/cnt[11] has multiple drivers: nolabel_line37/cnt_reg[11]/Q, and nolabel_line37/cnt_reg[11]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net nolabel_line37/cnt[12] has multiple drivers: nolabel_line37/cnt_reg[12]/Q, and nolabel_line37/cnt_reg[12]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net nolabel_line37/cnt[13] has multiple drivers: nolabel_line37/cnt_reg[13]/Q, and nolabel_line37/cnt_reg[13]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net nolabel_line37/cnt[14] has multiple drivers: nolabel_line37/cnt_reg[14]__0/Q, and nolabel_line37/cnt_reg[14]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net nolabel_line37/cnt[15] has multiple drivers: nolabel_line37/cnt_reg[15]/Q, and nolabel_line37/cnt_reg[15]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net nolabel_line37/cnt[16] has multiple drivers: nolabel_line37/cnt_reg[16]__0/Q, and nolabel_line37/cnt_reg[16]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net nolabel_line37/cnt[17] has multiple drivers: nolabel_line37/cnt_reg[17]__0/Q, and nolabel_line37/cnt_reg[17]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net nolabel_line37/cnt[18] has multiple drivers: nolabel_line37/cnt_reg[18]/Q, and nolabel_line37/cnt_reg[18]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net nolabel_line37/cnt[19] has multiple drivers: nolabel_line37/cnt_reg[19]/Q, and nolabel_line37/cnt_reg[19]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net nolabel_line37/cnt[1] has multiple drivers: nolabel_line37/cnt_reg[1]__0/Q, and nolabel_line37/cnt_reg[1]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net nolabel_line37/cnt[2] has multiple drivers: nolabel_line37/cnt_reg[2]/Q, and nolabel_line37/cnt_reg[2]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net nolabel_line37/cnt[3] has multiple drivers: nolabel_line37/cnt_reg[3]__0/Q, and nolabel_line37/cnt_reg[3]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net nolabel_line37/cnt[4] has multiple drivers: nolabel_line37/cnt_reg[4]/Q, and nolabel_line37/cnt_reg[4]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net nolabel_line37/cnt[5] has multiple drivers: nolabel_line37/cnt_reg[5]/Q, and nolabel_line37/cnt_reg[5]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net nolabel_line37/cnt[6] has multiple drivers: nolabel_line37/cnt_reg[6]__0/Q, and nolabel_line37/cnt_reg[6]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net nolabel_line37/cnt[7] has multiple drivers: nolabel_line37/cnt_reg[7]/Q, and nolabel_line37/cnt_reg[7]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net nolabel_line37/cnt[8] has multiple drivers: nolabel_line37/cnt_reg[8]/Q, and nolabel_line37/cnt_reg[8]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net nolabel_line37/cnt[9] has multiple drivers: nolabel_line37/cnt_reg[9]/Q, and nolabel_line37/cnt_reg[9]__0/Q.
+INFO: [Project 1-461] DRC finished with 40 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+ERROR: [Vivado_Tcl 4-78] Error(s) found during DRC. Opt_design not run.
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 671.168 ; gain = 16.941
+INFO: [Common 17-83] Releasing license: Implementation
+12 Infos, 0 Warnings, 0 Critical Warnings and 41 Errors encountered.
+opt_design failed
+ERROR: [Common 17-39] 'opt_design' failed due to earlier errors.
+
+INFO: [Common 17-206] Exiting Vivado at Thu Oct 10 05:59:11 2019...
