@@ -11,9 +11,9 @@ echo "Please update the PATH and LD_LIBRARY_PATH variables below, before executi
 exit
 
 if [ -z "$PATH" ]; then
-  PATH=D:/Programas/Xilinx/SDK/2019.1/bin;D:/Programas/Xilinx/Vivado/2019.1/ids_lite/ISE/bin/nt64;D:/Programas/Xilinx/Vivado/2019.1/ids_lite/ISE/lib/nt64:D:/Programas/Xilinx/Vivado/2019.1/bin
+  PATH=C:/Xilinx/SDK/2019.1/bin;C:/Xilinx/Vivado/2019.1/ids_lite/ISE/bin/nt64;C:/Xilinx/Vivado/2019.1/ids_lite/ISE/lib/nt64:C:/Xilinx/Vivado/2019.1/bin
 else
-  PATH=D:/Programas/Xilinx/SDK/2019.1/bin;D:/Programas/Xilinx/Vivado/2019.1/ids_lite/ISE/bin/nt64;D:/Programas/Xilinx/Vivado/2019.1/ids_lite/ISE/lib/nt64:D:/Programas/Xilinx/Vivado/2019.1/bin:$PATH
+  PATH=C:/Xilinx/SDK/2019.1/bin;C:/Xilinx/Vivado/2019.1/ids_lite/ISE/bin/nt64;C:/Xilinx/Vivado/2019.1/ids_lite/ISE/lib/nt64:C:/Xilinx/Vivado/2019.1/bin:$PATH
 fi
 export PATH
 
@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='D:/Lab_Digitales/Lab_Digitales_2019-2/Exp_4/lab4.srcs/lab5.runs/synth_1'
+HD_PWD='C:/Users/NBJSWETT/Desktop/COSAS PUC/VIII Semestre/Laboratorio de Sistemas Digitales/Lab_Digitales_2019-2/Exp_4/lab4.srcs/lab5.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log counter_with_button.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source counter_with_button.tcl
+EAStep vivado -log calculadora_monedas.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source calculadora_monedas.tcl

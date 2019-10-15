@@ -2,11 +2,11 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Thu Oct 10 16:45:48 2019
-# Process ID: 26192
-# Current directory: D:/Lab_Digitales/Lab_Digitales_2019-2/Exp_4/lab4.srcs/lab5.runs/impl_1
-# Command line: vivado.exe -log counter_with_button.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source counter_with_button.tcl -notrace
-# Log file: D:/Lab_Digitales/Lab_Digitales_2019-2/Exp_4/lab4.srcs/lab5.runs/impl_1/counter_with_button.vdi
-# Journal file: D:/Lab_Digitales/Lab_Digitales_2019-2/Exp_4/lab4.srcs/lab5.runs/impl_1\vivado.jou
+# Start of session at: Tue Oct 15 20:04:01 2019
+# Process ID: 5496
+# Current directory: C:/Users/NBJSWETT/Desktop/COSAS PUC/VIII Semestre/Laboratorio de Sistemas Digitales/Lab_Digitales_2019-2/Exp_4/lab4.srcs/lab5.runs/impl_1
+# Command line: vivado.exe -log calculadora_monedas.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source calculadora_monedas.tcl -notrace
+# Log file: C:/Users/NBJSWETT/Desktop/COSAS PUC/VIII Semestre/Laboratorio de Sistemas Digitales/Lab_Digitales_2019-2/Exp_4/lab4.srcs/lab5.runs/impl_1/calculadora_monedas.vdi
+# Journal file: C:/Users/NBJSWETT/Desktop/COSAS PUC/VIII Semestre/Laboratorio de Sistemas Digitales/Lab_Digitales_2019-2/Exp_4/lab4.srcs/lab5.runs/impl_1\vivado.jou
 #-----------------------------------------------------------
-source counter_with_button.tcl -notrace
+source calculadora_monedas.tcl -notrace

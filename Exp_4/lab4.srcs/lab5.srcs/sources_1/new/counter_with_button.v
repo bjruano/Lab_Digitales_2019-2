@@ -22,11 +22,7 @@
 
 module counter_with_button(
     input clk,
-    input btnC,
-    input btnU,
-    input btnL,
-    input btnD,
-    input btnR,    
+    input [4:0] sw,  
     output [3:0] an,
     output [6:0] seg
     );
@@ -39,11 +35,11 @@ reg [6:0] count_2;
 wire clock;
 reg rst = 1'b0;
 
-DeBouncer_D(clk, btnL, boton1_menos);
-DeBouncer_D(clk, btnR, boton1_mas);
-DeBouncer_D(clk, btnD, boton2_menos);
-DeBouncer_D(clk, btnU, boton2_mas);
-DeBouncer_D(clk, btnC, reset); 
+DeBouncer_D(clk, sw[0], boton1_menos);
+DeBouncer_D(clk, sw[1], boton1_mas);
+DeBouncer_D(clk, sw[2], boton2_menos);
+DeBouncer_D(clk, sw[3], boton2_mas);
+DeBouncer_D(clk, sw[4], reset); 
 
 
 always @(posedge clk)

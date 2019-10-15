@@ -1,84 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1570736472">
-  <File Type="BITSTR-BMM" Name="counter_with_button_bd.bmm"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="counter_with_button_methodology_drc_opted.rpt"/>
-  <File Type="INIT-TIMING" Name="counter_with_button_timing_summary_init.rpt"/>
-  <File Type="ROUTE-PWR" Name="counter_with_button_power_routed.rpt"/>
-  <File Type="PA-TCL" Name="counter_with_button.tcl"/>
-  <File Type="OPT-TIMING" Name="counter_with_button_timing_summary_opted.rpt"/>
-  <File Type="OPT-DCP" Name="counter_with_button_opt.dcp"/>
-  <File Type="ROUTE-PWR-SUM" Name="counter_with_button_power_summary_routed.pb"/>
-  <File Type="REPORTS-TCL" Name="counter_with_button_reports.tcl"/>
-  <File Type="OPT-DRC" Name="counter_with_button_drc_opted.rpt"/>
-  <File Type="OPT-HWDEF" Name="counter_with_button.hwdef"/>
-  <File Type="PWROPT-DCP" Name="counter_with_button_pwropt.dcp"/>
-  <File Type="PWROPT-DRC" Name="counter_with_button_drc_pwropted.rpt"/>
-  <File Type="PWROPT-TIMING" Name="counter_with_button_timing_summary_pwropted.rpt"/>
-  <File Type="PLACE-DCP" Name="counter_with_button_placed.dcp"/>
-  <File Type="PLACE-IO" Name="counter_with_button_io_placed.rpt"/>
-  <File Type="PLACE-CLK" Name="counter_with_button_clock_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL" Name="counter_with_button_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL-PB" Name="counter_with_button_utilization_placed.pb"/>
-  <File Type="PLACE-CTRL" Name="counter_with_button_control_sets_placed.rpt"/>
-  <File Type="PLACE-SIMILARITY" Name="counter_with_button_incremental_reuse_placed.rpt"/>
-  <File Type="PLACE-PRE-SIMILARITY" Name="counter_with_button_incremental_reuse_pre_placed.rpt"/>
-  <File Type="BG-BGN" Name="counter_with_button.bgn"/>
-  <File Type="PLACE-TIMING" Name="counter_with_button_timing_summary_placed.rpt"/>
-  <File Type="POSTPLACE-PWROPT-DCP" Name="counter_with_button_postplace_pwropt.dcp"/>
-  <File Type="BG-BIN" Name="counter_with_button.bin"/>
-  <File Type="POSTPLACE-PWROPT-TIMING" Name="counter_with_button_timing_summary_postplace_pwropted.rpt"/>
-  <File Type="PHYSOPT-DCP" Name="counter_with_button_physopt.dcp"/>
-  <File Type="PHYSOPT-DRC" Name="counter_with_button_drc_physopted.rpt"/>
-  <File Type="BITSTR-MSK" Name="counter_with_button.msk"/>
-  <File Type="PHYSOPT-TIMING" Name="counter_with_button_timing_summary_physopted.rpt"/>
-  <File Type="ROUTE-ERROR-DCP" Name="counter_with_button_routed_error.dcp"/>
-  <File Type="ROUTE-DCP" Name="counter_with_button_routed.dcp"/>
-  <File Type="ROUTE-BLACKBOX-DCP" Name="counter_with_button_routed_bb.dcp"/>
-  <File Type="ROUTE-DRC" Name="counter_with_button_drc_routed.rpt"/>
-  <File Type="ROUTE-DRC-PB" Name="counter_with_button_drc_routed.pb"/>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1571180559">
+  <File Type="BITSTR-BMM" Name="calculadora_monedas_bd.bmm"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="calculadora_monedas_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="calculadora_monedas_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR" Name="calculadora_monedas_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="calculadora_monedas.tcl"/>
+  <File Type="OPT-TIMING" Name="calculadora_monedas_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="calculadora_monedas_opt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="calculadora_monedas_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="calculadora_monedas_reports.tcl"/>
+  <File Type="OPT-DRC" Name="calculadora_monedas_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="calculadora_monedas.hwdef"/>
+  <File Type="PWROPT-DCP" Name="calculadora_monedas_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="calculadora_monedas_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="calculadora_monedas_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="calculadora_monedas_placed.dcp"/>
+  <File Type="PLACE-IO" Name="calculadora_monedas_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="calculadora_monedas_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="calculadora_monedas_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="calculadora_monedas_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="calculadora_monedas_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="calculadora_monedas_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="calculadora_monedas_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BGN" Name="calculadora_monedas.bgn"/>
+  <File Type="PLACE-TIMING" Name="calculadora_monedas_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="calculadora_monedas_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="calculadora_monedas.bin"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="calculadora_monedas_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="calculadora_monedas_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="calculadora_monedas_drc_physopted.rpt"/>
+  <File Type="BITSTR-MSK" Name="calculadora_monedas.msk"/>
+  <File Type="PHYSOPT-TIMING" Name="calculadora_monedas_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="calculadora_monedas_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="calculadora_monedas_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="calculadora_monedas_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="calculadora_monedas_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="calculadora_monedas_drc_routed.pb"/>
   <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
-  <File Type="BITSTR-LTX" Name="counter_with_button.ltx"/>
-  <File Type="ROUTE-DRC-RPX" Name="counter_with_button_drc_routed.rpx"/>
-  <File Type="BITSTR-MMI" Name="counter_with_button.mmi"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="counter_with_button_methodology_drc_routed.rpt"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="counter_with_button_methodology_drc_routed.rpx"/>
-  <File Type="BITSTR-SYSDEF" Name="counter_with_button.sysdef"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="counter_with_button_methodology_drc_routed.pb"/>
-  <File Type="ROUTE-PWR-RPX" Name="counter_with_button_power_routed.rpx"/>
-  <File Type="ROUTE-STATUS" Name="counter_with_button_route_status.rpt"/>
-  <File Type="ROUTE-STATUS-PB" Name="counter_with_button_route_status.pb"/>
-  <File Type="ROUTE-TIMINGSUMMARY" Name="counter_with_button_timing_summary_routed.rpt"/>
-  <File Type="ROUTE-TIMING-PB" Name="counter_with_button_timing_summary_routed.pb"/>
-  <File Type="ROUTE-TIMING-RPX" Name="counter_with_button_timing_summary_routed.rpx"/>
-  <File Type="ROUTE-SIMILARITY" Name="counter_with_button_incremental_reuse_routed.rpt"/>
-  <File Type="ROUTE-CLK" Name="counter_with_button_clock_utilization_routed.rpt"/>
-  <File Type="ROUTE-BUS-SKEW" Name="counter_with_button_bus_skew_routed.rpt"/>
-  <File Type="ROUTE-BUS-SKEW-PB" Name="counter_with_button_bus_skew_routed.pb"/>
-  <File Type="ROUTE-BUS-SKEW-RPX" Name="counter_with_button_bus_skew_routed.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-DCP" Name="counter_with_button_postroute_physopt.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="counter_with_button_postroute_physopt_bb.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="counter_with_button_timing_summary_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="counter_with_button_timing_summary_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="counter_with_button_timing_summary_postroute_physopted.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="counter_with_button_bus_skew_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="counter_with_button_bus_skew_postroute_physopted.pb"/>
-  <File Type="BG-BIT" Name="counter_with_button.bit"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="counter_with_button_bus_skew_postroute_physopted.rpx"/>
-  <File Type="BITSTR-RBT" Name="counter_with_button.rbt"/>
-  <File Type="BITSTR-NKY" Name="counter_with_button.nky"/>
-  <File Type="BG-DRC" Name="counter_with_button.drc"/>
-  <File Type="RDI-RDI" Name="counter_with_button.vdi"/>
+  <File Type="BITSTR-LTX" Name="calculadora_monedas.ltx"/>
+  <File Type="ROUTE-DRC-RPX" Name="calculadora_monedas_drc_routed.rpx"/>
+  <File Type="BITSTR-MMI" Name="calculadora_monedas.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="calculadora_monedas_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="calculadora_monedas_methodology_drc_routed.rpx"/>
+  <File Type="BITSTR-SYSDEF" Name="calculadora_monedas.sysdef"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="calculadora_monedas_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="calculadora_monedas_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="calculadora_monedas_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="calculadora_monedas_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="calculadora_monedas_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="calculadora_monedas_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="calculadora_monedas_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="calculadora_monedas_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="calculadora_monedas_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="calculadora_monedas_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="calculadora_monedas_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="calculadora_monedas_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="calculadora_monedas_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="calculadora_monedas_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="calculadora_monedas_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="calculadora_monedas_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="calculadora_monedas_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="calculadora_monedas_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="calculadora_monedas_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="calculadora_monedas.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="calculadora_monedas_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-RBT" Name="calculadora_monedas.rbt"/>
+  <File Type="BITSTR-NKY" Name="calculadora_monedas.nky"/>
+  <File Type="BG-DRC" Name="calculadora_monedas.drc"/>
+  <File Type="RDI-RDI" Name="calculadora_monedas.vdi"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
-    <File Path="$PSRCDIR/sources_1/new/Debouncer_D.v">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/new/Flip_FlopD.v">
+    <File Path="$PSRCDIR/sources_1/new/binary_to_BCD.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -106,6 +99,13 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/new/display_number.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/new/seven_seg_converter.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -120,8 +120,72 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/new/calculadora_monedas.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Debouncer_D.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Flip_FlopD.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Contador_monto_ingresado.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/new/counter_with_button.v">
       <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/buttonScanner.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/contador_stock.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/contador_dinero.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/calculadora_vueltos.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -129,7 +193,7 @@
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="counter_with_button"/>
+      <Option Name="TopModule" Val="calculadora_monedas"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
