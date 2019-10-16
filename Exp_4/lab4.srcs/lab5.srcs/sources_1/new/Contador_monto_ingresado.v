@@ -22,7 +22,7 @@
 
 module contador_monto_ingresado(
     input clk,
-    input [4:0] sw,
+    input devolucion_pre, M_500_pre, M_100_pre, M_50_pre, M_10_pre,
     output reg [13:0] monto_ingresado,
     output reg [13:0] monedas_10_ingresadas,
     output reg [13:0] monedas_50_ingresadas,
@@ -35,12 +35,13 @@ wire M_50;
 wire M_100;
 wire M_500;
 wire devolucion;
+wire compra;
 
-DeBouncer_D(clk, sw[0], M_10);
-DeBouncer_D(clk, sw[1], M_50);
-DeBouncer_D(clk, sw[2], M_100);
-DeBouncer_D(clk, sw[3], M_500);
-DeBouncer_D(clk, sw[4], devolucion);
+DeBouncer_D(clk, devolucion_pre, devolucion);
+DeBouncer_D(clk, M_500_pre, M_500);
+DeBouncer_D(clk, M_100_pre, M_100);
+DeBouncer_D(clk, M_50_pre, M_50);
+DeBouncer_D(clk, M_10_pre, M_10);
 
 always @(posedge clk)
 begin

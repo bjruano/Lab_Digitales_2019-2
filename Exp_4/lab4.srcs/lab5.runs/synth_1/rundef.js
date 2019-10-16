@@ -23,7 +23,7 @@ eval( EAInclude(ISEJScriptLib) );
 
 
 ISEStep( "vivado",
-         "-log calculadora_monedas.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source calculadora_monedas.tcl" );
+         "-log Top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top.tcl" );
 
 
 

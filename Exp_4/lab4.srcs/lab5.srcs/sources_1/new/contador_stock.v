@@ -22,7 +22,7 @@
 
 module contador_stock(
     input clk,
-    input [7:0] sw,
+    input sacar_A_pre, sacar_B_pre, sacar_C_pre, sacar_D_pre, poner_A_pre, poner_B_pre, poner_C_pre, poner_D_pre,
     output  reg [13:0] stock_A,
     output  reg [13:0] stock_B,
     output  reg [13:0] stock_C,
@@ -44,15 +44,15 @@ initial stock_B = 14'd20;
 initial stock_C = 14'd30;
 initial stock_D = 14'd40;
 
-DeBouncer_D(clk, sw[0], sacar_A);
-DeBouncer_D(clk, sw[1], sacar_B);
-DeBouncer_D(clk, sw[2], sacar_C);
-DeBouncer_D(clk, sw[3], sacar_D);
+DeBouncer_D(clk, sacar_A_pre, sacar_A);
+DeBouncer_D(clk, sacar_B_pre, sacar_B);
+DeBouncer_D(clk, sacar_C_pre, sacar_C);
+DeBouncer_D(clk, sacar_D_pre, sacar_D);
 
-DeBouncer_D(clk, sw[4], poner_A);
-DeBouncer_D(clk, sw[5], poner_B);
-DeBouncer_D(clk, sw[6], poner_C);
-DeBouncer_D(clk, sw[7], poner_D);
+DeBouncer_D(clk, poner_A_pre, poner_A);
+DeBouncer_D(clk, poner_B_pre, poner_B);
+DeBouncer_D(clk, poner_C_pre, poner_C);
+DeBouncer_D(clk, poner_D_pre, poner_D);
 
 always @(posedge clk)
 begin

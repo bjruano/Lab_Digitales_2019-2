@@ -44,17 +44,17 @@ begin
         monto_actual = monto_actual - 14'd500;
         monedas_500 = monedas_500 + 14'd1;
         end
-    else if (monto_actual - 14'd100 >= 0)
+    else if (monto_actual >= 14'd100)
         begin
         monto_actual = monto_actual - 14'd100;
         monedas_100 = monedas_100 + 14'd1;
         end
-    else if (monto_actual - 14'd50 >= 0)
+    else if (monto_actual >= 14'd50)
         begin
         monto_actual = monto_actual - 14'd50;
         monedas_50 = monedas_50 + 14'd1;
         end
-    else if (monto_actual - 14'd10 >= 0)
+    else if (monto_actual >= 14'd10)
         begin
         monto_actual = monto_actual - 14'd10;
         monedas_10 = monedas_10 + 14'd1;

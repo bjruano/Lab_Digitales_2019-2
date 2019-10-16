@@ -25,7 +25,7 @@ eval( EAInclude(ISEJScriptLib) );
 // pre-commands:
 ISETouchFile( "init_design", "begin" );
 ISEStep( "vivado",
-         "-log calculadora_monedas.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source calculadora_monedas.tcl -notrace" );
+         "-log Top.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source Top.tcl -notrace" );
 
 
 

@@ -313,3 +313,60 @@ program_hw_devices [get_hw_devices xc7a35t_0]
 INFO: [Labtools 27-3164] End of startup status: HIGH
 refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
 INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close [ open {C:/Users/NBJSWETT/Desktop/COSAS PUC/VIII Semestre/Laboratorio de Sistemas Digitales/Lab_Digitales_2019-2/Exp_4/lab4.srcs/lab5.srcs/sources_1/new/Top.v} w ]
+add_files {{C:/Users/NBJSWETT/Desktop/COSAS PUC/VIII Semestre/Laboratorio de Sistemas Digitales/Lab_Digitales_2019-2/Exp_4/lab4.srcs/lab5.srcs/sources_1/new/Top.v}}
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue Oct 15 22:30:33 2019] Launched synth_1...
+Run output will be captured here: C:/Users/NBJSWETT/Desktop/COSAS PUC/VIII Semestre/Laboratorio de Sistemas Digitales/Lab_Digitales_2019-2/Exp_4/lab4.srcs/lab5.runs/synth_1/runme.log
+[Tue Oct 15 22:30:33 2019] Launched impl_1...
+Run output will be captured here: C:/Users/NBJSWETT/Desktop/COSAS PUC/VIII Semestre/Laboratorio de Sistemas Digitales/Lab_Digitales_2019-2/Exp_4/lab4.srcs/lab5.runs/impl_1/runme.log
+set_property top Top [current_fileset]
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue Oct 15 22:42:56 2019] Launched synth_1...
+Run output will be captured here: C:/Users/NBJSWETT/Desktop/COSAS PUC/VIII Semestre/Laboratorio de Sistemas Digitales/Lab_Digitales_2019-2/Exp_4/lab4.srcs/lab5.runs/synth_1/runme.log
+[Tue Oct 15 22:42:56 2019] Launched impl_1...
+Run output will be captured here: C:/Users/NBJSWETT/Desktop/COSAS PUC/VIII Semestre/Laboratorio de Sistemas Digitales/Lab_Digitales_2019-2/Exp_4/lab4.srcs/lab5.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue Oct 15 23:39:48 2019] Launched synth_1...
+Run output will be captured here: C:/Users/NBJSWETT/Desktop/COSAS PUC/VIII Semestre/Laboratorio de Sistemas Digitales/Lab_Digitales_2019-2/Exp_4/lab4.srcs/lab5.runs/synth_1/runme.log
+[Tue Oct 15 23:39:48 2019] Launched impl_1...
+Run output will be captured here: C:/Users/NBJSWETT/Desktop/COSAS PUC/VIII Semestre/Laboratorio de Sistemas Digitales/Lab_Digitales_2019-2/Exp_4/lab4.srcs/lab5.runs/impl_1/runme.log
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183AA621DA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183AA621DA
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/NBJSWETT/Desktop/COSAS PUC/VIII Semestre/Laboratorio de Sistemas Digitales/Lab_Digitales_2019-2/Exp_4/lab4.srcs/lab5.runs/impl_1/Top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183AA621DA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183AA621DA
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183AA621DA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183AA621DA
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183AA621DA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183AA621DA
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183AA621DA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183AA621DA
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183AA621DA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183AA621DA
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Oct 16 01:57:55 2019...

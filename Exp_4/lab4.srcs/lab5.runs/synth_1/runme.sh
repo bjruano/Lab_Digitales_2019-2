@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log calculadora_monedas.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source calculadora_monedas.tcl
+EAStep vivado -log Top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top.tcl

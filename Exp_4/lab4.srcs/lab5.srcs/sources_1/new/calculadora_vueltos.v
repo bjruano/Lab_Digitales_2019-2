@@ -22,67 +22,87 @@
 
 module calculadora_vueltos(
     input clk,
-    input [13:0] precio, 
-//    input [13:0] monto_ingresado,
-//    input [13:0] monedas_10_disponibles,
-//    input [13:0] monedas_50_disponibles,
-//    input [13:0] monedas_100_disponibles,
-//    input [13:0] monedas_500_disponibles,
-    output reg [13:0] monedas_10_vuelto,
-    output reg [13:0] monedas_50_vuelto,
-    output reg [13:0] monedas_100_vuelto,
-    output reg [13:0] monedas_500_vuelto,
+    input [13:0] precio_A, precio_B, precio_C, precio_D,
+    input [13:0] stock_A, stock_B, stock_C, stock_D,
+    input [13:0] monto_ingresado,
+    input prod_A_pre, prod_B_pre, prod_C_pre, prod_D_pre,
     output reg [13:0] vuelto,
-    output reg vuelto_posible,
-    output reg dinero_suficiente
+    output reg dinero_insuficiente,
+    output reg stock_insuficiente,
+    output reg compra_exitosa
     );
     
-    wire [13:0] monedas_10_requeridas;
-    wire [13:0] monedas_50_requeridas;
-    wire [13:0] monedas_100_requeridas;
-    wire [13:0] monedas_500_requeridas;
-    
-    reg cond_10;
-    reg cond_50;
-    reg cond_100;
-    reg cond_500;
-    
-//    calculadora_monedas(clk, monto_ingresado - precio, monedas_500_requeridas, monedas_100_requeridas,
-//    monedas_50_requeridas, monedas_10_requeridas);
-    
-    
-    always @(*)
+DeBouncer_D(clk, prod_A_pre, prod_A);
+DeBouncer_D(clk, prod_B_pre, prod_B);
+DeBouncer_D(clk, prod_C_pre, prod_C);
+DeBouncer_D(clk, prod_D_pre, prod_D);
+
+always @(posedge clk)
+begin
+if (prod_A)
     begin
-    
-    if (precio > monto_ingresado)
+    vuelto = monto_ingresado - precio_A;
+    if (monto_ingresado < precio_A)
         begin
-        vuelto_posible = 0;
         vuelto = 0;
-        dinero_suficiente = 0;
+        dinero_insuficiente = 1;
+        compra_exitosa = 0;
         end
-    
-    else
+    else 
         begin
-        dinero_suficiente = 1;
-        cond_10 = monedas_10_disponibles >= monedas_10_requeridas;
-        cond_50 = monedas_50_disponibles >= monedas_50_requeridas;
-        cond_100 = monedas_100_disponibles >= monedas_100_requeridas;
-        cond_500 = monedas_500_disponibles >= monedas_500_requeridas;
-        
-        if (cond_10 & cond_50 & cond_100 & cond_500)
-            begin
-            vuelto_posible = 1;
-            vuelto = monto_ingresado - precio;
-            end
-        
-        else 
-            begin
-            vuelto_posible = 0;
-            vuelto = 0;
-            end
-        
+        dinero_insuficiente = 0;
+        compra_exitosa = 1;
         end
-    
-    end 
-        
+    end
+
+if (prod_B)
+    begin
+    vuelto = monto_ingresado - precio_B;
+    if (monto_ingresado < precio_B)
+        begin
+        vuelto = 0;
+        dinero_insuficiente = 1;
+        compra_exitosa = 0;
+        end
+    else 
+        begin
+        dinero_insuficiente = 0;
+        compra_exitosa = 1;
+        end
+    end
+
+if (prod_C)
+    begin
+    vuelto = monto_ingresado - precio_C;
+    if (monto_ingresado < precio_C)
+        begin
+        vuelto = 0;
+        dinero_insuficiente = 1;
+        compra_exitosa = 0;
+        end
+    else 
+        begin
+        dinero_insuficiente = 0;
+        compra_exitosa = 1;
+        end
+    end
+
+if (prod_D)
+    begin
+    vuelto = monto_ingresado - precio_D;
+    if (monto_ingresado < precio_D)
+        begin
+        vuelto = 0;
+        dinero_insuficiente = 1;
+        compra_exitosa = 0;
+        end
+    else 
+        begin
+        dinero_insuficiente = 0;
+        compra_exitosa = 1;
+        end
+    end
+
+end
+
 endmodule
