@@ -1,0 +1,952 @@
+/*
+
+Xilinx Vivado v2019.1 (64-bit) [Major: 2019, Minor: 1]
+SW Build: 2552052 on Fri May 24 14:49:42 MDT 2019
+IP Build: 2548770 on Fri May 24 18:01:18 MDT 2019
+
+Process ID (PID): 13192
+License: Customer
+
+Current time: 	Wed Oct 16 14:21:10 CLST 2019
+Time zone: 	Chile Standard Time (America/Santiago)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1600x900
+Screen resolution (DPI): 100
+Available screens: 1
+Available disk space: 63 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	C:/Xilinx/Vivado/2019.1/tps/win64/jre9.0.4
+Java executable location: 	C:/Xilinx/Vivado/2019.1/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	NBJSWETT
+User home directory: C:/Users/NBJSWETT
+User working directory: C:/Users/NBJSWETT/Desktop/COSAS PUC/VIII Semestre/Laboratorio de Sistemas Digitales/Lab_Digitales_2019-2/Exp_4/lab4.srcs
+User country: 	CL
+User language: 	es
+User locale: 	es_CL
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2019.1
+RDI_DATADIR: C:/Xilinx/Vivado/2019.1/data
+RDI_BINDIR: C:/Xilinx/Vivado/2019.1/bin
+
+Vivado preferences file location: C:/Users/NBJSWETT/AppData/Roaming/Xilinx/Vivado/2019.1/vivado.xml
+Vivado preferences directory: C:/Users/NBJSWETT/AppData/Roaming/Xilinx/Vivado/2019.1/
+Vivado layouts directory: C:/Users/NBJSWETT/AppData/Roaming/Xilinx/Vivado/2019.1/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2019.1/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/NBJSWETT/Desktop/COSAS PUC/VIII Semestre/Laboratorio de Sistemas Digitales/Lab_Digitales_2019-2/Exp_4/lab4.srcs/vivado.log
+Vivado journal file location: 	C:/Users/NBJSWETT/Desktop/COSAS PUC/VIII Semestre/Laboratorio de Sistemas Digitales/Lab_Digitales_2019-2/Exp_4/lab4.srcs/vivado.jou
+Engine tmp dir: 	C:/Users/NBJSWETT/Desktop/COSAS PUC/VIII Semestre/Laboratorio de Sistemas Digitales/Lab_Digitales_2019-2/Exp_4/lab4.srcs/.Xil/Vivado-13192-Danielitoh
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2019.1/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2019.1/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2019.1
+XILINX_SDK: C:/Xilinx/SDK/2019.1
+XILINX_VIVADO: C:/Xilinx/Vivado/2019.1
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2019.1
+
+
+GUI allocated memory:	185 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 617 MB
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// by (cl):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\NBJSWETT\Desktop\COSAS PUC\VIII Semestre\Laboratorio de Sistemas Digitales\Lab_Digitales_2019-2\Exp_4\lab4.srcs\lab5.xpr. Version: Vivado v2019.1 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project {C:/Users/NBJSWETT/Desktop/COSAS PUC/VIII Semestre/Laboratorio de Sistemas Digitales/Lab_Digitales_2019-2/Exp_4/lab4.srcs/lab5.xpr} 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'C:/Users/NBJSWETT/Desktop/COSAS PUC/VIII Semestre/Laboratorio de Sistemas Digitales/Lab_Digitales_2019-2/Exp_4/lab4.srcs' 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project {C:/Users/NBJSWETT/Desktop/COSAS PUC/VIII Semestre/Laboratorio de Sistemas Digitales/Lab_Digitales_2019-2/Exp_4/lab4.srcs/lab5.xpr} 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'C:/Users/NBJSWETT/Desktop/COSAS PUC/VIII Semestre/Laboratorio de Sistemas Digitales/Lab_Digitales_2019-2/Exp_4/lab4.srcs' 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// HMemoryUtils.trashcanNow. Engine heap size: 639 MB. GUI used memory: 47 MB. Current time: 10/16/19, 2:21:12 PM CLST
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'. 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 61 MB (+61460kb) [00:00:23]
+// [Engine Memory]: 639 MB (+518498kb) [00:00:23]
+// [GUI Memory]: 77 MB (+13554kb) [00:00:24]
+// [GUI Memory]: 100 MB (+20251kb) [00:00:25]
+// WARNING: HEventQueue.dispatchEvent() is taking  7783 ms.
+// [Engine Memory]: 672 MB (+676kb) [00:00:30]
+// WARNING: HEventQueue.dispatchEvent() is taking  3861 ms.
+// Project name: lab5; location: C:/Users/NBJSWETT/Desktop/COSAS PUC/VIII Semestre/Laboratorio de Sistemas Digitales/Lab_Digitales_2019-2/Exp_4/lab4.srcs; part: xc7a35tcpg236-1
+// Tcl Message: open_project: Time (s): cpu = 00:00:30 ; elapsed = 00:00:14 . Memory (MB): peak = 699.301 ; gain = 55.477 
+dismissDialog("Open Project"); // by (cl)
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1166 ms. Increasing delay to 3498 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 7004 ms. Increasing delay to 3000 ms.
+// [GUI Memory]: 111 MB (+5851kb) [00:00:45]
+// Tcl Message: update_compile_order -fileset sources_1 
+// PAPropertyPanels.initPanels (Top.v) elapsed time: 0.4s
+// Elapsed time: 46 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top (Top.v)]", 3, true); // B (F, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top (Top.v)]", 3, true, false, false, false, true, false); // B (F, cl) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ae (an, cl)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ae (an, cl)
+selectMenuItem(PAResourceCommand.PACommandNames_SET_AS_TOP, "Set as Top"); // ah (an, cl)
+// Run Command: PAResourceCommand.PACommandNames_SET_AS_TOP
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: set_property top Top [current_fileset] 
+// by (cl):  Set as Top : addNotify
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Set as Top"); // by (cl)
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking 494ms to process. Increasing delay to 3000 ms.
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 11 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top (Top.v)]", 1, true); // B (F, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top (Top.v)]", 1, true, false, false, false, false, true); // B (F, cl) - Double Click - Node
+selectCodeEditor("Top.v", 464, 274); // cl (w, cl)
+// WARNING: HTimer (StateMonitor Timer) is taking 720ms to process. Increasing delay to 4000 ms.
+// Elapsed time: 55 seconds
+selectCodeEditor("Top.v", 340, 95); // cl (w, cl)
+selectCodeEditor("Top.v", 350, 136); // cl (w, cl)
+selectCodeEditor("Top.v", 353, 148); // cl (w, cl)
+selectCodeEditor("Top.v", 353, 149); // cl (w, cl)
+// Elapsed time: 14 seconds
+selectCodeEditor("Top.v", 353, 149); // cl (w, cl)
+// Elapsed time: 13 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top (Top.v), contador_stock : contador_stock (contador_stock.v)]", 3, true); // B (F, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top (Top.v), contador_stock : contador_stock (contador_stock.v), DeBouncer_D_1 : DeBouncer_D (Debouncer_D.v)]", 6, true, false, false, false, false, true); // B (F, cl) - Double Click - Node
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top.v", 1); // k (j, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "contador_stock.v", 2); // k (j, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top.v", 1); // k (j, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "contador_stock.v", 2); // k (j, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top.v", 1); // k (j, cl)
+selectCodeEditor("Top.v", 290, 167); // cl (w, cl)
+selectCodeEditor("Top.v", 290, 173); // cl (w, cl)
+selectCodeEditor("Top.v", 289, 201); // cl (w, cl)
+selectCodeEditor("Top.v", 289, 234); // cl (w, cl)
+selectCodeEditor("Top.v", 291, 248); // cl (w, cl)
+selectCodeEditor("Top.v", 299, 264); // cl (w, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "contador_stock.v", 2); // k (j, cl)
+selectCodeEditor("contador_stock.v", 213, 213); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 196, 243); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 179, 221); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 179, 213); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 179, 213); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 179, 213); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 179, 213); // cl (w, cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 693 MB. GUI used memory: 56 MB. Current time: 10/16/19, 2:24:38 PM CLST
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 418ms to process. Increasing delay to 2000 ms.
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, cl)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cl): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// by (cl):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (cl)
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (cl): Launch Runs: addNotify
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 1186 ms to process. Increasing delay to 2000 ms.
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cx' command handler elapsed time: 5 seconds
+dismissDialog("Launch Runs"); // f (cl)
+// TclEventType: RUN_LAUNCH
+// by (cl):  Generate Bitstream : addNotify
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Oct 16 14:24:44 2019] Launched synth_1... Run output will be captured here: C:/Users/NBJSWETT/Desktop/COSAS PUC/VIII Semestre/Laboratorio de Sistemas Digitales/Lab_Digitales_2019-2/Exp_4/lab4.srcs/lab5.runs/synth_1/runme.log [Wed Oct 16 14:24:45 2019] Launched impl_1... Run output will be captured here: C:/Users/NBJSWETT/Desktop/COSAS PUC/VIII Semestre/Laboratorio de Sistemas Digitales/Lab_Digitales_2019-2/Exp_4/lab4.srcs/lab5.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+dismissDialog("Generate Bitstream"); // by (cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top.v", 1); // k (j, cl)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// WARNING: HTimer (ExpRunMgr Pending Runs Timer) is taking 402ms to process. Increasing delay to 3000 ms.
+// TclEventType: RUN_STEP_COMPLETED
+// [Engine Memory]: 706 MB (+826kb) [00:07:19]
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// ah (cl): Bitstream Generation Completed: addNotify
+// Elapsed time: 243 seconds
+dismissDialog("Bitstream Generation Completed"); // ah (cl)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 21, true); // u (O, cl) - Node
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Tcl Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// by (cl):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+// PAPropertyPanels.initPanels (contador_stock.v) elapsed time: 0.2s
+// WARNING: HEventQueue.dispatchEvent() is taking  2191 ms.
+// Tcl Message: open_hw 
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// HMemoryUtils.trashcanNow. Engine heap size: 715 MB. GUI used memory: 100 MB. Current time: 10/16/19, 2:28:54 PM CLST
+dismissDialog("Open Hardware Manager"); // by (cl)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 22, false); // u (O, cl)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ah (an, Popup.HeavyWeightWindow)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// by (cl):  Auto Connect : addNotify
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... 
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2019.1   **** Build date : May 24 2019 at 15:13:31     ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.   
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 747.074 ; gain = 20.820 
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// WARNING: HEventQueue.dispatchEvent() is taking  7549 ms.
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183AA621DA 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,824 MB. GUI used memory: 60 MB. Current time: 10/16/19, 2:29:17 PM CLST
+// Tcl Message: open_hw_target: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1865.824 ; gain = 1118.750 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/NBJSWETT/Desktop/COSAS PUC/VIII Semestre/Laboratorio de Sistemas Digitales/Lab_Digitales_2019-2/Exp_4/lab4.srcs/lab5.runs/impl_1/Top.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0] 
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// [Engine Memory]: 1,827 MB (+1138214kb) [00:08:24]
+// Tcl Message: INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0). 
+// Elapsed time: 15 seconds
+dismissDialog("Auto Connect"); // by (cl)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cS, cl)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cl): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_SPECIFY_BITSTREAM_FILE, (String) null); // q (al, bC)
+setFileChooser("C:/Users/NBJSWETT/Desktop/COSAS PUC/VIII Semestre/Laboratorio de Sistemas Digitales/Lab_Digitales_2019-2/Exp_4/lab4.srcs/lab5.runs/impl_1/Top.bit");
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// by (cl):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cl)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/NBJSWETT/Desktop/COSAS PUC/VIII Semestre/Laboratorio de Sistemas Digitales/Lab_Digitales_2019-2/Exp_4/lab4.srcs/lab5.runs/impl_1/Top.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 9 seconds
+dismissDialog("Program Device"); // by (cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,871 MB. GUI used memory: 62 MB. Current time: 10/16/19, 2:29:33 PM CLST
+selectCodeEditor("Top.v", 291, 304); // cl (w, cl)
+selectCodeEditor("Top.v", 151, 140); // cl (w, cl)
+selectCodeEditor("Top.v", 205, 218); // cl (w, cl)
+// Elapsed time: 17 seconds
+selectCodeEditor("Top.v", 260, 232); // cl (w, cl)
+// Elapsed time: 48 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "contador_stock.v", 1); // k (j, cl)
+selectCodeEditor("contador_stock.v", 318, 135); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 318, 135); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 318, 135); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 318, 135); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 318, 136); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 319, 158); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 319, 158); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 320, 160); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 320, 160); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 321, 182); // cl (w, cl)
+// Elapsed time: 19 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top.v", 0); // k (j, cl)
+// Elapsed time: 27 seconds
+selectCodeEditor("Top.v", 291, 143); // cl (w, cl)
+selectCodeEditor("Top.v", 316, 119); // cl (w, cl)
+selectCodeEditor("Top.v", 321, 114); // cl (w, cl)
+selectCodeEditor("Top.v", 321, 114); // cl (w, cl)
+selectCodeEditor("Top.v", 321, 169); // cl (w, cl)
+selectCodeEditor("Top.v", 321, 169); // cl (w, cl)
+// Elapsed time: 11 seconds
+selectCodeEditor("Top.v", 321, 179); // cl (w, cl)
+selectCodeEditor("Top.v", 320, 203); // cl (w, cl)
+selectCodeEditor("Top.v", 316, 236); // cl (w, cl)
+selectCodeEditor("Top.v", 321, 271); // cl (w, cl)
+// Elapsed time: 17 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "contador_stock.v", 1); // k (j, cl)
+selectCodeEditor("contador_stock.v", 196, 112); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 294, 135); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 294, 135); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 292, 144); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 292, 144); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 284, 172); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 272, 215); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 270, 218); // cl (w, cl)
+// Elapsed time: 54 seconds
+selectCodeEditor("contador_stock.v", 227, 271); // cl (w, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top.v", 0); // k (j, cl)
+selectCodeEditor("Top.v", 392, 182); // cl (w, cl)
+selectCodeEditor("Top.v", 392, 182); // cl (w, cl)
+selectCodeEditor("Top.v", 401, 145); // cl (w, cl)
+selectCodeEditor("Top.v", 158, 137); // cl (w, cl)
+selectCodeEditor("Top.v", 487, 130); // cl (w, cl)
+selectCodeEditor("Top.v", 524, 144); // cl (w, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "contador_stock.v", 1); // k (j, cl)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // u (O, cl) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top (Top.v), contador_monto_ingresado : contador_monto_ingresado (Contador_monto_ingresado.v)]", 2, true); // B (F, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top (Top.v), contador_stock : contador_stock (contador_stock.v)]", 3, true); // B (F, cl) - Node
+// [GUI Memory]: 118 MB (+1711kb) [00:13:17]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top (Top.v), contador_stock : contador_stock (contador_stock.v)]", 3, true, false, false, false, true, false); // B (F, cl) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ae (an, cl)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ae (an, cl)
+selectMenuItem(PAResourceCommand.PACommandNames_SET_AS_TOP, "Set as Top"); // ah (an, cl)
+// Run Command: PAResourceCommand.PACommandNames_SET_AS_TOP
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: set_property top contador_stock [current_fileset] 
+// TclEventType: DG_GRAPH_STALE
+// by (cl):  Set as Top : addNotify
+dismissDialog("Set as Top"); // by (cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 12 seconds
+selectCodeEditor("Top.v", 285, 56); // cl (w, cl)
+selectCodeEditor("Top.v", 291, 87); // cl (w, cl)
+selectCodeEditor("Top.v", 288, 101); // cl (w, cl)
+selectCodeEditor("Top.v", 284, 114); // cl (w, cl)
+selectCodeEditor("Top.v", 280, 127); // cl (w, cl)
+selectCodeEditor("Top.v", 267, 152); // cl (w, cl)
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "contador_stock.v", 2); // k (j, cl)
+selectCodeEditor("contador_stock.v", 204, 190); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 218, 227); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 224, 245); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 305, 138); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 345, 162); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 193, 147); // cl (w, cl)
+selectButton(RDIResourceCommand.RDICommands_LINE_COMMENT, (String) null); // B (f, cl)
+selectCodeEditor("contador_stock.v", 237, 166); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 241, 214); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 240, 234); // cl (w, cl)
+selectButton(RDIResourceCommand.RDICommands_LINE_COMMENT, (String) null); // B (f, cl)
+selectCodeEditor("contador_stock.v", 271, 264); // cl (w, cl)
+// Elapsed time: 73 seconds
+selectCodeEditor("contador_stock.v", 262, 152); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 266, 165); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 266, 165); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 251, 194); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 120, 176); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 197, 138); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 203, 266); // cl (w, cl)
+// Elapsed time: 14 seconds
+selectCodeEditor("contador_stock.v", 412, 79); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 454, 129); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 454, 129); // cl (w, cl)
+// Elapsed time: 18 seconds
+selectCodeEditor("contador_stock.v", 158, 271); // cl (w, cl)
+// Elapsed time: 20 seconds
+selectButton(RDIResourceCommand.RDICommands_LINE_COMMENT, (String) null); // B (f, cl)
+selectCodeEditor("contador_stock.v", 422, 179); // cl (w, cl)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183AA621DA 
+// n (cl): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// WARNING: updateGUI() is taking  1630 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1862 ms.
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// WARNING: HEventQueue.dispatchEvent() is taking  102317 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 7483 ms. Increasing delay to 4000 ms.
+// Elapsed time: 155 seconds
+dismissDialog("Close Hardware Target"); // n (cl)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Elapsed time: 47 seconds
+selectCodeEditor("contador_stock.v", 118, 261); // cl (w, cl)
+// Elapsed time: 11 seconds
+selectCodeEditor("contador_stock.v", 164, 181); // cl (w, cl)
+selectButton(RDIResourceCommand.RDICommands_LINE_COMMENT, (String) null); // B (f, cl)
+selectCodeEditor("contador_stock.v", 251, 136); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 181, 260); // cl (w, cl)
+typeControlKey((HResource) null, "contador_stock.v", 'v'); // cl (w, cl)
+// Elapsed time: 10 seconds
+selectCodeEditor("contador_stock.v", 98, 259); // cl (w, cl)
+typeControlKey((HResource) null, "contador_stock.v", 'c'); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 235, 274); // cl (w, cl)
+typeControlKey((HResource) null, "contador_stock.v", 'v'); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 134, 261); // cl (w, cl)
+selectButton(RDIResourceCommand.RDICommands_LINE_COMMENT, (String) null); // B (f, cl)
+selectCodeEditor("contador_stock.v", 233, 175); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 217, 158); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 229, 145); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 335, 153); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 381, 146); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 489, 145); // cl (w, cl)
+// Elapsed time: 11 seconds
+selectCodeEditor("contador_stock.v", 105, 173); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 132, 161); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 275, 159); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 357, 165); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 406, 159); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 517, 159); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 643, 165); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 362, 151); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 370, 134); // cl (w, cl)
+// Elapsed time: 17 seconds
+selectCodeEditor("contador_stock.v", 376, 167); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 376, 167); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 356, 242); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 356, 241); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 370, 227); // cl (w, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top.v", 1); // k (j, cl)
+selectCodeEditor("Top.v", 443, 82); // cl (w, cl)
+// Elapsed time: 15 seconds
+selectCodeEditor("Top.v", 443, 82); // cl (w, cl)
+selectCodeEditor("Top.v", 443, 82); // cl (w, cl)
+selectCodeEditor("Top.v", 446, 84); // cl (w, cl)
+selectCodeEditor("Top.v", 450, 108); // cl (w, cl)
+selectCodeEditor("Top.v", 453, 127); // cl (w, cl)
+// Elapsed time: 105 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "contador_stock.v", 2); // k (j, cl)
+selectCodeEditor("contador_stock.v", 477, 186); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 477, 186, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("contador_stock.v", 482, 192); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 482, 192); // cl (w, cl)
+// Elapsed time: 32 seconds
+selectCodeEditor("contador_stock.v", 482, 192); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 425, 211); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 369, 154); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 393, 219); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 384, 233); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 400, 272); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 420, 129); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 225, 68); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 214, 58); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 437, 115); // cl (w, cl)
+// Elapsed time: 10 seconds
+selectCodeEditor("contador_stock.v", 324, 127); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 325, 148); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 335, 178); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 329, 159); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 335, 174); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 347, 204); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 290, 188); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 302, 217); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 304, 221); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 316, 244); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 311, 217); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 322, 235); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 321, 255); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 322, 245); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 306, 105); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 312, 84); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 312, 84); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 312, 55); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 49, 88); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 95, 94); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 169, 95); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 241, 93); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 345, 98); // cl (w, cl)
+// Elapsed time: 11 seconds
+selectCodeEditor("contador_stock.v", 402, 102); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 426, 90); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 446, 91); // cl (w, cl)
+// Elapsed time: 10 seconds
+selectCodeEditor("contador_stock.v", 452, 125); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 516, 102); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 609, 109); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 621, 111); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 375, 92); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 258, 114); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 423, 109); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 550, 118); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 151, 88); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 164, 104); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 167, 122); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 181, 144); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 195, 185); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 171, 130); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 105, 126); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 133, 126); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 155, 124); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 235, 126); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 241, 127); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 59, 169); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 178, 189); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 145, 221); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 103, 250); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 150, 248); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 212, 184); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 407, 91); // cl (w, cl)
+// Elapsed time: 10 seconds
+selectCodeEditor("contador_stock.v", 390, 99); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 390, 99); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 191, 129); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 191, 170); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 200, 207); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 110, 218); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 150, 212); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 154, 254); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 184, 277); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 201, 270); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 222, 261); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 209, 264); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 200, 193); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 211, 112); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 247, 67); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 395, 158); // cl (w, cl)
+// Elapsed time: 13 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 14); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, basys.xdc]", 16, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, basys.xdc]", 16, false); // B (F, cl)
+// [GUI Memory]: 125 MB (+683kb) [00:27:32]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, basys.xdc]", 16, false, false, false, false, false, true); // B (F, cl) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "contador_stock.v", 2); // k (j, cl)
+selectCodeEditor("contador_stock.v", 320, 134); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 406, 155); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 373, 146); // cl (w, cl)
+// Elapsed time: 14 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "basys.xdc", 3); // k (j, cl)
+selectCodeEditor("basys.xdc", 411, 176); // cl (w, cl)
+selectCodeEditor("basys.xdc", 419, 211); // cl (w, cl)
+selectCodeEditor("basys.xdc", 416, 216); // cl (w, cl)
+selectCodeEditor("basys.xdc", 421, 247); // cl (w, cl)
+selectCodeEditor("basys.xdc", 412, 252); // cl (w, cl)
+selectCodeEditor("basys.xdc", 379, 243); // cl (w, cl)
+// Elapsed time: 50 seconds
+selectCodeEditor("basys.xdc", 416, 156); // cl (w, cl)
+selectButton(RDIResourceCommand.RDICommands_LINE_COMMENT, (String) null); // B (f, cl)
+selectCodeEditor("basys.xdc", 768, 232); // cl (w, cl)
+selectCodeEditor("basys.xdc", 421, 266); // cl (w, cl)
+selectButton(RDIResourceCommand.RDICommands_LINE_COMMENT, (String) null); // B (f, cl)
+selectCodeEditor("basys.xdc", 553, 92); // cl (w, cl)
+selectCodeEditor("basys.xdc", 538, 116); // cl (w, cl)
+selectCodeEditor("basys.xdc", 538, 116); // cl (w, cl)
+selectCodeEditor("basys.xdc", 463, 234); // cl (w, cl)
+selectCodeEditor("basys.xdc", 461, 252); // cl (w, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "contador_stock.v", 2); // k (j, cl)
+selectCodeEditor("contador_stock.v", 401, 118); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 402, 157); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 404, 195); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 414, 218); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 414, 228); // cl (w, cl)
+// Elapsed time: 21 seconds
+selectCodeEditor("contador_stock.v", 372, 255); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 371, 246); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 371, 246); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 72, 247); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 149, 247); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 166, 259); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 397, 172); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 404, 159); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 404, 159); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 404, 159); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 348, 129); // cl (w, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "basys.xdc", 3); // k (j, cl)
+selectCodeEditor("basys.xdc", 385, 212); // cl (w, cl)
+selectCodeEditor("basys.xdc", 415, 215); // cl (w, cl)
+selectButton(RDIResourceCommand.RDICommands_LINE_COMMENT, (String) null); // B (f, cl)
+selectCodeEditor("basys.xdc", 318, 185); // cl (w, cl)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// Elapsed time: 15 seconds
+selectCodeEditor("basys.xdc", 492, 270); // cl (w, cl)
+selectCodeEditor("basys.xdc", 492, 270); // cl (w, cl)
+selectCodeEditor("basys.xdc", 491, 268); // cl (w, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "contador_stock.v", 2); // k (j, cl)
+selectCodeEditor("contador_stock.v", 300, 35); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 293, 37); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 293, 46); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 297, 64); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 297, 126); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 296, 162); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 313, 205); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 257, 267); // cl (w, cl)
+// Elapsed time: 12 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top (Top.v)]", 3, true); // B (F, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top (Top.v)]", 3, true, false, false, false, false, true); // B (F, cl) - Double Click - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top (Top.v)]", 3); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top (Top.v), display_number : display_number (display_number.v)]", 11, true); // B (F, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top (Top.v), display_number : display_number (display_number.v), display_7s : display_7s (display_7s.v)]", 14, true, false, false, false, false, true); // B (F, cl) - Double Click - Node
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "contador_stock.v", 2); // k (j, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "display_number.v", 4); // k (j, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "contador_stock.v", 2); // k (j, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "display_number.v", 4); // k (j, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "contador_stock.v", 2); // k (j, cl)
+// Elapsed time: 18 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "basys.xdc", 3); // k (j, cl)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cl)
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("basys.xdc", 427, 254); // cl (w, cl)
+selectButton(RDIResourceCommand.RDICommands_LINE_COMMENT, (String) null); // B (f, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "contador_stock.v", 2); // k (j, cl)
+selectCodeEditor("contador_stock.v", 336, 74); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 358, 123); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 378, 174); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 389, 162); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 390, 143); // cl (w, cl)
+// Elapsed time: 14 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "basys.xdc", 3); // k (j, cl)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 12 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, cl)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cl): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// by (cl):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (cl)
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (cl): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cx' command handler elapsed time: 3 seconds
+dismissDialog("Launch Runs"); // f (cl)
+// TclEventType: RUN_LAUNCH
+// by (cl):  Generate Bitstream : addNotify
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Oct 16 14:53:44 2019] Launched synth_1... Run output will be captured here: C:/Users/NBJSWETT/Desktop/COSAS PUC/VIII Semestre/Laboratorio de Sistemas Digitales/Lab_Digitales_2019-2/Exp_4/lab4.srcs/lab5.runs/synth_1/runme.log [Wed Oct 16 14:53:44 2019] Launched impl_1... Run output will be captured here: C:/Users/NBJSWETT/Desktop/COSAS PUC/VIII Semestre/Laboratorio de Sistemas Digitales/Lab_Digitales_2019-2/Exp_4/lab4.srcs/lab5.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // by (cl)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// ah (cl): Bitstream Generation Failed: addNotify
+// Elapsed time: 202 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_LOG_WINDOW
+dismissDialog("Bitstream Generation Failed"); // ah (cl)
+selectCodeEditor("basys.xdc", 151, 245); // cl (w, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "contador_stock.v", 2); // k (j, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top (Top.v), contador_stock : contador_stock (contador_stock.v)]", 5, true); // B (F, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top (Top.v), contador_stock : contador_stock (contador_stock.v)]", 5, true, false, false, false, false, true); // B (F, cl) - Double Click - Node
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "basys.xdc", 3); // k (j, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "contador_stock.v", 2); // k (j, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "basys.xdc", 3); // k (j, cl)
+selectCodeEditor("basys.xdc", 359, 113); // cl (w, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "contador_stock.v", 2); // k (j, cl)
+// Elapsed time: 13 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "basys.xdc", 3); // k (j, cl)
+// Elapsed time: 15 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "contador_stock.v", 2); // k (j, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "basys.xdc", 3); // k (j, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "contador_stock.v", 2); // k (j, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "basys.xdc", 3); // k (j, cl)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cl)
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, cl)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cl): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// by (cl):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (cl)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (cl): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cx' command handler elapsed time: 3 seconds
+dismissDialog("Launch Runs"); // f (cl)
+// TclEventType: RUN_LAUNCH
+// by (cl):  Generate Bitstream : addNotify
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Wed Oct 16 14:58:48 2019] Launched synth_1... Run output will be captured here: C:/Users/NBJSWETT/Desktop/COSAS PUC/VIII Semestre/Laboratorio de Sistemas Digitales/Lab_Digitales_2019-2/Exp_4/lab4.srcs/lab5.runs/synth_1/runme.log [Wed Oct 16 14:58:49 2019] Launched impl_1... Run output will be captured here: C:/Users/NBJSWETT/Desktop/COSAS PUC/VIII Semestre/Laboratorio de Sistemas Digitales/Lab_Digitales_2019-2/Exp_4/lab4.srcs/lab5.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+dismissDialog("Generate Bitstream"); // by (cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,879 MB. GUI used memory: 67 MB. Current time: 10/16/19, 2:59:33 PM CLST
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// ah (cl): Bitstream Generation Completed: addNotify
+// Elapsed time: 233 seconds
+dismissDialog("Bitstream Generation Completed"); // ah (cl)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false); // u (O, cl)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a35t_0"); // ah (an, cl)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cl): Program Device: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1202 ms.
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+selectButton(PAResourceOtoP.ProgramFpgaDialog_SPECIFY_BITSTREAM_FILE, (String) null); // q (al, bC)
+setFileChooser("C:/Users/NBJSWETT/Desktop/COSAS PUC/VIII Semestre/Laboratorio de Sistemas Digitales/Lab_Digitales_2019-2/Exp_4/lab4.srcs/lab5.runs/impl_1/contador_stock.bit");
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// by (cl):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cl)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/NBJSWETT/Desktop/COSAS PUC/VIII Semestre/Laboratorio de Sistemas Digitales/Lab_Digitales_2019-2/Exp_4/lab4.srcs/lab5.runs/impl_1/contador_stock.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 6 seconds
+dismissDialog("Program Device"); // by (cl)
+// Elapsed time: 49 seconds
+selectCodeEditor("contador_stock.v", 162, 188); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 147, 208); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 142, 223); // cl (w, cl)
+// Elapsed time: 95 seconds
+selectCodeEditor("contador_stock.v", 169, 65); // cl (w, cl)
+// Elapsed time: 99 seconds
+selectCodeEditor("contador_stock.v", 260, 106); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 100, 193); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 132, 209); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 126, 190); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 83, 200); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 73, 66); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 25, 59); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 203, 119); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 53, 215); // cl (w, cl)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("contador_stock.v", 284, 176); // cl (w, cl)
+// Elapsed time: 11 seconds
+selectCodeEditor("contador_stock.v", 82, 202); // cl (w, cl)
+typeControlKey((HResource) null, "contador_stock.v", 'c'); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 2, 180); // cl (w, cl)
+typeControlKey((HResource) null, "contador_stock.v", 'v'); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 101, 207); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 102, 163); // cl (w, cl)
+// Elapsed time: 26 seconds
+selectCodeEditor("contador_stock.v", 0, 184); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 210, 143); // cl (w, cl)
+// Elapsed time: 35 seconds
+selectCodeEditor("contador_stock.v", 213, 167); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 56, 190); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 101, 200); // cl (w, cl)
+// Elapsed time: 10 seconds
+typeControlKey((HResource) null, "contador_stock.v", 'v'); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 128, 168); // cl (w, cl)
+// Elapsed time: 36 seconds
+selectCodeEditor("contador_stock.v", 121, 267); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 367, 27); // cl (w, cl)
+// Elapsed time: 13 seconds
+selectCodeEditor("contador_stock.v", 28, 179); // cl (w, cl)
+typeControlKey((HResource) null, "contador_stock.v", 'v'); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 125, 109); // cl (w, cl)
+// Elapsed time: 28 seconds
+selectCodeEditor("contador_stock.v", 97, 232); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 238, 272); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 185, 266); // cl (w, cl)
+// Elapsed time: 18 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("contador_stock.v", 435, 209); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 439, 198); // cl (w, cl)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, cl)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cl): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// by (cl):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (cl)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cl): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cx' command handler elapsed time: 4 seconds
+dismissDialog("Launch Runs"); // f (cl)
+// TclEventType: RUN_LAUNCH
+// by (cl):  Generate Bitstream : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Wed Oct 16 15:11:28 2019] Launched synth_1... Run output will be captured here: C:/Users/NBJSWETT/Desktop/COSAS PUC/VIII Semestre/Laboratorio de Sistemas Digitales/Lab_Digitales_2019-2/Exp_4/lab4.srcs/lab5.runs/synth_1/runme.log [Wed Oct 16 15:11:28 2019] Launched impl_1... Run output will be captured here: C:/Users/NBJSWETT/Desktop/COSAS PUC/VIII Semestre/Laboratorio de Sistemas Digitales/Lab_Digitales_2019-2/Exp_4/lab4.srcs/lab5.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // by (cl)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// [GUI Memory]: 132 MB (+1008kb) [00:54:19]
+// ah (cl): Bitstream Generation Completed: addNotify
+// Elapsed time: 230 seconds
+dismissDialog("Bitstream Generation Completed"); // ah (cl)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false); // u (O, cl)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a35t_0"); // ah (an, cl)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cl): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_SPECIFY_BITSTREAM_FILE, (String) null); // q (al, bC)
+setFileChooser("C:/Users/NBJSWETT/Desktop/COSAS PUC/VIII Semestre/Laboratorio de Sistemas Digitales/Lab_Digitales_2019-2/Exp_4/lab4.srcs/lab5.runs/impl_1/contador_stock.bit");
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// by (cl):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cl)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/NBJSWETT/Desktop/COSAS PUC/VIII Semestre/Laboratorio de Sistemas Digitales/Lab_Digitales_2019-2/Exp_4/lab4.srcs/lab5.runs/impl_1/contador_stock.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 7 seconds
+dismissDialog("Program Device"); // by (cl)
+// Elapsed time: 66 seconds
+selectCodeEditor("contador_stock.v", 390, 224); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 200, 298); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 104, 240); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 94, 218); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 95, 230); // cl (w, cl)
+typeControlKey((HResource) null, "contador_stock.v", 'c'); // cl (w, cl)
+typeControlKey((HResource) null, "contador_stock.v", 'c'); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 78, 113); // cl (w, cl)
+// Elapsed time: 16 seconds
+typeControlKey((HResource) null, "contador_stock.v", 'v'); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 113, 143); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 79, 180); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 68, 197); // cl (w, cl)
+// Elapsed time: 10 seconds
+selectCodeEditor("contador_stock.v", 69, 155); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 69, 139); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 261, 191); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 272, 262); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 247, 198); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 174, 244); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 169, 194); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 236, 164); // cl (w, cl)
+selectButton(RDIResourceCommand.RDICommands_LINE_COMMENT, (String) null); // B (f, cl)
+selectCodeEditor("contador_stock.v", 226, 134); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 226, 134); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 233, 87); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 233, 81); // cl (w, cl)
+selectButton(RDIResourceCommand.RDICommands_LINE_COMMENT, (String) null); // B (f, cl)
+selectCodeEditor("contador_stock.v", 261, 81); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 439, 83); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 548, 156); // cl (w, cl)
+// Elapsed time: 35 seconds
+selectCodeEditor("contador_stock.v", 268, 211); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 213, 71); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 253, 105); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 315, 95); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 667, 141); // cl (w, cl)
+selectButton(RDIResourceCommand.RDICommands_LINE_COMMENT, (String) null); // B (f, cl)
+selectCodeEditor("contador_stock.v", 293, 39); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 455, 104); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 463, 92); // cl (w, cl)
+selectCodeEditor("contador_stock.v", 632, 204); // cl (w, cl)
