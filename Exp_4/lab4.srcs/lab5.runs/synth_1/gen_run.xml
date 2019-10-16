@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1571250305">
-  <File Type="PA-TCL" Name="Top.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="Top_drc_synth.rpt"/>
-  <File Type="REPORTS-TCL" Name="Top_reports.tcl"/>
-  <File Type="RDS-RDS" Name="Top.vds"/>
-  <File Type="RDS-UTIL" Name="Top_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="Top_utilization_synth.pb"/>
-  <File Type="RDS-DCP" Name="Top.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="Top_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="Top_timing_summary_synth.pb"/>
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1571254256">
+  <File Type="PA-TCL" Name="verificador_compra.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="verificador_compra_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="verificador_compra_reports.tcl"/>
+  <File Type="RDS-RDS" Name="verificador_compra.vds"/>
+  <File Type="RDS-UTIL" Name="verificador_compra_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="verificador_compra_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="verificador_compra.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="verificador_compra_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="verificador_compra_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
-    <File Path="$PSRCDIR/sources_1/new/Contador_monto_ingresado.v">
+    <File Path="$PSRCDIR/sources_1/new/calculadora_vueltos.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -20,6 +20,7 @@
     </File>
     <File Path="$PSRCDIR/sources_1/new/Debouncer_D.v">
       <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -27,6 +28,15 @@
     </File>
     <File Path="$PSRCDIR/sources_1/new/Flip_FlopD.v">
       <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Contador_monto_ingresado.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -34,13 +44,7 @@
     </File>
     <File Path="$PSRCDIR/sources_1/new/binary_to_BCD.v">
       <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/new/calculadora_vueltos.v">
-      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -48,6 +52,7 @@
     </File>
     <File Path="$PSRCDIR/sources_1/new/clk_divider_7segment.v">
       <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -55,6 +60,7 @@
     </File>
     <File Path="$PSRCDIR/sources_1/new/contador_stock.v">
       <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -62,6 +68,7 @@
     </File>
     <File Path="$PSRCDIR/sources_1/new/digit_separator.v">
       <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -69,6 +76,7 @@
     </File>
     <File Path="$PSRCDIR/sources_1/new/display_7s.v">
       <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -76,6 +84,7 @@
     </File>
     <File Path="$PSRCDIR/sources_1/new/display_number.v">
       <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -83,6 +92,7 @@
     </File>
     <File Path="$PSRCDIR/sources_1/new/seven_seg_converter.v">
       <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -90,6 +100,7 @@
     </File>
     <File Path="$PSRCDIR/sources_1/new/seven_seg_manager4digit.v">
       <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -97,6 +108,7 @@
     </File>
     <File Path="$PSRCDIR/sources_1/new/Top.v">
       <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -168,7 +180,7 @@
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="Top"/>
+      <Option Name="TopModule" Val="verificador_compra"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
