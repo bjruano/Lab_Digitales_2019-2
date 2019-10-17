@@ -64,14 +64,14 @@ wire ver_monto_ingresado = sw[0];
 
 // Monedas_en_caja:
 
-//wire [13:0] monedas_10_en_caja;
-//wire [13:0] monedas_50_en_caja;
-//wire [13:0] monedas_100_en_caja;
-//wire [13:0] monedas_500_en_caja;
+wire [13:0] monedas_10_en_caja;
+wire [13:0] monedas_50_en_caja;
+wire [13:0] monedas_100_en_caja;
+wire [13:0] monedas_500_en_caja;
 
 // Monto en caja:
 
-//wire [13:0] monto_en_caja; 
+wire [13:0] monto_en_caja; 
 
 // Monedas ingresadas:
 
@@ -102,61 +102,70 @@ wire [13:0] cant_D;
 
 wire [13:0] costo;
 
-// Vuelto:
+//Vuelto:
 
-//wire [13:0] vuelto;
+wire [13:0] vuelto;
 
-// Boletas:
+//Boletas:
 
-//wire [13:0] boletas_emitidas;
+wire [13:0] boletas_emitidas;
 
 // Avisos:
 
 wire dinero_insuficiente;
 wire stock_insuficiente;
 wire compra_exitosa;
-wire impresion;
-
+wire vuelto_disponible;
 
 // Funcionamiento del verificador de compras:
 
-verificador_compra(clk, 14'd500, 14'd500, 14'd500, 14'd500, monto_ingresado, prod_A, prod_B, prod_C, prod_D, 0,
+verificador_compra(clk, vuelto_disponible, stock_A, stock_B, stock_C, stock_D, monto_ingresado, prod_A, prod_B, prod_C, prod_D, comprar,
 devolucion, cant_A, cant_B, cant_C, cant_D, costo, dinero_insuficiente, stock_insuficiente, compra_exitosa);
 
 // Funcionamiento del contador de monto ingresado:
 
-contador_monto_ingresado(clk, M500, M100, M50, M10, devolucion, monedas_500_ingresadas,
+contador_monto_ingresado(clk, comprar, compra_exitosa, M500, M100, M50, M10, devolucion, monedas_500_ingresadas,
 monedas_100_ingresadas, monedas_50_ingresadas, monedas_10_ingresadas, monto_ingresado);
 
 // Funcionamiento del contador de stock:
 
-//contador_stock(clk, modo_conf, compra_exitosa, comprar, cant_A, cant_B, cant_C, cant_D, stock_A, stock_B, stock_C, stock_D);
+contador_stock(clk, modo_conf, compra_exitosa, comprar, cant_A, cant_B, cant_C, cant_D, stock_A, stock_B, stock_C, stock_D);
+
+// Funcionamiento del vuelto:
+
+determinador_vuelto(monto_ingresado, costo, vuelto);
 
 // Funcionamiento del contador de monto total:
 
-//contador_dinero(clk, modo_conf, compra_exitosa, comprar, costo, monto_ingresado, monedas_500_ingresadas, monedas_100_ingresadas,
-//monedas_50_ingresadas, monedas_10_ingresadas, vuelto, monto_en_caja, monedas_10_en_caja, monedas_50_en_caja, 
-//monedas_100_en_caja, monedas_500_en_caja);
+contador_dinero(clk, modo_conf, compra_exitosa, comprar, costo, vuelto, monedas_500_ingresadas,
+monedas_100_ingresadas, monedas_50_ingresadas, monedas_10_ingresadas, monto_en_caja, monedas_10_en_caja,
+monedas_50_en_caja, monedas_100_en_caja, monedas_500_en_caja); 
 
 // Funcionamiento del contador de boletas:
 
-//contador_boletas_emitidas(clk, comprar, compra_exitosa, boletas_emitidas);
+contador_boletas_emitidas(clk, comprar, compra_exitosa, boletas_emitidas);
 
 // Funcionamiento del selector de display:
 
 wire [13:0] data;
 
-display_admin(ver_monto_ingresado, ver_vuelto, modo_conf, monto_ingresado, costo, 14'd0, data); 
+display_admin(ver_monto_ingresado, ver_vuelto, modo_conf, monto_ingresado, vuelto, boletas_emitidas, data); 
 
 display_number(clk, data, an, seg);
 
 // Funcionamiento del aviso de boletas:
 
-//wire impresion;
+wire impresion;
 
-//aviso_boletas(clk, comprar, compra_exitosa, impresion);
+aviso_boletas(clk, comprar, compra_exitosa, impresion);
 
-assign led[3] = impresion;
+// Funcionamiento del chequeo de vuelto:
+
+chequeo_vuelto(vuelto, monedas_500_en_caja, monedas_100_en_caja, monedas_50_en_caja, monedas_10_en_caja, 
+vuelto_disponible);
+
+assign led[4] = impresion;
+assign led[3] = ~vuelto_disponible;
 assign led[2] = compra_exitosa;
 assign led[1] = stock_insuficiente;
 assign led[0] = dinero_insuficiente;

@@ -98,6 +98,7 @@
 
 module contador_monto_ingresado(
     input clk,
+    input compra, compra_exitosa,
     input M_500_pre, M_100_pre, M_50_pre, M_10_pre,
     input devolucion_pre,
     output reg [13:0] monedas_500_ingresadas, monedas_100_ingresadas, monedas_50_ingresadas, monedas_10_ingresadas,
@@ -122,28 +123,33 @@ begin
 if (M_500)
     begin
     monedas_500_ingresadas = monedas_500_ingresadas + 1;
+    monto_ingresado = monto_ingresado + 500;
     end
 else if (M_100)
     begin
     monedas_100_ingresadas = monedas_100_ingresadas + 1;
+    monto_ingresado = monto_ingresado + 100;
     end
 else if (M_50)
     begin
     monedas_50_ingresadas = monedas_50_ingresadas + 1;
+    monto_ingresado = monto_ingresado + 50;
     end
 else if (M_10)
     begin
     monedas_10_ingresadas = monedas_10_ingresadas + 1;
+    monto_ingresado = monto_ingresado + 10;
     end
-else if (devolucion)
+else if (devolucion | (compra & compra_exitosa))
     begin
     monedas_500_ingresadas = 0;
     monedas_100_ingresadas = 0;
     monedas_50_ingresadas = 0;
     monedas_10_ingresadas = 0;
+    monto_ingresado = 0;
     end
     
-monto_ingresado = monedas_500_ingresadas*500 + monedas_100_ingresadas*100 + monedas_50_ingresadas*50 + monedas_10_ingresadas*10;
+//monto_ingresado = monedas_500_ingresadas*500 + monedas_100_ingresadas*100 + monedas_50_ingresadas*50 + monedas_10_ingresadas*10;
 
 end
 

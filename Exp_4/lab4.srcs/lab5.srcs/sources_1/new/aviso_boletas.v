@@ -24,23 +24,34 @@ module aviso_boletas(
     input clk,
     input comprar,
     input compra_exitosa,
-    output impresion
+    output reg impresion
     );
     
-reg cuenta = 28'd0;
+reg [27:0] count;
+
+initial
+begin
+count = 0;
+impresion = 0;
+end
 
 always @(posedge clk)
 begin
-    if (cuenta > 0)
-        begin
-        cuenta = cuenta - 1;
-        end
-    if (comprar & compra_exitosa)
-        begin
-        cuenta = 28'd200000000; 
-        end
-end
 
-assign impresion = cuenta > 0;
+ if (comprar & compra_exitosa)
+     begin
+     impresion = 1;
+     count = 1;
+     end
+ else if (count > 200000000)
+     begin
+     impresion = 0;
+     count = 0;
+     end
+ else if (count)
+     begin
+     count = count + 1;
+     end
+end
 
 endmodule

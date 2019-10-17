@@ -22,6 +22,7 @@
 
 module verificador_compra(
     input clk,
+    input vuelto_disponible,
     input [13:0] stock_A, stock_B, stock_C, stock_D,
     input [13:0] monto_ingresado,
     input prod_A_pre, prod_B_pre, prod_C_pre, prod_D_pre,
@@ -83,7 +84,7 @@ else if (compra_exitosa & comprar)
 costo = cant_A*14'd100 + cant_B*14'd250 + cant_C*14'd560 + cant_D*14'd700;
 dinero_insuficiente = costo > monto_ingresado;
 stock_insuficiente = (cant_A > stock_A) | (cant_B > stock_B) | (cant_C > stock_C) | (cant_D > stock_D);
-compra_exitosa = (~dinero_insuficiente) & (~stock_insuficiente) & ((cant_A > 0) | (cant_B > 0) | (cant_C > 0) | (cant_D > 0));
+compra_exitosa = (~dinero_insuficiente) & (~stock_insuficiente) & ((cant_A > 0) | (cant_B > 0) | (cant_C > 0) | (cant_D > 0)) & vuelto_disponible;
 end
 
 

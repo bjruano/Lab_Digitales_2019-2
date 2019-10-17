@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 17.10.2019 02:47:56
+// Create Date: 17.10.2019 15:11:29
 // Design Name: 
-// Module Name: contador_boletas_emitidas
+// Module Name: determinador_vuelto
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -20,23 +20,21 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module contador_boletas_emitidas(
-    input clk,
-    input comprar,
-    input compra_exitosa,
-    output [13:0] boletas_out
+module determinador_vuelto(
+    input [13:0] monto_ingresado,
+    input [13:0] costo,
+    output reg [13:0] vuelto
     );
-
-reg [13:0] boletas = 14'd0;
     
-always @(posedge clk)
+always @(*)
 begin
-if (comprar & compra_exitosa)
-    begin
-    boletas = boletas + 1;
-    end
+if (costo > monto_ingresado)
+    vuelto = 0;
+else 
+    vuelto = monto_ingresado - costo;
 end
-    
-assign boletas_out = boletas;
+
+
+
 
 endmodule
