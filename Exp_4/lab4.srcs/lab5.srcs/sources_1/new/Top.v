@@ -23,30 +23,36 @@
 module Top(
     input clk,
     input [15:0] sw,
+    input btnC,
     output [3:0] an,
     output [6:0] seg,
-    output [3:0] led
+    output [4:0] led
     );
 
 // BOTONES:
 
-// Botones de ingreso de monedas:
-
-wire mon_500 = sw[3];
-wire mon_100 = sw[2];
-wire mon_50 = sw[1];
-wire mon_10 = sw[0];
-
 // Botón de devolución: 
 
-wire devolucion = sw[8];
+wire devolucion = sw[10];
 
 // Botones de elección de productos:
 
-wire prod_D = sw[7];
-wire prod_C = sw[6];
-wire prod_B = sw[5];
-wire prod_A = sw[4];    
+wire prod_D = sw[14];
+wire prod_C = sw[13];
+wire prod_B = sw[12];
+wire prod_A = sw[11];
+
+// Botones de ingreso de monedas:
+
+wire M500 = sw[9];
+wire M100 = sw[8];
+wire M50 = sw[7];
+wire M10 = sw[6];
+
+// Boton de confirmar compra:
+
+wire comprar;
+DeBouncer_D(clk, btnC, comprar);    
 
 // Switch para modo configuración:
 
@@ -78,14 +84,29 @@ wire [13:0] monto_ingresado;
 
 // Stock de los productos:
 
-wire stock_A; 
-wire stock_B;
-wire stock_C;
-wire stock_D;
+wire [13:0] stock_A; 
+wire [13:0] stock_B;
+wire [13:0] stock_C;
+wire [13:0] stock_D;
+
+// Carro de compras:
+
+wire [13:0] cant_A;
+wire [13:0] cant_B;
+wire [13:0] cant_C;
+wire [13:0] cant_D;
+
+// Costo total:
+
+wire [13:0] costo;
 
 // Vuelto:
 
 wire [13:0] vuelto;
+
+// Boletas:
+
+wire [13:0] boletas_emitidas;
 
 // Avisos:
 
@@ -94,16 +115,51 @@ wire stock_insuficiente;
 wire compra_exitosa;
 wire boleta_emitida;
 
-contador_monto_ingresado(clk, devolucion, mon_500, mon_100, mon_50, mon_10, monto_ingresado, monedas_10_ingresadas,
-monedas_50_ingresadas, monedas_100_ingresadas, monedas_500_ingresadas);
+// Datos a mostrar en el display:
 
-contador_stock(clk, modo_conf, monto_ingresado, prod_A, prod_B, prod_C, prod_D, stock_A, stock_B, stock_C, stock_D);
+wire [13:0] data;
 
-display_number(clk, stock_A, an, seg);
+// Funcionamiento del verificador de compras:
+
+verificador_compra(clk, stock_A, stock_B, stock_C, stock_D, monto_ingresado, prod_A, prod_B, prod_C, prod_D, comprar,
+devolucion, cant_A, cant_B, cant_C, cant_D, costo, dinero_insuficiente, stock_insuficiente, compra_exitosa);
+
+// Funcionamiento del contador de monto ingresado:
+
+contador_monto_ingresado(clk, M500, M100, M50, M10, compra_exitosa, comprar, devolucion, monedas_500_ingresadas,
+monedas_100_ingresadas, monedas_50_ingresadas, monedas_10_ingresadas);
+
+// Funcionamiento del contador de stock:
+
+contador_stock(clk, modo_conf, compra_exitosa, comprar, cant_A, cant_B, cant_C, cant_D, stock_A, stock_B, stock_C, stock_D);
+
+// Funcionamiento del contador de monto total:
+
+contador_dinero(clk, modo_conf, compra_exitosa, comprar, costo, monto_ingresado, monedas_500_ingresadas, monedas_100_ingresadas,
+monedas_50_ingresadas, monedas_10_ingresadas, vuelto, monto_en_caja, monedas_10_en_caja, monedas_50_en_caja, 
+monedas_100_en_caja, monedas_500_en_caja);
+
+// Funcionamiento del contador de boletas:
+
+contador_boletas_emitidas(clk, comprar, compra_exitosa, boletas_emitidas);
+
+// Funcionamiento del selector de display:
+
+selector_display(clk, modo_conf, M500, M100, M50, M10, monto_ingresado, vuelto, boletas_emitidas, comprar,
+compra_exitosa, data);
+
+display_number(clk, data, an, seg);
+
+// Funcionamiento del aviso de boletas:
+
+wire impresion;
+
+aviso_boletas(clk, comprar, compra_exitosa, impresion);
 
 assign led[3] = compra_exitosa;
 assign led[2] = boleta_emitida;
 assign led[1] = stock_insuficiente;
 assign led[0] = dinero_insuficiente;
+assign led[4] = impresion;
 
 endmodule

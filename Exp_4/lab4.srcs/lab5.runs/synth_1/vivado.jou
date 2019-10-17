@@ -2,11 +2,11 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Wed Oct 16 16:31:02 2019
-# Process ID: 1284
+# Start of session at: Thu Oct 17 01:23:05 2019
+# Process ID: 12388
 # Current directory: C:/Users/NBJSWETT/Desktop/COSAS PUC/VIII Semestre/Laboratorio de Sistemas Digitales/Lab_Digitales_2019-2/Exp_4/lab4.srcs/lab5.runs/synth_1
-# Command line: vivado.exe -log verificador_compra.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source verificador_compra.tcl
-# Log file: C:/Users/NBJSWETT/Desktop/COSAS PUC/VIII Semestre/Laboratorio de Sistemas Digitales/Lab_Digitales_2019-2/Exp_4/lab4.srcs/lab5.runs/synth_1/verificador_compra.vds
+# Command line: vivado.exe -log Top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top.tcl
+# Log file: C:/Users/NBJSWETT/Desktop/COSAS PUC/VIII Semestre/Laboratorio de Sistemas Digitales/Lab_Digitales_2019-2/Exp_4/lab4.srcs/lab5.runs/synth_1/Top.vds
 # Journal file: C:/Users/NBJSWETT/Desktop/COSAS PUC/VIII Semestre/Laboratorio de Sistemas Digitales/Lab_Digitales_2019-2/Exp_4/lab4.srcs/lab5.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
-source verificador_compra.tcl -notrace
+source Top.tcl -notrace

@@ -22,56 +22,69 @@
 
 module verificador_compra(
     input clk,
-//    input [13:0] stock_A, stock_B, stock_C, stock_D,
-//    input [13:0] monto_ingresado,
-    input prod_A_pre, prod_B_pre, prod_C_pre, prod_D_pre, // botones
-    output dinero_insuficiente,
-    output stock_insuficiente,
-    output compra_exitosa
+    input [13:0] stock_A, stock_B, stock_C, stock_D,
+    input [13:0] monto_ingresado,
+    input prod_A_pre, prod_B_pre, prod_C_pre, prod_D_pre,
+    input comprar, 
+    input devolucion_pre,
+    output reg [13:0] cant_A, cant_B, cant_C, cant_D,
+    output reg [13:0] costo,
+    output reg dinero_insuficiente,
+    output reg stock_insuficiente,
+    output reg compra_exitosa
     );
-
-
-wire prod_A = prod_A_pre;
-wire prod_B = prod_B_pre;
-wire prod_C = prod_C_pre; 
-wire prod_D = prod_D_pre;
-
-//DeBouncer_D(clk, prod_A_pre, prod_A);
-//DeBouncer_D(clk, prod_B_pre, prod_B);    
-//DeBouncer_D(clk, prod_C_pre, prod_C);    
-//DeBouncer_D(clk, prod_D_pre, prod_D);        
-
-wire precio_A = 14'd1300;
-wire precio_B = 14'd2850;
-wire precio_C = 14'd3560;
-wire precio_D = 14'd7890;
-
-wire monto_ingresado = 14'd6666;
-wire stock_A = 14'd10;
-wire stock_B = 14'd10;
-wire stock_C = 14'd10;
-wire stock_D = 14'd10;
-
     
-// Se revisa dinero insuficiente:
-wire cond_p_A = prod_A & (precio_A > monto_ingresado);
-wire cond_p_B = prod_B & (precio_B > monto_ingresado);
-wire cond_p_C = prod_C & (precio_C > monto_ingresado);
-wire cond_p_D = prod_D & (precio_D > monto_ingresado);
-wire dinero_insuficiente_pre = cond_p_A | cond_p_B | cond_p_C | cond_p_D;
-assign dinero_insuficiente = dinero_insuficiente_pre;
+wire prod_A;
+wire prod_B;
+wire prod_C;
+wire prod_D;
+ 
+wire devolucion;
 
-// Se revisa stock insuficiente:
-wire cond_s_A = prod_A & (stock_A<=0);
-wire cond_s_B = prod_B & (stock_B<=0);
-wire cond_s_C = prod_C & (stock_C<=0);
-wire cond_s_D = prod_D & (stock_D<=0);
-wire stock_insuficiente_pre = cond_s_A | cond_s_B | cond_s_C | cond_s_D;
-assign stock_insuficiente = stock_insuficiente_pre;
-
-// Se revisa compra exitosa:
-assign compra_exitosa = ~stock_insuficiente & ~dinero_insuficiente & (prod_A | prod_B | prod_C | prod_D); 
-
+DeBouncer_D(clk, devolucion_pre, devolucion);
+DeBouncer_D(clk, prod_A_pre, prod_A);
+DeBouncer_D(clk, prod_B_pre, prod_B);    
+DeBouncer_D(clk, prod_C_pre, prod_C);    
+DeBouncer_D(clk, prod_D_pre, prod_D);        
+    
+always @(posedge clk)
+begin
+if (prod_A)
+    begin
+    cant_A = cant_A + 1;
+    end
+else if (prod_B)
+    begin
+    cant_B = cant_B + 1;
+    end
+else if (prod_C)
+    begin
+    cant_C = cant_C + 1;
+    end
+else if (prod_D)
+    begin
+    cant_D = cant_D + 1;
+    end
+else if (devolucion)
+    begin
+    cant_A = 0;
+    cant_B = 0;
+    cant_C = 0;
+    cant_D = 0;
+    end
+else if (compra_exitosa & comprar)
+    begin
+    cant_A = 0;
+    cant_B = 0;
+    cant_C = 0;
+    cant_D = 0;
+    end
+    
+costo = cant_A*14'd100 + cant_B*14'd250 + cant_C*14'd560 + cant_D*14'd700;
+dinero_insuficiente = costo > monto_ingresado;
+stock_insuficiente = (cant_A > stock_A) | (cant_B > stock_B) | (cant_C > stock_C) | (cant_D > stock_D);
+compra_exitosa = (~dinero_insuficiente) & (~stock_insuficiente) & ((cant_A > 0) | (cant_B > 0) | (cant_C > 0) | (cant_D > 0));
+end
 
 
 endmodule
