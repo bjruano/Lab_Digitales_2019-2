@@ -35,10 +35,18 @@ module contador_stock(
     output [13:0] stock_D_out
     );
     
-reg [13:0] stock_A = 14'd10;
-reg [13:0] stock_B = 14'D20;
-reg [13:0] stock_C = 14'd30;
-reg [13:0] stock_D = 14'd40;    
+reg [13:0] stock_A;
+reg [13:0] stock_B;
+reg [13:0] stock_C;
+reg [13:0] stock_D;
+
+initial
+begin
+stock_A = 14'd500;
+stock_B = 14'd500;
+stock_C = 14'd500;
+stock_D = 14'd500;
+end    
 
 wire prod_A;
 wire prod_B;

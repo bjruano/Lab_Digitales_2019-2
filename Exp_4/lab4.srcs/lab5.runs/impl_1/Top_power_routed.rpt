@@ -1,8 +1,8 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date             : Thu Oct 17 12:56:55 2019
-| Host             : BJRR running 64-bit major release  (build 9200)
+| Date             : Thu Oct 17 14:58:14 2019
+| Host             : Danielitoh running 64-bit major release  (build 9200)
 | Command          : report_power -file Top_power_routed.rpt -pb Top_power_summary_routed.pb -rpx Top_power_routed.rpx
 | Design           : Top
 | Device           : xc7a35tcpg236-1
@@ -30,11 +30,11 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.074        |
+| Total On-Chip Power (W)  | 0.088        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.006        |
-| Device Static (W)        | 0.068        |
+| Dynamic (W)              | 0.016        |
+| Device Static (W)        | 0.072        |
 | Effective TJA (C/W)      | 5.0          |
 | Max Ambient (C)          | 84.6         |
 | Junction Temperature (C) | 25.4         |
@@ -53,17 +53,17 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |     0.002 |        3 |       --- |             --- |
-| Slice Logic    |     0.001 |      567 |       --- |             --- |
-|   LUT as Logic |     0.001 |      250 |     20800 |            1.20 |
-|   CARRY4       |    <0.001 |       34 |      8150 |            0.42 |
-|   Register     |    <0.001 |      199 |     41600 |            0.48 |
+| Slice Logic    |     0.002 |      871 |       --- |             --- |
+|   LUT as Logic |     0.002 |      405 |     20800 |            1.95 |
+|   CARRY4       |    <0.001 |       64 |      8150 |            0.79 |
+|   Register     |    <0.001 |      280 |     41600 |            0.67 |
 |   F7/F8 Muxes  |    <0.001 |        7 |     32600 |            0.02 |
-|   Others       |     0.000 |       37 |       --- |             --- |
-| Signals        |     0.001 |      617 |       --- |             --- |
-| DSPs           |     0.002 |        4 |        90 |            4.44 |
-| I/O            |    <0.001 |       22 |       106 |           20.75 |
-| Static Power   |     0.068 |          |           |                 |
-| Total          |     0.074 |          |           |                 |
+|   Others       |     0.000 |       58 |       --- |             --- |
+| Signals        |     0.002 |     1026 |       --- |             --- |
+| DSPs           |     0.004 |        8 |        90 |            8.89 |
+| I/O            |     0.006 |       29 |       106 |           27.36 |
+| Static Power   |     0.072 |          |           |                 |
+| Total          |     0.088 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -73,9 +73,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.015 |       0.006 |      0.010 |
+| Vccint    |       1.000 |     0.020 |       0.011 |      0.010 |
 | Vccaux    |       1.800 |     0.013 |       0.000 |      0.013 |
-| Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |
+| Vcco33    |       3.300 |     0.003 |       0.002 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
@@ -142,8 +142,9 @@ Table of Contents
 +--------------------+-----------+
 | Name               | Power (W) |
 +--------------------+-----------+
-| Top                |     0.006 |
-|   nolabel_line129  |     0.003 |
+| Top                |     0.016 |
+|   nolabel_line123  |     0.005 |
+|   nolabel_line128  |     0.003 |
 |   nolabel_line151  |     0.002 |
 |     nolabel_line36 |     0.001 |
 +--------------------+-----------+

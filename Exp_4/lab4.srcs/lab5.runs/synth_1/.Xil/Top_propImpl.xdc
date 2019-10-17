@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:{D:/Lab_Digitales/Experiencia 4/Lab_Digitales_2019-2/Exp_4/lab4.srcs/lab5.srcs/constrs_1/new/basys.xdc} rfile:../../../lab5.srcs/constrs_1/new/basys.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:{C:/Users/NBJSWETT/Desktop/COSAS PUC/VIII Semestre/Laboratorio de Sistemas Digitales/Lab_Digitales_2019-2/Exp_4/lab4.srcs/lab5.srcs/constrs_1/new/basys.xdc} rfile:../../../lab5.srcs/constrs_1/new/basys.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:7 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN W5 [get_ports clk]
 set_property src_info {type:XDC file:1 line:12 export:INPUT save:INPUT read:READ} [current_design]

@@ -19,30 +19,31 @@ proc create_report { reportName command } {
 }
 set_param chipscope.maxJobs 1
 set_param xicom.use_bs_reader 1
-set_msg_config -id {Common 17-41} -limit 10000000
 create_project -in_memory -part xc7a35tcpg236-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir {D:/Lab_Digitales/Experiencia 4/Lab_Digitales_2019-2/Exp_4/lab4.srcs/lab5.cache/wt} [current_project]
-set_property parent.project_path {D:/Lab_Digitales/Experiencia 4/Lab_Digitales_2019-2/Exp_4/lab4.srcs/lab5.xpr} [current_project]
+set_property webtalk.parent_dir {C:/Users/NBJSWETT/Desktop/COSAS PUC/VIII Semestre/Laboratorio de Sistemas Digitales/Lab_Digitales_2019-2/Exp_4/lab4.srcs/lab5.cache/wt} [current_project]
+set_property parent.project_path {C:/Users/NBJSWETT/Desktop/COSAS PUC/VIII Semestre/Laboratorio de Sistemas Digitales/Lab_Digitales_2019-2/Exp_4/lab4.srcs/lab5.xpr} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property ip_output_repo {d:/University/Engineering/8th semester/Digital Lab/exp4/lab4.cache/ip} [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib {
-  {D:/Lab_Digitales/Experiencia 4/Lab_Digitales_2019-2/Exp_4/lab4.srcs/lab5.srcs/sources_1/new/Contador_monto_ingresado.v}
-  {D:/Lab_Digitales/Experiencia 4/Lab_Digitales_2019-2/Exp_4/lab4.srcs/lab5.srcs/sources_1/new/Debouncer_D.v}
-  {D:/Lab_Digitales/Experiencia 4/Lab_Digitales_2019-2/Exp_4/lab4.srcs/lab5.srcs/sources_1/new/Flip_FlopD.v}
-  {D:/Lab_Digitales/Experiencia 4/Lab_Digitales_2019-2/Exp_4/lab4.srcs/lab5.srcs/sources_1/new/binary_to_BCD.v}
-  {D:/Lab_Digitales/Experiencia 4/Lab_Digitales_2019-2/Exp_4/lab4.srcs/lab5.srcs/sources_1/new/clk_divider_7segment.v}
-  {D:/Lab_Digitales/Experiencia 4/Lab_Digitales_2019-2/Exp_4/lab4.srcs/lab5.srcs/sources_1/new/digit_separator.v}
-  {D:/Lab_Digitales/Experiencia 4/Lab_Digitales_2019-2/Exp_4/lab4.srcs/lab5.srcs/sources_1/new/display_7s.v}
-  {D:/Lab_Digitales/Experiencia 4/Lab_Digitales_2019-2/Exp_4/lab4.srcs/lab5.srcs/sources_1/new/display_number.v}
-  {D:/Lab_Digitales/Experiencia 4/Lab_Digitales_2019-2/Exp_4/lab4.srcs/lab5.srcs/sources_1/new/seven_seg_converter.v}
-  {D:/Lab_Digitales/Experiencia 4/Lab_Digitales_2019-2/Exp_4/lab4.srcs/lab5.srcs/sources_1/new/seven_seg_manager4digit.v}
-  {D:/Lab_Digitales/Experiencia 4/Lab_Digitales_2019-2/Exp_4/lab4.srcs/lab5.srcs/sources_1/new/Top.v}
+  {C:/Users/NBJSWETT/Desktop/COSAS PUC/VIII Semestre/Laboratorio de Sistemas Digitales/Lab_Digitales_2019-2/Exp_4/lab4.srcs/lab5.srcs/sources_1/new/Contador_monto_ingresado.v}
+  {C:/Users/NBJSWETT/Desktop/COSAS PUC/VIII Semestre/Laboratorio de Sistemas Digitales/Lab_Digitales_2019-2/Exp_4/lab4.srcs/lab5.srcs/sources_1/new/Debouncer_D.v}
+  {C:/Users/NBJSWETT/Desktop/COSAS PUC/VIII Semestre/Laboratorio de Sistemas Digitales/Lab_Digitales_2019-2/Exp_4/lab4.srcs/lab5.srcs/sources_1/new/Flip_FlopD.v}
+  {C:/Users/NBJSWETT/Desktop/COSAS PUC/VIII Semestre/Laboratorio de Sistemas Digitales/Lab_Digitales_2019-2/Exp_4/lab4.srcs/lab5.srcs/sources_1/new/binary_to_BCD.v}
+  {C:/Users/NBJSWETT/Desktop/COSAS PUC/VIII Semestre/Laboratorio de Sistemas Digitales/Lab_Digitales_2019-2/Exp_4/lab4.srcs/lab5.srcs/sources_1/new/calculadora_vueltos.v}
+  {C:/Users/NBJSWETT/Desktop/COSAS PUC/VIII Semestre/Laboratorio de Sistemas Digitales/Lab_Digitales_2019-2/Exp_4/lab4.srcs/lab5.srcs/sources_1/new/clk_divider_7segment.v}
+  {C:/Users/NBJSWETT/Desktop/COSAS PUC/VIII Semestre/Laboratorio de Sistemas Digitales/Lab_Digitales_2019-2/Exp_4/lab4.srcs/lab5.srcs/sources_1/new/digit_separator.v}
+  {C:/Users/NBJSWETT/Desktop/COSAS PUC/VIII Semestre/Laboratorio de Sistemas Digitales/Lab_Digitales_2019-2/Exp_4/lab4.srcs/lab5.srcs/sources_1/new/display_7s.v}
+  {C:/Users/NBJSWETT/Desktop/COSAS PUC/VIII Semestre/Laboratorio de Sistemas Digitales/Lab_Digitales_2019-2/Exp_4/lab4.srcs/lab5.srcs/sources_1/new/display_admin.v}
+  {C:/Users/NBJSWETT/Desktop/COSAS PUC/VIII Semestre/Laboratorio de Sistemas Digitales/Lab_Digitales_2019-2/Exp_4/lab4.srcs/lab5.srcs/sources_1/new/display_number.v}
+  {C:/Users/NBJSWETT/Desktop/COSAS PUC/VIII Semestre/Laboratorio de Sistemas Digitales/Lab_Digitales_2019-2/Exp_4/lab4.srcs/lab5.srcs/sources_1/new/seven_seg_converter.v}
+  {C:/Users/NBJSWETT/Desktop/COSAS PUC/VIII Semestre/Laboratorio de Sistemas Digitales/Lab_Digitales_2019-2/Exp_4/lab4.srcs/lab5.srcs/sources_1/new/seven_seg_manager4digit.v}
+  {C:/Users/NBJSWETT/Desktop/COSAS PUC/VIII Semestre/Laboratorio de Sistemas Digitales/Lab_Digitales_2019-2/Exp_4/lab4.srcs/lab5.srcs/sources_1/new/Top.v}
 }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -52,8 +53,8 @@ read_verilog -library xil_defaultlib {
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc {{D:/Lab_Digitales/Experiencia 4/Lab_Digitales_2019-2/Exp_4/lab4.srcs/lab5.srcs/constrs_1/new/basys.xdc}}
-set_property used_in_implementation false [get_files {{D:/Lab_Digitales/Experiencia 4/Lab_Digitales_2019-2/Exp_4/lab4.srcs/lab5.srcs/constrs_1/new/basys.xdc}}]
+read_xdc {{C:/Users/NBJSWETT/Desktop/COSAS PUC/VIII Semestre/Laboratorio de Sistemas Digitales/Lab_Digitales_2019-2/Exp_4/lab4.srcs/lab5.srcs/constrs_1/new/basys.xdc}}
+set_property used_in_implementation false [get_files {{C:/Users/NBJSWETT/Desktop/COSAS PUC/VIII Semestre/Laboratorio de Sistemas Digitales/Lab_Digitales_2019-2/Exp_4/lab4.srcs/lab5.srcs/constrs_1/new/basys.xdc}}]
 
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]
