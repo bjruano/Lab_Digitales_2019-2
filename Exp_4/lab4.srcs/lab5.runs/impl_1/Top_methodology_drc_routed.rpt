@@ -1,8 +1,8 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date         : Thu Oct 17 01:27:33 2019
-| Host         : Danielitoh running 64-bit major release  (build 9200)
+| Date         : Thu Oct 17 12:56:55 2019
+| Host         : BJRR running 64-bit major release  (build 9200)
 | Command      : report_methodology -file Top_methodology_drc_routed.rpt -pb Top_methodology_drc_routed.pb -rpx Top_methodology_drc_routed.rpx
 | Design       : Top
 | Device       : xc7a35tcpg236-1
@@ -23,14 +23,15 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 58
+             Violations found: 98
 +-----------+------------------+-------------------------------+------------+
 | Rule      | Severity         | Description                   | Violations |
 +-----------+------------------+-------------------------------+------------+
 | TIMING-17 | Critical Warning | Non-clocked sequential cell   | 14         |
-| SYNTH-13  | Warning          | combinational multiplier      | 4          |
-| TIMING-16 | Warning          | Large setup violation         | 3          |
-| TIMING-18 | Warning          | Missing input or output delay | 21         |
+| SYNTH-12  | Warning          | DSP input not registered      | 1          |
+| SYNTH-13  | Warning          | combinational multiplier      | 3          |
+| TIMING-16 | Warning          | Large setup violation         | 48         |
+| TIMING-18 | Warning          | Missing input or output delay | 16         |
 | TIMING-20 | Warning          | Non-clocked latch             | 16         |
 +-----------+------------------+-------------------------------+------------+
 
@@ -38,292 +39,492 @@ Table of Contents
 -----------------
 TIMING-17#1 Critical Warning
 Non-clocked sequential cell  
-The clock pin nolabel_line124/nolabel_line37/nolabel_line22/anodo_reg[0]/C is not reached by a timing clock
+The clock pin nolabel_line151/nolabel_line37/nolabel_line22/anodo_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#2 Critical Warning
 Non-clocked sequential cell  
-The clock pin nolabel_line124/nolabel_line37/nolabel_line22/anodo_reg[1]/C is not reached by a timing clock
+The clock pin nolabel_line151/nolabel_line37/nolabel_line22/anodo_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#3 Critical Warning
 Non-clocked sequential cell  
-The clock pin nolabel_line124/nolabel_line37/nolabel_line22/anodo_reg[2]/C is not reached by a timing clock
+The clock pin nolabel_line151/nolabel_line37/nolabel_line22/anodo_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#4 Critical Warning
 Non-clocked sequential cell  
-The clock pin nolabel_line124/nolabel_line37/nolabel_line22/anodo_reg[3]/C is not reached by a timing clock
+The clock pin nolabel_line151/nolabel_line37/nolabel_line22/anodo_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#5 Critical Warning
 Non-clocked sequential cell  
-The clock pin nolabel_line124/nolabel_line37/nolabel_line22/segments_reg[0]/C is not reached by a timing clock
+The clock pin nolabel_line151/nolabel_line37/nolabel_line22/segments_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#6 Critical Warning
 Non-clocked sequential cell  
-The clock pin nolabel_line124/nolabel_line37/nolabel_line22/segments_reg[1]/C is not reached by a timing clock
+The clock pin nolabel_line151/nolabel_line37/nolabel_line22/segments_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#7 Critical Warning
 Non-clocked sequential cell  
-The clock pin nolabel_line124/nolabel_line37/nolabel_line22/segments_reg[2]/C is not reached by a timing clock
+The clock pin nolabel_line151/nolabel_line37/nolabel_line22/segments_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#8 Critical Warning
 Non-clocked sequential cell  
-The clock pin nolabel_line124/nolabel_line37/nolabel_line22/segments_reg[3]/C is not reached by a timing clock
+The clock pin nolabel_line151/nolabel_line37/nolabel_line22/segments_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#9 Critical Warning
 Non-clocked sequential cell  
-The clock pin nolabel_line124/nolabel_line37/nolabel_line22/segments_reg[4]/C is not reached by a timing clock
+The clock pin nolabel_line151/nolabel_line37/nolabel_line22/segments_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#10 Critical Warning
 Non-clocked sequential cell  
-The clock pin nolabel_line124/nolabel_line37/nolabel_line22/segments_reg[5]/C is not reached by a timing clock
+The clock pin nolabel_line151/nolabel_line37/nolabel_line22/segments_reg[5]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#11 Critical Warning
 Non-clocked sequential cell  
-The clock pin nolabel_line124/nolabel_line37/nolabel_line22/segments_reg[6]/C is not reached by a timing clock
+The clock pin nolabel_line151/nolabel_line37/nolabel_line22/segments_reg[6]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#12 Critical Warning
 Non-clocked sequential cell  
-The clock pin nolabel_line124/nolabel_line37/nolabel_line22/selector_reg[0]/C is not reached by a timing clock
+The clock pin nolabel_line151/nolabel_line37/nolabel_line22/selector_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#13 Critical Warning
 Non-clocked sequential cell  
-The clock pin nolabel_line124/nolabel_line37/nolabel_line22/selector_reg[1]/C is not reached by a timing clock
+The clock pin nolabel_line151/nolabel_line37/nolabel_line22/selector_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#14 Critical Warning
 Non-clocked sequential cell  
-The clock pin nolabel_line124/nolabel_line37/nolabel_line22/selector_reg[2]/C is not reached by a timing clock
+The clock pin nolabel_line151/nolabel_line37/nolabel_line22/selector_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+SYNTH-12#1 Warning
+DSP input not registered  
+DSP instance nolabel_line129/monto_ingresado_reg is not fully pipelined on the input side. AREG/BREG/CREG/DREG are not used.
 Related violations: <none>
 
 SYNTH-13#1 Warning
 combinational multiplier  
-Detected combinational multiplier in DSP instance nolabel_line116/costo0.
+Detected combinational multiplier in DSP instance nolabel_line129/monto_ingresado0.
 Related violations: <none>
 
 SYNTH-13#2 Warning
 combinational multiplier  
-Detected combinational multiplier in DSP instance nolabel_line116/costo0__0.
+Detected combinational multiplier in DSP instance nolabel_line129/monto_ingresado0__0.
 Related violations: <none>
 
 SYNTH-13#3 Warning
 combinational multiplier  
-Detected combinational multiplier in DSP instance nolabel_line116/costo0__1.
-Related violations: <none>
-
-SYNTH-13#4 Warning
-combinational multiplier  
-Detected combinational multiplier in DSP instance nolabel_line116/costo1.
+Detected combinational multiplier in DSP instance nolabel_line129/monto_ingresado1.
 Related violations: <none>
 
 TIMING-16#1 Warning
 Large setup violation  
-There is a large setup violation of -4.558 ns between nolabel_line116/nolabel_line45/flip1/Q_reg/C (clocked by sys_clk_pin) and nolabel_line116/dinero_insuficiente_reg/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -2.398 ns between nolabel_line129/monedas_10_ingresadas_reg[0]/C (clocked by sys_clk_pin) and nolabel_line129/monto_ingresado_reg/PCIN[0] (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#2 Warning
 Large setup violation  
-There is a large setup violation of -5.455 ns between nolabel_line116/nolabel_line45/flip1/Q_reg/C (clocked by sys_clk_pin) and nolabel_line116/compra_exitosa_reg_lopt_replica/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -2.398 ns between nolabel_line129/monedas_10_ingresadas_reg[0]/C (clocked by sys_clk_pin) and nolabel_line129/monto_ingresado_reg/PCIN[10] (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#3 Warning
 Large setup violation  
-There is a large setup violation of -5.468 ns between nolabel_line116/nolabel_line45/flip1/Q_reg/C (clocked by sys_clk_pin) and nolabel_line116/compra_exitosa_reg/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -2.398 ns between nolabel_line129/monedas_10_ingresadas_reg[0]/C (clocked by sys_clk_pin) and nolabel_line129/monto_ingresado_reg/PCIN[11] (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#4 Warning
+Large setup violation  
+There is a large setup violation of -2.398 ns between nolabel_line129/monedas_10_ingresadas_reg[0]/C (clocked by sys_clk_pin) and nolabel_line129/monto_ingresado_reg/PCIN[12] (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#5 Warning
+Large setup violation  
+There is a large setup violation of -2.398 ns between nolabel_line129/monedas_10_ingresadas_reg[0]/C (clocked by sys_clk_pin) and nolabel_line129/monto_ingresado_reg/PCIN[13] (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#6 Warning
+Large setup violation  
+There is a large setup violation of -2.398 ns between nolabel_line129/monedas_10_ingresadas_reg[0]/C (clocked by sys_clk_pin) and nolabel_line129/monto_ingresado_reg/PCIN[14] (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#7 Warning
+Large setup violation  
+There is a large setup violation of -2.398 ns between nolabel_line129/monedas_10_ingresadas_reg[0]/C (clocked by sys_clk_pin) and nolabel_line129/monto_ingresado_reg/PCIN[15] (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#8 Warning
+Large setup violation  
+There is a large setup violation of -2.398 ns between nolabel_line129/monedas_10_ingresadas_reg[0]/C (clocked by sys_clk_pin) and nolabel_line129/monto_ingresado_reg/PCIN[16] (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#9 Warning
+Large setup violation  
+There is a large setup violation of -2.398 ns between nolabel_line129/monedas_10_ingresadas_reg[0]/C (clocked by sys_clk_pin) and nolabel_line129/monto_ingresado_reg/PCIN[17] (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#10 Warning
+Large setup violation  
+There is a large setup violation of -2.398 ns between nolabel_line129/monedas_10_ingresadas_reg[0]/C (clocked by sys_clk_pin) and nolabel_line129/monto_ingresado_reg/PCIN[18] (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#11 Warning
+Large setup violation  
+There is a large setup violation of -2.398 ns between nolabel_line129/monedas_10_ingresadas_reg[0]/C (clocked by sys_clk_pin) and nolabel_line129/monto_ingresado_reg/PCIN[19] (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#12 Warning
+Large setup violation  
+There is a large setup violation of -2.398 ns between nolabel_line129/monedas_10_ingresadas_reg[0]/C (clocked by sys_clk_pin) and nolabel_line129/monto_ingresado_reg/PCIN[1] (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#13 Warning
+Large setup violation  
+There is a large setup violation of -2.398 ns between nolabel_line129/monedas_10_ingresadas_reg[0]/C (clocked by sys_clk_pin) and nolabel_line129/monto_ingresado_reg/PCIN[20] (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#14 Warning
+Large setup violation  
+There is a large setup violation of -2.398 ns between nolabel_line129/monedas_10_ingresadas_reg[0]/C (clocked by sys_clk_pin) and nolabel_line129/monto_ingresado_reg/PCIN[21] (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#15 Warning
+Large setup violation  
+There is a large setup violation of -2.398 ns between nolabel_line129/monedas_10_ingresadas_reg[0]/C (clocked by sys_clk_pin) and nolabel_line129/monto_ingresado_reg/PCIN[22] (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#16 Warning
+Large setup violation  
+There is a large setup violation of -2.398 ns between nolabel_line129/monedas_10_ingresadas_reg[0]/C (clocked by sys_clk_pin) and nolabel_line129/monto_ingresado_reg/PCIN[23] (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#17 Warning
+Large setup violation  
+There is a large setup violation of -2.398 ns between nolabel_line129/monedas_10_ingresadas_reg[0]/C (clocked by sys_clk_pin) and nolabel_line129/monto_ingresado_reg/PCIN[24] (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#18 Warning
+Large setup violation  
+There is a large setup violation of -2.398 ns between nolabel_line129/monedas_10_ingresadas_reg[0]/C (clocked by sys_clk_pin) and nolabel_line129/monto_ingresado_reg/PCIN[25] (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#19 Warning
+Large setup violation  
+There is a large setup violation of -2.398 ns between nolabel_line129/monedas_10_ingresadas_reg[0]/C (clocked by sys_clk_pin) and nolabel_line129/monto_ingresado_reg/PCIN[26] (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#20 Warning
+Large setup violation  
+There is a large setup violation of -2.398 ns between nolabel_line129/monedas_10_ingresadas_reg[0]/C (clocked by sys_clk_pin) and nolabel_line129/monto_ingresado_reg/PCIN[27] (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#21 Warning
+Large setup violation  
+There is a large setup violation of -2.398 ns between nolabel_line129/monedas_10_ingresadas_reg[0]/C (clocked by sys_clk_pin) and nolabel_line129/monto_ingresado_reg/PCIN[28] (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#22 Warning
+Large setup violation  
+There is a large setup violation of -2.398 ns between nolabel_line129/monedas_10_ingresadas_reg[0]/C (clocked by sys_clk_pin) and nolabel_line129/monto_ingresado_reg/PCIN[29] (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#23 Warning
+Large setup violation  
+There is a large setup violation of -2.398 ns between nolabel_line129/monedas_10_ingresadas_reg[0]/C (clocked by sys_clk_pin) and nolabel_line129/monto_ingresado_reg/PCIN[2] (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#24 Warning
+Large setup violation  
+There is a large setup violation of -2.398 ns between nolabel_line129/monedas_10_ingresadas_reg[0]/C (clocked by sys_clk_pin) and nolabel_line129/monto_ingresado_reg/PCIN[30] (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#25 Warning
+Large setup violation  
+There is a large setup violation of -2.398 ns between nolabel_line129/monedas_10_ingresadas_reg[0]/C (clocked by sys_clk_pin) and nolabel_line129/monto_ingresado_reg/PCIN[31] (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#26 Warning
+Large setup violation  
+There is a large setup violation of -2.398 ns between nolabel_line129/monedas_10_ingresadas_reg[0]/C (clocked by sys_clk_pin) and nolabel_line129/monto_ingresado_reg/PCIN[32] (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#27 Warning
+Large setup violation  
+There is a large setup violation of -2.398 ns between nolabel_line129/monedas_10_ingresadas_reg[0]/C (clocked by sys_clk_pin) and nolabel_line129/monto_ingresado_reg/PCIN[33] (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#28 Warning
+Large setup violation  
+There is a large setup violation of -2.398 ns between nolabel_line129/monedas_10_ingresadas_reg[0]/C (clocked by sys_clk_pin) and nolabel_line129/monto_ingresado_reg/PCIN[34] (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#29 Warning
+Large setup violation  
+There is a large setup violation of -2.398 ns between nolabel_line129/monedas_10_ingresadas_reg[0]/C (clocked by sys_clk_pin) and nolabel_line129/monto_ingresado_reg/PCIN[35] (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#30 Warning
+Large setup violation  
+There is a large setup violation of -2.398 ns between nolabel_line129/monedas_10_ingresadas_reg[0]/C (clocked by sys_clk_pin) and nolabel_line129/monto_ingresado_reg/PCIN[36] (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#31 Warning
+Large setup violation  
+There is a large setup violation of -2.398 ns between nolabel_line129/monedas_10_ingresadas_reg[0]/C (clocked by sys_clk_pin) and nolabel_line129/monto_ingresado_reg/PCIN[37] (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#32 Warning
+Large setup violation  
+There is a large setup violation of -2.398 ns between nolabel_line129/monedas_10_ingresadas_reg[0]/C (clocked by sys_clk_pin) and nolabel_line129/monto_ingresado_reg/PCIN[38] (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#33 Warning
+Large setup violation  
+There is a large setup violation of -2.398 ns between nolabel_line129/monedas_10_ingresadas_reg[0]/C (clocked by sys_clk_pin) and nolabel_line129/monto_ingresado_reg/PCIN[39] (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#34 Warning
+Large setup violation  
+There is a large setup violation of -2.398 ns between nolabel_line129/monedas_10_ingresadas_reg[0]/C (clocked by sys_clk_pin) and nolabel_line129/monto_ingresado_reg/PCIN[3] (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#35 Warning
+Large setup violation  
+There is a large setup violation of -2.398 ns between nolabel_line129/monedas_10_ingresadas_reg[0]/C (clocked by sys_clk_pin) and nolabel_line129/monto_ingresado_reg/PCIN[40] (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#36 Warning
+Large setup violation  
+There is a large setup violation of -2.398 ns between nolabel_line129/monedas_10_ingresadas_reg[0]/C (clocked by sys_clk_pin) and nolabel_line129/monto_ingresado_reg/PCIN[41] (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#37 Warning
+Large setup violation  
+There is a large setup violation of -2.398 ns between nolabel_line129/monedas_10_ingresadas_reg[0]/C (clocked by sys_clk_pin) and nolabel_line129/monto_ingresado_reg/PCIN[42] (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#38 Warning
+Large setup violation  
+There is a large setup violation of -2.398 ns between nolabel_line129/monedas_10_ingresadas_reg[0]/C (clocked by sys_clk_pin) and nolabel_line129/monto_ingresado_reg/PCIN[43] (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#39 Warning
+Large setup violation  
+There is a large setup violation of -2.398 ns between nolabel_line129/monedas_10_ingresadas_reg[0]/C (clocked by sys_clk_pin) and nolabel_line129/monto_ingresado_reg/PCIN[44] (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#40 Warning
+Large setup violation  
+There is a large setup violation of -2.398 ns between nolabel_line129/monedas_10_ingresadas_reg[0]/C (clocked by sys_clk_pin) and nolabel_line129/monto_ingresado_reg/PCIN[45] (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#41 Warning
+Large setup violation  
+There is a large setup violation of -2.398 ns between nolabel_line129/monedas_10_ingresadas_reg[0]/C (clocked by sys_clk_pin) and nolabel_line129/monto_ingresado_reg/PCIN[46] (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#42 Warning
+Large setup violation  
+There is a large setup violation of -2.398 ns between nolabel_line129/monedas_10_ingresadas_reg[0]/C (clocked by sys_clk_pin) and nolabel_line129/monto_ingresado_reg/PCIN[47] (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#43 Warning
+Large setup violation  
+There is a large setup violation of -2.398 ns between nolabel_line129/monedas_10_ingresadas_reg[0]/C (clocked by sys_clk_pin) and nolabel_line129/monto_ingresado_reg/PCIN[4] (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#44 Warning
+Large setup violation  
+There is a large setup violation of -2.398 ns between nolabel_line129/monedas_10_ingresadas_reg[0]/C (clocked by sys_clk_pin) and nolabel_line129/monto_ingresado_reg/PCIN[5] (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#45 Warning
+Large setup violation  
+There is a large setup violation of -2.398 ns between nolabel_line129/monedas_10_ingresadas_reg[0]/C (clocked by sys_clk_pin) and nolabel_line129/monto_ingresado_reg/PCIN[6] (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#46 Warning
+Large setup violation  
+There is a large setup violation of -2.398 ns between nolabel_line129/monedas_10_ingresadas_reg[0]/C (clocked by sys_clk_pin) and nolabel_line129/monto_ingresado_reg/PCIN[7] (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#47 Warning
+Large setup violation  
+There is a large setup violation of -2.398 ns between nolabel_line129/monedas_10_ingresadas_reg[0]/C (clocked by sys_clk_pin) and nolabel_line129/monto_ingresado_reg/PCIN[8] (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#48 Warning
+Large setup violation  
+There is a large setup violation of -2.398 ns between nolabel_line129/monedas_10_ingresadas_reg[0]/C (clocked by sys_clk_pin) and nolabel_line129/monto_ingresado_reg/PCIN[9] (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-18#1 Warning
 Missing input or output delay  
-An input delay is missing on btnC relative to clock(s) sys_clk_pin
+An input delay is missing on sw[0] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#2 Warning
 Missing input or output delay  
-An input delay is missing on sw[0] relative to clock(s) sys_clk_pin
+An input delay is missing on sw[10] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#3 Warning
 Missing input or output delay  
-An input delay is missing on sw[10] relative to clock(s) sys_clk_pin
+An input delay is missing on sw[11] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#4 Warning
 Missing input or output delay  
-An input delay is missing on sw[11] relative to clock(s) sys_clk_pin
+An input delay is missing on sw[12] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#5 Warning
 Missing input or output delay  
-An input delay is missing on sw[12] relative to clock(s) sys_clk_pin
+An input delay is missing on sw[13] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#6 Warning
 Missing input or output delay  
-An input delay is missing on sw[13] relative to clock(s) sys_clk_pin
+An input delay is missing on sw[14] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#7 Warning
 Missing input or output delay  
-An input delay is missing on sw[14] relative to clock(s) sys_clk_pin
+An input delay is missing on sw[15] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#8 Warning
 Missing input or output delay  
-An input delay is missing on sw[15] relative to clock(s) sys_clk_pin
+An input delay is missing on sw[1] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#9 Warning
 Missing input or output delay  
-An input delay is missing on sw[1] relative to clock(s) sys_clk_pin
+An input delay is missing on sw[2] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#10 Warning
 Missing input or output delay  
-An input delay is missing on sw[2] relative to clock(s) sys_clk_pin
+An input delay is missing on sw[3] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#11 Warning
 Missing input or output delay  
-An input delay is missing on sw[3] relative to clock(s) sys_clk_pin
+An input delay is missing on sw[4] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#12 Warning
 Missing input or output delay  
-An input delay is missing on sw[4] relative to clock(s) sys_clk_pin
+An input delay is missing on sw[5] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#13 Warning
 Missing input or output delay  
-An input delay is missing on sw[5] relative to clock(s) sys_clk_pin
+An input delay is missing on sw[6] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#14 Warning
 Missing input or output delay  
-An input delay is missing on sw[6] relative to clock(s) sys_clk_pin
+An input delay is missing on sw[7] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#15 Warning
 Missing input or output delay  
-An input delay is missing on sw[7] relative to clock(s) sys_clk_pin
+An input delay is missing on sw[8] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#16 Warning
 Missing input or output delay  
-An input delay is missing on sw[8] relative to clock(s) sys_clk_pin
-Related violations: <none>
-
-TIMING-18#17 Warning
-Missing input or output delay  
 An input delay is missing on sw[9] relative to clock(s) sys_clk_pin
-Related violations: <none>
-
-TIMING-18#18 Warning
-Missing input or output delay  
-An output delay is missing on led[0] relative to clock(s) sys_clk_pin
-Related violations: <none>
-
-TIMING-18#19 Warning
-Missing input or output delay  
-An output delay is missing on led[1] relative to clock(s) sys_clk_pin
-Related violations: <none>
-
-TIMING-18#20 Warning
-Missing input or output delay  
-An output delay is missing on led[2] relative to clock(s) sys_clk_pin
-Related violations: <none>
-
-TIMING-18#21 Warning
-Missing input or output delay  
-An output delay is missing on led[3] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-20#1 Warning
 Non-clocked latch  
-The latch nolabel_line124/nolabel_line37/nolabel_line13/decena_reg[0] cannot be properly analyzed as its control pin nolabel_line124/nolabel_line37/nolabel_line13/decena_reg[0]/G is not reached by a timing clock
+The latch nolabel_line151/nolabel_line37/nolabel_line13/decena_reg[0] cannot be properly analyzed as its control pin nolabel_line151/nolabel_line37/nolabel_line13/decena_reg[0]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#2 Warning
 Non-clocked latch  
-The latch nolabel_line124/nolabel_line37/nolabel_line13/decena_reg[1] cannot be properly analyzed as its control pin nolabel_line124/nolabel_line37/nolabel_line13/decena_reg[1]/G is not reached by a timing clock
+The latch nolabel_line151/nolabel_line37/nolabel_line13/decena_reg[1] cannot be properly analyzed as its control pin nolabel_line151/nolabel_line37/nolabel_line13/decena_reg[1]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#3 Warning
 Non-clocked latch  
-The latch nolabel_line124/nolabel_line37/nolabel_line13/decena_reg[2] cannot be properly analyzed as its control pin nolabel_line124/nolabel_line37/nolabel_line13/decena_reg[2]/G is not reached by a timing clock
+The latch nolabel_line151/nolabel_line37/nolabel_line13/decena_reg[2] cannot be properly analyzed as its control pin nolabel_line151/nolabel_line37/nolabel_line13/decena_reg[2]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#4 Warning
 Non-clocked latch  
-The latch nolabel_line124/nolabel_line37/nolabel_line13/decena_reg[3] cannot be properly analyzed as its control pin nolabel_line124/nolabel_line37/nolabel_line13/decena_reg[3]/G is not reached by a timing clock
+The latch nolabel_line151/nolabel_line37/nolabel_line13/decena_reg[3] cannot be properly analyzed as its control pin nolabel_line151/nolabel_line37/nolabel_line13/decena_reg[3]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#5 Warning
 Non-clocked latch  
-The latch nolabel_line124/nolabel_line37/nolabel_line13/unidad_reg[0] cannot be properly analyzed as its control pin nolabel_line124/nolabel_line37/nolabel_line13/unidad_reg[0]/G is not reached by a timing clock
+The latch nolabel_line151/nolabel_line37/nolabel_line13/unidad_reg[0] cannot be properly analyzed as its control pin nolabel_line151/nolabel_line37/nolabel_line13/unidad_reg[0]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#6 Warning
 Non-clocked latch  
-The latch nolabel_line124/nolabel_line37/nolabel_line13/unidad_reg[1] cannot be properly analyzed as its control pin nolabel_line124/nolabel_line37/nolabel_line13/unidad_reg[1]/G is not reached by a timing clock
+The latch nolabel_line151/nolabel_line37/nolabel_line13/unidad_reg[1] cannot be properly analyzed as its control pin nolabel_line151/nolabel_line37/nolabel_line13/unidad_reg[1]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#7 Warning
 Non-clocked latch  
-The latch nolabel_line124/nolabel_line37/nolabel_line13/unidad_reg[2] cannot be properly analyzed as its control pin nolabel_line124/nolabel_line37/nolabel_line13/unidad_reg[2]/G is not reached by a timing clock
+The latch nolabel_line151/nolabel_line37/nolabel_line13/unidad_reg[2] cannot be properly analyzed as its control pin nolabel_line151/nolabel_line37/nolabel_line13/unidad_reg[2]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#8 Warning
 Non-clocked latch  
-The latch nolabel_line124/nolabel_line37/nolabel_line13/unidad_reg[3] cannot be properly analyzed as its control pin nolabel_line124/nolabel_line37/nolabel_line13/unidad_reg[3]/G is not reached by a timing clock
+The latch nolabel_line151/nolabel_line37/nolabel_line13/unidad_reg[3] cannot be properly analyzed as its control pin nolabel_line151/nolabel_line37/nolabel_line13/unidad_reg[3]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#9 Warning
 Non-clocked latch  
-The latch nolabel_line124/nolabel_line37/nolabel_line14/decena_reg[0] cannot be properly analyzed as its control pin nolabel_line124/nolabel_line37/nolabel_line14/decena_reg[0]/G is not reached by a timing clock
+The latch nolabel_line151/nolabel_line37/nolabel_line14/decena_reg[0] cannot be properly analyzed as its control pin nolabel_line151/nolabel_line37/nolabel_line14/decena_reg[0]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#10 Warning
 Non-clocked latch  
-The latch nolabel_line124/nolabel_line37/nolabel_line14/decena_reg[1] cannot be properly analyzed as its control pin nolabel_line124/nolabel_line37/nolabel_line14/decena_reg[1]/G is not reached by a timing clock
+The latch nolabel_line151/nolabel_line37/nolabel_line14/decena_reg[1] cannot be properly analyzed as its control pin nolabel_line151/nolabel_line37/nolabel_line14/decena_reg[1]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#11 Warning
 Non-clocked latch  
-The latch nolabel_line124/nolabel_line37/nolabel_line14/decena_reg[2] cannot be properly analyzed as its control pin nolabel_line124/nolabel_line37/nolabel_line14/decena_reg[2]/G is not reached by a timing clock
+The latch nolabel_line151/nolabel_line37/nolabel_line14/decena_reg[2] cannot be properly analyzed as its control pin nolabel_line151/nolabel_line37/nolabel_line14/decena_reg[2]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#12 Warning
 Non-clocked latch  
-The latch nolabel_line124/nolabel_line37/nolabel_line14/decena_reg[3] cannot be properly analyzed as its control pin nolabel_line124/nolabel_line37/nolabel_line14/decena_reg[3]/G is not reached by a timing clock
+The latch nolabel_line151/nolabel_line37/nolabel_line14/decena_reg[3] cannot be properly analyzed as its control pin nolabel_line151/nolabel_line37/nolabel_line14/decena_reg[3]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#13 Warning
 Non-clocked latch  
-The latch nolabel_line124/nolabel_line37/nolabel_line14/unidad_reg[0] cannot be properly analyzed as its control pin nolabel_line124/nolabel_line37/nolabel_line14/unidad_reg[0]/G is not reached by a timing clock
+The latch nolabel_line151/nolabel_line37/nolabel_line14/unidad_reg[0] cannot be properly analyzed as its control pin nolabel_line151/nolabel_line37/nolabel_line14/unidad_reg[0]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#14 Warning
 Non-clocked latch  
-The latch nolabel_line124/nolabel_line37/nolabel_line14/unidad_reg[1] cannot be properly analyzed as its control pin nolabel_line124/nolabel_line37/nolabel_line14/unidad_reg[1]/G is not reached by a timing clock
+The latch nolabel_line151/nolabel_line37/nolabel_line14/unidad_reg[1] cannot be properly analyzed as its control pin nolabel_line151/nolabel_line37/nolabel_line14/unidad_reg[1]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#15 Warning
 Non-clocked latch  
-The latch nolabel_line124/nolabel_line37/nolabel_line14/unidad_reg[2] cannot be properly analyzed as its control pin nolabel_line124/nolabel_line37/nolabel_line14/unidad_reg[2]/G is not reached by a timing clock
+The latch nolabel_line151/nolabel_line37/nolabel_line14/unidad_reg[2] cannot be properly analyzed as its control pin nolabel_line151/nolabel_line37/nolabel_line14/unidad_reg[2]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#16 Warning
 Non-clocked latch  
-The latch nolabel_line124/nolabel_line37/nolabel_line14/unidad_reg[3] cannot be properly analyzed as its control pin nolabel_line124/nolabel_line37/nolabel_line14/unidad_reg[3]/G is not reached by a timing clock
+The latch nolabel_line151/nolabel_line37/nolabel_line14/unidad_reg[3] cannot be properly analyzed as its control pin nolabel_line151/nolabel_line37/nolabel_line14/unidad_reg[3]/G is not reached by a timing clock
 Related violations: <none>
 
 

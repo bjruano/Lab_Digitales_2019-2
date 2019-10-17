@@ -98,61 +98,52 @@
 
 module contador_monto_ingresado(
     input clk,
-    input prod_A_pre, prod_B_pre, prod_C_pre, prod_D_pre,
-    input compra_exitosa,
-    input comprar,
+    input M_500_pre, M_100_pre, M_50_pre, M_10_pre,
     input devolucion_pre,
-    output reg [13:0] cant_A, cant_B, cant_C, cant_D,
-    output reg [13:0] costo
+    output reg [13:0] monedas_500_ingresadas, monedas_100_ingresadas, monedas_50_ingresadas, monedas_10_ingresadas,
+    output reg [13:0] monto_ingresado
     );
     
-wire prod_A;
-wire prod_B;
-wire prod_C;
-wire prod_D;
+wire M_500;
+wire M_100;
+wire M_50;
+wire M_10;
  
 wire devolucion;
 
 DeBouncer_D(clk, devolucion_pre, devolucion);
-DeBouncer_D(clk, prod_A_pre, prod_A);
-DeBouncer_D(clk, prod_B_pre, prod_B);    
-DeBouncer_D(clk, prod_C_pre, prod_C);    
-DeBouncer_D(clk, prod_D_pre, prod_D);        
+DeBouncer_D(clk, M_500_pre, M_500);
+DeBouncer_D(clk, M_100_pre, M_100);    
+DeBouncer_D(clk, M_50_pre, M_50);    
+DeBouncer_D(clk, M_10_pre, M_10);        
     
 always @(posedge clk)
 begin
-if (prod_A)
+if (M_500)
     begin
-    cant_A = cant_A + 1;
+    monedas_500_ingresadas = monedas_500_ingresadas + 1;
     end
-else if (prod_B)
+else if (M_100)
     begin
-    cant_B = cant_B + 1;
+    monedas_100_ingresadas = monedas_100_ingresadas + 1;
     end
-else if (prod_C)
+else if (M_50)
     begin
-    cant_C = cant_C + 1;
+    monedas_50_ingresadas = monedas_50_ingresadas + 1;
     end
-else if (prod_D)
+else if (M_10)
     begin
-    cant_D = cant_D + 1;
+    monedas_10_ingresadas = monedas_10_ingresadas + 1;
     end
 else if (devolucion)
     begin
-    cant_A = 0;
-    cant_B = 0;
-    cant_C = 0;
-    cant_D = 0;
-    end
-else if (compra_exitosa & comprar)
-    begin
-    cant_A = 0;
-    cant_B = 0;
-    cant_C = 0;
-    cant_D = 0;
+    monedas_500_ingresadas = 0;
+    monedas_100_ingresadas = 0;
+    monedas_50_ingresadas = 0;
+    monedas_10_ingresadas = 0;
     end
     
-costo = cant_A*14'd500 + cant_B*14'd100 + cant_C*14'd50 + cant_D*14'd10;
+monto_ingresado = monedas_500_ingresadas*500 + monedas_100_ingresadas*100 + monedas_50_ingresadas*50 + monedas_10_ingresadas*10;
 
 end
 

@@ -60,6 +60,7 @@ proc step_failed { step } {
   close $ch
 }
 
+set_msg_config -id {Common 17-41} -limit 10000000
 
 start_step init_design
 set ACTIVE_STEP init_design
@@ -70,12 +71,12 @@ set rc [catch {
   create_project -in_memory -part xc7a35tcpg236-1
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir {C:/Users/NBJSWETT/Desktop/COSAS PUC/VIII Semestre/Laboratorio de Sistemas Digitales/Lab_Digitales_2019-2/Exp_4/lab4.srcs/lab5.cache/wt} [current_project]
-  set_property parent.project_path {C:/Users/NBJSWETT/Desktop/COSAS PUC/VIII Semestre/Laboratorio de Sistemas Digitales/Lab_Digitales_2019-2/Exp_4/lab4.srcs/lab5.xpr} [current_project]
+  set_property webtalk.parent_dir {D:/Lab_Digitales/Experiencia 4/Lab_Digitales_2019-2/Exp_4/lab4.srcs/lab5.cache/wt} [current_project]
+  set_property parent.project_path {D:/Lab_Digitales/Experiencia 4/Lab_Digitales_2019-2/Exp_4/lab4.srcs/lab5.xpr} [current_project]
   set_property ip_output_repo {{D:/University/Engineering/8th semester/Digital Lab/exp4/lab4.cache/ip}} [current_project]
   set_property ip_cache_permissions {read write} [current_project]
-  add_files -quiet {{C:/Users/NBJSWETT/Desktop/COSAS PUC/VIII Semestre/Laboratorio de Sistemas Digitales/Lab_Digitales_2019-2/Exp_4/lab4.srcs/lab5.runs/synth_1/Top.dcp}}
-  read_xdc {{C:/Users/NBJSWETT/Desktop/COSAS PUC/VIII Semestre/Laboratorio de Sistemas Digitales/Lab_Digitales_2019-2/Exp_4/lab4.srcs/lab5.srcs/constrs_1/new/basys.xdc}}
+  add_files -quiet {{D:/Lab_Digitales/Experiencia 4/Lab_Digitales_2019-2/Exp_4/lab4.srcs/lab5.runs/synth_1/Top.dcp}}
+  read_xdc {{D:/Lab_Digitales/Experiencia 4/Lab_Digitales_2019-2/Exp_4/lab4.srcs/lab5.srcs/constrs_1/new/basys.xdc}}
   link_design -top Top -part xc7a35tcpg236-1
   close_msg_db -file init_design.pb
 } RESULT]

@@ -29,7 +29,8 @@ module selector_display(
     input [13:0] boletas,
     input comprar,
     input compra_exitosa,
-    output reg [13:0] data
+    output reg [13:0] data,
+    output estado
      );
      
 wire moneda_500;
@@ -52,10 +53,10 @@ end
 always @(*)
 begin
 case(state)
-0: if (comprar & compra_exitosa) nextstate = 1;
-   else nextstate = 0;
-1: if (moneda_10 | moneda_50 | moneda_100 | moneda_500) nextstate = 0;
-   else nextstate = 1;
+0: if (comprar & compra_exitosa) begin nextstate = 1; end
+   else begin nextstate = 0; end
+1: if (moneda_10 | moneda_50 | moneda_100 | moneda_500) begin nextstate = 0; end
+   else begin nextstate = 1; end
 endcase
 
 if (state == 0 & modo_conf == 0)
@@ -69,7 +70,10 @@ else if (state == 1 & modo_conf == 0)
 else
     begin
     data = boletas;
-    end
-    
+    end    
 end
+
+assign estado = state;
+//display_number(inpclk,input [13:0] N,output [3:0] an,output [6:0] seg);
+
 endmodule
